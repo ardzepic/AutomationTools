@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="12.0" key="{772D19CB-AB43-4ECB-B310-10A59BCB6A54}">
+	<children>
+		<child name="QATools" key="{206D7019-C195-45E2-80E5-7A3D94F594F4}" type="Project" typeId="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" pluginName="">
+			<data path="QATools\QATools.mds" />
+		</child>
+	</children>
+	<folders />
+	<testItems key="{DF20EEAF-5432-4D04-8F1C-FFDBF4175771}">
+		<children>
+			<testItem key="{206D7019-C195-45E2-80E5-7A3D94F594F4}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{B375F8E2-5535-4932-AC95-77F4EFAB8D49}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{4F68C6F9-E96E-45B2-8B53-C18A10432A72}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}" />
+</Root>

@@ -1,0 +1,26 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Open_Forms
+//USEUNIT Supplier_Functions
+//USEUNIT Payment_Entry_Functions
+
+// Function name:  Calculatedfields
+// Purpose:  Follow testcase Report Data Validation > Calculated Fields (sharepoint) 
+// Author: Hector Rocha
+// Input:  -
+// Output:  -
+// Last update: Andrea Rodriguez - 1/29/2018
+
+function Calculatedfields ()
+{
+  OpenSupplierForm();
+  NewSupplier("sup3", "sup3", "Espa[Alt164]ol/M", "1/10 Net 30");
+  ClickMenu("File->Exit");
+  OpenPaymentEntry();
+  NewGroup("woo3", "Main Checking Account", "AP Check Payment");
+  NewPayment("sup3")
+  NewMiscPayment("200")
+  ProcessPayment();
+  ClickMenu("File->Exit");
+}

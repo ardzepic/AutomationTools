@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportDataSet xmlns="http://www.epicor.com/Mfg/100">
+	<xs:schema id="ReportDataSet" targetNamespace="http://www.epicor.com/Mfg/100" xmlns:mstns="http://www.epicor.com/Mfg/100" xmlns="http://www.epicor.com/Mfg/100" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+		<xs:element name="ReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False">
+			<xs:complexType>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="CallContextBpmData">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Password" type="xs:string" minOccurs="0"/>
+								<xs:element name="ButtonValue" type="xs:int" minOccurs="0"/>
+								<xs:element name="Character01" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character02" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character03" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character04" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character05" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character06" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character07" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character08" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character09" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character10" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character11" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character12" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character13" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character14" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character15" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character16" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character17" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character18" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character19" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character20" type="xs:string" minOccurs="0"/>
+								<xs:element name="Number01" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number02" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number03" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number04" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number05" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number06" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number07" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number08" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number09" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number10" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number11" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number12" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number13" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number14" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number15" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number16" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number17" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number18" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number19" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number20" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Date01" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date02" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date03" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date04" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date05" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date06" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date07" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date08" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date09" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Date10" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Checkbox01" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox02" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox03" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox04" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox05" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox06" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox07" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox08" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox09" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Checkbox10" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ShortChar01" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar02" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar03" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar04" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar05" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar06" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar07" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar08" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar09" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar10" type="xs:string" minOccurs="0"/>
+								<xs:element name="SysRowID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0"/>
+								<xs:element name="RowMod" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="CallContextClientData">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ClientType" type="xs:string" minOccurs="0"/>
+								<xs:element name="ProcessId" type="xs:string" minOccurs="0"/>
+								<xs:element name="AssemblyName" type="xs:string" minOccurs="0"/>
+								<xs:element name="CustomizationId" type="xs:string" minOccurs="0"/>
+								<xs:element name="CurrentUserId" type="xs:string" minOccurs="0"/>
+								<xs:element name="CurrentCompany" type="xs:string" minOccurs="0"/>
+								<xs:element name="CurrentPlant" type="xs:string" minOccurs="0"/>
+								<xs:element name="CGCCode" type="xs:string" minOccurs="0"/>
+								<xs:element name="SysRowID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0"/>
+								<xs:element name="RowMod" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="RptLabels">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language" type="xs:string"/>
+								<xs:element name="DecimalsGeneral" msdata:Caption="General Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="DecimalsPrice" msdata:Caption="Unit Prices Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="DecimalsCost" msdata:Caption="Unit Cost Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="GlbDecimalsGeneral" msdata:Caption="General Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="GlbDecimalsPrice" msdata:Caption="Unit Prices Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="GlbDecimalsCost" msdata:Caption="Unit Cost Decimals" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsPage" msdata:Caption="Page" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsTime" msdata:Caption="Time" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsUser" msdata:Caption="User" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsDate" msdata:Caption="Date" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLAllocQty" msdata:Caption="Allocated Qty" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLBin" msdata:Caption="Bin" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLcomp" msdata:Caption="Comp." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLComp." msdata:Caption="Comp." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLComponents" msdata:Caption="Components" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLCompQty" msdata:Caption="Comp. Qty" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLCustomer" msdata:Caption="CUSTOMER:" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLDate" msdata:Caption="Date" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLDesc" msdata:Caption="Description" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLDimCode" msdata:Caption="Dim Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLJob" msdata:Caption="Job:" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKit" msdata:Caption="Kit" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitComp" msdata:Caption="Kit Components" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitComponents" msdata:Caption="Kit Components" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitHeading" msdata:Caption="--------------Kit Components--------------" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitParent" msdata:Caption="Kit Parent" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitQty" msdata:Caption="Kit Qty" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLKitSeq" msdata:Caption="Kit Seq." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLLine" msdata:Caption="Line" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLLineSeq" msdata:Caption="Line Seq" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLLn" msdata:Caption="Ln." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLOf" msdata:Caption="of" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLOnHand" msdata:Caption="On Hand" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLOrder" msdata:Caption="ORDER:" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLOrderLine" msdata:Caption="Order Line" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLOrderLn" msdata:Caption="Oder Ln" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLPage" msdata:Caption="Page:" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLParent" msdata:Caption="Parent" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLPartNum" msdata:Caption="Part Number" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLPickFrm" msdata:Caption="Pick From" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLPrnt" msdata:Caption="Prnt." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLQtyPerKit" msdata:Caption="Qty Per Kit" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLQtyPerParent" msdata:Caption="Qty. Per Parent" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLQtyShip" msdata:Caption="Quantity Shipped" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLRel" msdata:Caption="Rel" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLRelQty" msdata:Caption="Release Qty" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLRev" msdata:Caption="Revision" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLShipTo" msdata:Caption="Ship To" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLShipVia" msdata:Caption="Ship Via" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLTotalCompQty" msdata:Caption="Total Component Qty" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLTotalQty" msdata:Caption="Total Qty." type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLUOM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsLWhse" msdata:Caption="Whse" type="xs:string" minOccurs="0"/>
+								<xs:element name="RptLiteralsRptTitle" msdata:Caption="Sales Order Pick List" type="xs:string" minOccurs="0"/>
+								<xs:element name="APBOECheck" msdata:Caption="APBOE Check " type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" type="xs:string" minOccurs="0"/>
+								<xs:element name="COSequenceCert" type="xs:string" minOccurs="0"/>
+								<xs:element name="DeepCopy" type="xs:string" minOccurs="0"/>
+								<xs:element name="DeepCopyDupOrRevEst" type="xs:string" minOccurs="0"/>
+								<xs:element name="MapURL" type="xs:string" minOccurs="0"/>
+								<xs:element name="MXMunicipio" type="xs:string" minOccurs="0"/>
+								<xs:element name="Name" msdata:Caption="Company Name" type="xs:string" minOccurs="0"/>
+								<xs:element name="SendToFSA" msdata:Caption="Sync to FSA" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIApplication" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIAutoCreateJob" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIGetDetails" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIRelease" type="xs:string" minOccurs="0"/>
+								<xs:element name="WISchedule" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIShippingCosts" type="xs:string" minOccurs="0"/>
+								<xs:element name="AGUseGoodDefaultMark" type="xs:string" minOccurs="0"/>
+								<xs:element name="CCCity" msdata:Caption="Credit Card Holder City" type="xs:string" minOccurs="0"/>
+								<xs:element name="CCState" msdata:Caption="Credit Card Holder State" type="xs:string" minOccurs="0"/>
+								<xs:element name="ccToken" type="xs:string" minOccurs="0"/>
+								<xs:element name="ClosedNotShipped" type="xs:string" minOccurs="0"/>
+								<xs:element name="CounterSOAck" type="xs:string" minOccurs="0"/>
+								<xs:element name="CustNum" msdata:Caption="Customer" type="xs:string" minOccurs="0"/>
+								<xs:element name="DispatchReason" msdata:Caption="Key2" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCOrderNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPaymentMethod" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPONum" type="xs:string" minOccurs="0"/>
+								<xs:element name="InvcOrderCmp" type="xs:string" minOccurs="0"/>
+								<xs:element name="InvCurrDepositBal" msdata:Caption="Deposit Balance" type="xs:string" minOccurs="0"/>
+								<xs:element name="IsCSRSet" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderCSR" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderOpenCredit" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSShipToNum" msdata:Caption="Ship To" type="xs:string" minOccurs="0"/>
+								<xs:element name="Plant" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLArticle106c" msdata:Caption="Article. 106c" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLEnforcementAuthAddr" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLEnforcementAuthName" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLGoodsOrServiceVATExempt" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLInvIssuedBySecondTaxpayer" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLInvIssuedByTaxpayer" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLLegalArticleAct" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLLegalArticleOther" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLLegalArticleWEDirective" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLMarginScheme" msdata:Caption="Margin Scheme" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLSecondHandOrArts" msdata:Caption="Secon Hand or Arts" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeAddr" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeName" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeTaxID" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTouristService" msdata:Caption="Tourist Services" type="xs:string" minOccurs="0"/>
+								<xs:element name="ProFormaInvComment" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReadyToFulfill" msdata:Caption="Ready To Fulfill" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReprintSOAck" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShipByTime" msdata:Caption="Ship By Time" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWFiscalPeriod" msdata:Caption="GUI Fiscal Period" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWFiscalYear" msdata:Caption="GUI Fiscal Year" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWFiscalYearSuffix" msdata:Caption="GUI Fiscal Year Suffix" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIGroup" msdata:Caption="GroupID" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIRegNumBuyer" msdata:Caption="Buyer GUI Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIRegNumSeller" msdata:Caption="Seller GUI Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="WICreditCardorder" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIOrder" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIUserID" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIUsername" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCCustNum" msdata:Caption="BCCustNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCOrderNum" msdata:Caption="BCOrderNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_CustID" msdata:Caption="CustID" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_CustName" msdata:Caption="CustName" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_FOBDesc" msdata:Caption="FOBDesc" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_HeadComment" msdata:Caption="HeadComment" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_NeedByDate" msdata:Caption="NeedByDate" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_NewPage" msdata:Caption="NewPage" type="xs:string" minOccurs="0"/>
+								<xs:element name="CommodityCode" type="xs:string" minOccurs="0"/>
+								<xs:element name="ContractID" msdata:Caption="Contract ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="CreateJob" type="xs:string" minOccurs="0"/>
+								<xs:element name="DefaultOversPricing" type="xs:string" minOccurs="0"/>
+								<xs:element name="DisplaySeq" msdata:Caption="Display Seq" type="xs:string" minOccurs="0"/>
+								<xs:element name="DocInAdvanceBillBal" type="xs:string" minOccurs="0"/>
+								<xs:element name="DupOnJobCrt" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCOrderLine" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPlant" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCQuoteLine" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCQuoteNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="GroupSeq" type="xs:string" minOccurs="0"/>
+								<xs:element name="InAdvanceBillBal" type="xs:string" minOccurs="0"/>
+								<xs:element name="KitFlag" msdata:Caption="Sales Kit Line" type="xs:string" minOccurs="0"/>
+								<xs:element name="KitParentLine" msdata:Caption="Kit Parent Line" type="xs:string" minOccurs="0"/>
+								<xs:element name="KitQtyPer" msdata:Caption="Kit Qty Per" type="xs:string" minOccurs="0"/>
+								<xs:element name="KitShipComplete" msdata:Caption="Kit Ship Complete" type="xs:string" minOccurs="0"/>
+								<xs:element name="LineDesc" msdata:Caption="Desc" type="xs:string" minOccurs="0"/>
+								<xs:element name="LinkToContract" msdata:Caption="Link To Contract" type="xs:string" minOccurs="0"/>
+								<xs:element name="MfgJobType" type="xs:string" minOccurs="0"/>
+								<xs:element name="MOMsourceEst" type="xs:string" minOccurs="0"/>
+								<xs:element name="MOMsourceType" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderLine" msdata:Caption="Line" type="xs:string" minOccurs="0"/>
+								<xs:element name="Overs" type="xs:string" minOccurs="0"/>
+								<xs:element name="OversUnitPrice" type="xs:string" minOccurs="0"/>
+								<xs:element name="PartNum" msdata:Caption="Part" type="xs:string" minOccurs="0"/>
+								<xs:element name="PCLinkRemoved" type="xs:string" minOccurs="0"/>
+								<xs:element name="PickListComment" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanGUID" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanUserID" type="xs:string" minOccurs="0"/>
+								<xs:element name="RevisionNum" msdata:Caption="Rev" type="xs:string" minOccurs="0"/>
+								<xs:element name="Rpt1InAdvanceBillBal" type="xs:string" minOccurs="0"/>
+								<xs:element name="Rpt2InAdvanceBillBal" type="xs:string" minOccurs="0"/>
+								<xs:element name="Rpt3InAdvanceBillBal" type="xs:string" minOccurs="0"/>
+								<xs:element name="SalesUM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+								<xs:element name="Unders" type="xs:string" minOccurs="0"/>
+								<xs:element name="UndersPct" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCLineNum" msdata:Caption="BCLineNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCPart" msdata:Caption="BCPart" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCRev" msdata:Caption="BCRev" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BinNum" msdata:Caption="BinNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_Discount" msdata:Caption="Discount" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_KitPartNum" msdata:Caption="KitPartNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OnHandQty" msdata:Caption="OnHandQty" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_UOM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_whse" msdata:Caption="whse" type="xs:string" minOccurs="0"/>
+								<xs:element name="PartDescription" msdata:Caption="Description" type="xs:string" minOccurs="0"/>
+								<xs:element name="EntityUseCode" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderRelNum" msdata:Caption="Rel" type="xs:string" minOccurs="0"/>
+								<xs:element name="PhaseID" msdata:Caption="Project Phase" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReqDate" msdata:Caption="Ship By" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShipOvers" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShipToNum" msdata:Caption="Ship To" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShipViaCode" msdata:Caption="Ship Via" type="xs:string" minOccurs="0"/>
+								<xs:element name="WasRecInvoiced" type="xs:string" minOccurs="0"/>
+								<xs:element name="WebSKU" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIItemPrice" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIItemShipCost" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIOrderLine" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCRelNum" msdata:Caption="BCRelNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelQty" msdata:Caption="RelQty" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr1" msdata:Caption="RelShipAddr1" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr2" msdata:Caption="RelShipAddr2" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr3" msdata:Caption="RelShipAddr3" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr4" msdata:Caption="RelShipAddr4" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr5" msdata:Caption="RelShipAddr5" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr6" msdata:Caption="RelShipAddr6" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr7" msdata:Caption="RelShipAddr7" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr8" msdata:Caption="RelShipAddr8" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_ShipToAddr" msdata:Caption="ShipToAddr" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_Source" msdata:Caption="Source" type="xs:string" minOccurs="0"/>
+								<xs:element name="BinNum" msdata:Caption="Bin" type="xs:string" minOccurs="0"/>
+								<xs:element name="WarehouseCode" msdata:Caption="Warehouse" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_DimCode" msdata:Caption="DimCode" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_LotNum" msdata:Caption="LotNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OrderLine" msdata:Caption="OrderLine" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OrderNum" msdata:Caption="OrderNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OrdRelNum" msdata:Caption="OrdRelNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_PartNum" msdata:Caption="PartNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Accuracy" type="xs:string" minOccurs="0"/>
+								<xs:element name="MeterReading" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTS" msdata:Caption="One Time" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSAddress1" msdata:Caption="OTS Address 1" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSAddress2" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSAddress3" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSCity" msdata:Caption="OTS City" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSContact" msdata:Caption="OTS Contact" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSCountryNum" msdata:Caption="Country Number" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSCustSaved" msdata:Caption="OTS Customer Saved" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSFaxNum" msdata:Caption="OTS Fax" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSName" msdata:Caption="OTS Name" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSPhoneNum" msdata:Caption="OTS Phone" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSResaleID" msdata:Caption="OTS Tax ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSSaveAs" msdata:Caption="OTS Save As" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSSaveCustID" msdata:Caption="Cust. ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSState" msdata:Caption="OTS State" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSTaxRegionCode" msdata:Caption="Tax Region" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSZip" msdata:Caption="OTS Postal Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="PCID" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorAssemblySeq" msdata:Caption="Prior Assembly Seq" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorJobNum" msdata:Caption="Prior JobNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorMtlSeq" msdata:Caption="Prior Mtl Seq" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorPartNum" msdata:Caption="Prior PartNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="SerialNumber" msdata:Caption="Serial Number" type="xs:string" minOccurs="0"/>
+								<xs:element name="JobNum" msdata:Caption="Job" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanID" type="xs:string" minOccurs="0"/>
+								<xs:element name="AllocatedQty" msdata:Caption="Allocated" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_AvailableQty" msdata:Caption="AvailableQty" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_LotSerialNum" msdata:Caption="LotSerialNum" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="RptParameter">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Company" type="xs:string"/>
+								<xs:element name="BarCodes" msdata:Caption="" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="FromDate" msdata:Caption="" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="FromDateToken" msdata:Caption="" type="xs:string" minOccurs="0"/>
+								<xs:element name="IncSOWihoutShipDate" msdata:Caption="Include Orders with No Ship Date" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="NewPage" msdata:Caption="" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="OrderList" msdata:Caption="" type="xs:string" minOccurs="0"/>
+								<xs:element name="PartList" msdata:Caption="" type="xs:string" minOccurs="0"/>
+								<xs:element name="PrintKitComponents" msdata:Caption="" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ToDate" msdata:Caption="" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="ToDateToken" msdata:Caption="" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReportCultureCode" msdata:Caption="Report Culture Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReportCurrencyCode" msdata:Caption="Report Currency Code" type="xs:string" minOccurs="0"/>
+								<xs:element name="ThousandsSeparator" msdata:Caption="Thousands Separator" type="xs:string" minOccurs="0"/>
+								<xs:element name="DecimalSeparator" msdata:Caption="Decimal Separator" type="xs:string" minOccurs="0"/>
+								<xs:element name="DecimalsGeneral" msdata:Caption="General Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="DecimalsCost" msdata:Caption="Unit Cost Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="DecimalsPrice" msdata:Caption="Unit Prices Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="GlbDecimalsGeneral" msdata:Caption="General Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="GlbDecimalsCost" msdata:Caption="Unit Cost Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="GlbDecimalsPrice" msdata:Caption="Unit Prices Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="DecimalsQuantity" msdata:Caption="Quantity Display Decimals" type="xs:int" minOccurs="0"/>
+								<xs:element name="CompanyExecutionTime" msdata:Caption="Company Execution Time" type="xs:dateTime" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Company" msprop:SystemCode="ERP" msprop:DataTableID="Company" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="APBOECheck" msdata:Caption="APBOE Check " msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="COSequenceCert" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="DeepCopy" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="DeepCopyDupOrRevEst" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="MapURL" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="MXMunicipio" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Name" msdata:Caption="Company Name" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="SendToFSA" msdata:Caption="Sync to FSA" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WIApplication" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIAutoCreateJob" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WIGetDetails" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WIRelease" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WISchedule" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WIShippingCosts" msprop:DataTableID="Company" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="OrderHed" msprop:SystemCode="ERP" msprop:DataTableID="OrderHed" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="AGUseGoodDefaultMark" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CCCity" msdata:Caption="Credit Card Holder City" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="CCState" msdata:Caption="Credit Card Holder State" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ccToken" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ClosedNotShipped" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="CounterSOAck" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="CustNum" msdata:Caption="Customer" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="DispatchReason" msdata:Caption="Key2" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCOrderNum" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPaymentMethod" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPONum" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="InvcOrderCmp" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="InvCurrDepositBal" msdata:Caption="Deposit Balance" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="IsCSRSet" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="OrderCSR" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderOpenCredit" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="OTSShipToNum" msdata:Caption="Ship To" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Plant" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLArticle106c" msdata:Caption="Article. 106c" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PLEnforcementAuthAddr" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLEnforcementAuthName" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLGoodsOrServiceVATExempt" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PLInvIssuedBySecondTaxpayer" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PLInvIssuedByTaxpayer" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PLLegalArticleAct" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLLegalArticleOther" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLLegalArticleWEDirective" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLMarginScheme" msdata:Caption="Margin Scheme" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="PLSecondHandOrArts" msdata:Caption="Secon Hand or Arts" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeAddr" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeName" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTaxRepresentativeTaxID" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PLTouristService" msdata:Caption="Tourist Services" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ProFormaInvComment" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReadyToFulfill" msdata:Caption="Ready To Fulfill" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ReprintSOAck" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ShipByTime" msdata:Caption="Ship By Time" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="TWFiscalPeriod" msdata:Caption="GUI Fiscal Period" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="TWFiscalYear" msdata:Caption="GUI Fiscal Year" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="TWFiscalYearSuffix" msdata:Caption="GUI Fiscal Year Suffix" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIGroup" msdata:Caption="GroupID" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIRegNumBuyer" msdata:Caption="Buyer GUI Code" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="TWGUIRegNumSeller" msdata:Caption="Seller GUI Code" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIApplication" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WICreditCardorder" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WIOrder" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIUserID" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIUsername" msprop:DataTableID="OrderHed" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character01" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character06" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character07" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character08" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character09" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character10" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="CheckBox01" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox05" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox10" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox15" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox16" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox17" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Number05" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number20" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="orderhed_c" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="PbsId_c" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="PbsStage_c" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar01" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar05" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar06" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar08" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar09" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar10" msdata:Caption="" msprop:DataTableID="OrderHed_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCCustNum" msdata:Caption="BCCustNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCOrderNum" msdata:Caption="BCOrderNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_CustID" msdata:Caption="CustID" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_CustName" msdata:Caption="CustName" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_FOBDesc" msdata:Caption="FOBDesc" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_HeadComment" msdata:Caption="HeadComment" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_NeedByDate" msdata:Caption="NeedByDate" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Calc_NewPage" msdata:Caption="NewPage" type="xs:boolean" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="OrderDtl" msprop:SystemCode="ERP" msprop:DataTableID="OrderDtl" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="CommodityCode" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ContractID" msdata:Caption="Contract ID" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="CreateJob" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="DefaultOversPricing" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="DisplaySeq" msdata:Caption="Display Seq" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="DocInAdvanceBillBal" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="DupOnJobCrt" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ECCOrderLine" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="ECCOrderNum" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPlant" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCQuoteLine" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="ECCQuoteNum" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="GroupSeq" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="InAdvanceBillBal" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="KitFlag" msdata:Caption="Sales Kit Line" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="KitParentLine" msdata:Caption="Kit Parent Line" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="KitQtyPer" msdata:Caption="Kit Qty Per" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="KitShipComplete" msdata:Caption="Kit Ship Complete" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="LineDesc" msdata:Caption="Desc" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="LinkToContract" msdata:Caption="Link To Contract" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="MfgJobType" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="MOMsourceEst" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="MOMsourceType" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderLine" msdata:Caption="Line" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="Overs" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="OversUnitPrice" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="PartNum" msdata:Caption="Part" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PCLinkRemoved" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PickListComment" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanGUID" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanUserID" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ProFormaInvComment" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="RevisionNum" msdata:Caption="Rev" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Rpt1InAdvanceBillBal" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Rpt2InAdvanceBillBal" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Rpt3InAdvanceBillBal" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="SalesUM" msdata:Caption="UOM" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Unders" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="UndersPct" msprop:DataTableID="OrderDtl" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Character01" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character03" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character04" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character05" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character06" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="CheckBox02" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox11" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox12" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="CheckBox13" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="Date01" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="Number01" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number02" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number04" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number05" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number06" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number10" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number11" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number12" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number13" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number16" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number18" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number19" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="OrderDtl_c" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="PbsId_c" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:int" minOccurs="0"/>
+								<xs:element name="ShortChar01" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar03" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar04" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar06" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar10" msdata:Caption="" msprop:DataTableID="OrderDtl_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCLineNum" msdata:Caption="BCLineNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCPart" msdata:Caption="BCPart" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCRev" msdata:Caption="BCRev" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BinNum" msdata:Caption="BinNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_Discount" msdata:Caption="Discount" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_KitPartNum" msdata:Caption="KitPartNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OnHandQty" msdata:Caption="OnHandQty" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_UOM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_whse" msdata:Caption="whse" type="xs:string" minOccurs="0"/>
+								<xs:element name="PartNum_PartDescription" msdata:Caption="Description" msprop:DataTableID="Part" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="OrderRel" msprop:SystemCode="ERP" msprop:DataTableID="OrderRel" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ContractID" msdata:Caption="Contract ID" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ECCPlant" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="EntityUseCode" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="LinkToContract" msdata:Caption="Link To Contract" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="OrderLine" msdata:Caption="Line" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderRelNum" msdata:Caption="Rel" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OTSShipToNum" msdata:Caption="Ship To" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PhaseID" msdata:Caption="Project Phase" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ReadyToFulfill" msdata:Caption="Ready To Fulfill" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ReqDate" msdata:Caption="Ship By" msdata:DateTimeMode="Unspecified" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:dateTime" minOccurs="0"/>
+								<xs:element name="ShipOvers" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ShipToNum" msdata:Caption="Ship To" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShipViaCode" msdata:Caption="Ship Via" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WasRecInvoiced" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WebSKU" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIItemPrice" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="WIItemShipCost" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="WIOrder" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WIOrderLine" msprop:DataTableID="OrderRel" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PbsDefaultTaxRemoved_c" msdata:Caption="" msprop:DataTableID="OrderRel_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="PbsTaxCalculated_c" msdata:Caption="" msprop:DataTableID="OrderRel_UD" msprop:SystemCode="Erp" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="ShortChar01" msdata:Caption="" msprop:DataTableID="OrderRel_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar02" msdata:Caption="" msprop:DataTableID="OrderRel_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_BCRelNum" msdata:Caption="BCRelNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_NeedByDate" msdata:Caption="NeedByDate" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelQty" msdata:Caption="RelQty" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr1" msdata:Caption="RelShipAddr1" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr2" msdata:Caption="RelShipAddr2" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr3" msdata:Caption="RelShipAddr3" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr4" msdata:Caption="RelShipAddr4" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr5" msdata:Caption="RelShipAddr5" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr6" msdata:Caption="RelShipAddr6" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr7" msdata:Caption="RelShipAddr7" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_RelShipAddr8" msdata:Caption="RelShipAddr8" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_ShipToAddr" msdata:Caption="ShipToAddr" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_Source" msdata:Caption="Source" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="WhseBin" msprop:SystemCode="ERP" msprop:DataTableID="WhseBin" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="BinNum" msdata:Caption="Bin" msprop:DataTableID="WhseBin" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="WhseBin" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="SendToFSA" msdata:Caption="Sync To FSA" msprop:DataTableID="WhseBin" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="WarehouseCode" msdata:Caption="Warehouse" msprop:DataTableID="WhseBin" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_DimCode" msdata:Caption="DimCode" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_LotNum" msdata:Caption="LotNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OnHandQty" msdata:Caption="OnHandQty" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_OrderLine" msdata:Caption="OrderLine" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrderNum" msdata:Caption="OrderNum" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrdRelNum" msdata:Caption="OrdRelNum" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_PartNum" msdata:Caption="PartNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_UOM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="SerialNo" msprop:SystemCode="ERP" msprop:DataTableID="SerialNo" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="Accuracy" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="MeterReading" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OTS" msdata:Caption="One Time" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="OTSAddress1" msdata:Caption="OTS Address 1" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSAddress2" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSAddress3" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSCity" msdata:Caption="OTS City" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSContact" msdata:Caption="OTS Contact" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSCountryNum" msdata:Caption="Country Number" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OTSCustSaved" msdata:Caption="OTS Customer Saved" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:boolean" minOccurs="0"/>
+								<xs:element name="OTSFaxNum" msdata:Caption="OTS Fax" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSName" msdata:Caption="OTS Name" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSPhoneNum" msdata:Caption="OTS Phone" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSResaleID" msdata:Caption="OTS Tax ID" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSSaveAs" msdata:Caption="OTS Save As" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSSaveCustID" msdata:Caption="Cust. ID" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSShipToNum" msdata:Caption="Ship To" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSState" msdata:Caption="OTS State" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSTaxRegionCode" msdata:Caption="Tax Region" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OTSZip" msdata:Caption="OTS Postal Code" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PartNum" msdata:Caption="Part" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PCID" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorAssemblySeq" msdata:Caption="Prior Assembly Seq" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="PriorJobNum" msdata:Caption="Prior JobNum" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PriorMtlSeq" msdata:Caption="Prior Mtl Seq" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="PriorPartNum" msdata:Caption="Prior PartNum" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="SerialNumber" msdata:Caption="Serial Number" msprop:DataTableID="SerialNo" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character05" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character09" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Character10" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Number08" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number09" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Number10" msdata:Caption="" msprop:DataTableID="SerialNo_UD" msprop:SystemCode="Erp" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_OrderLine" msdata:Caption="OrderLine" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrderNum" msdata:Caption="OrderNum" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrdRelNum" msdata:Caption="OrdRelNum" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_PartNum" msdata:Caption="PartNum" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="JobProd" msprop:SystemCode="ERP" msprop:DataTableID="JobProd" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="JobNum" msdata:Caption="Job" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderLine" msdata:Caption="Line" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderRelNum" msdata:Caption="Rel" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="PlanID" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PlanUserID" msprop:DataTableID="JobProd" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar01" msdata:Caption="" msprop:DataTableID="JobProd_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="ShortChar02" msdata:Caption="" msprop:DataTableID="JobProd_UD" msprop:SystemCode="Erp" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OrderLine" msdata:Caption="OrderLine" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrderNum" msdata:Caption="OrderNum" type="xs:int" minOccurs="0"/>
+								<xs:element name="Calc_OrdRelNum" msdata:Caption="OrdRelNum" type="xs:int" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="PartAlloc" msprop:SystemCode="ERP" msprop:DataTableID="PartAlloc" msprop:SchemaName="Erp">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RptLanguageID" msdata:Caption="Language ID" type="xs:string" minOccurs="0"/>
+								<xs:element name="AllocatedQty" msdata:Caption="Allocated" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="BinNum" msdata:Caption="Bin" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Company" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="OrderLine" msdata:Caption="Line" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrderNum" msdata:Caption="Order" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:int" minOccurs="0"/>
+								<xs:element name="PartNum" msdata:Caption="Part" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="PCID" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="WarehouseCode" msdata:Caption="Warehouse" msprop:DataTableID="PartAlloc" msprop:SystemCode="ERP" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_AvailableQty" msdata:Caption="AvailableQty" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_LotSerialNum" msdata:Caption="LotSerialNum" type="xs:string" minOccurs="0"/>
+								<xs:element name="Calc_OnHandQty" msdata:Caption="OnHandQty" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="Calc_UOM" msdata:Caption="UOM" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:complexType>
+			<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+				<xs:selector xpath=".//mstns:RptLabels"/>
+				<xs:field xpath="mstns:RptLanguageID"/>
+			</xs:unique>
+			<xs:unique name="RptParameter_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+				<xs:selector xpath=".//mstns:RptParameter"/>
+				<xs:field xpath="mstns:Company"/>
+			</xs:unique>
+			<xs:unique name="OrderHed_Constraint1" msdata:ConstraintName="Constraint1">
+				<xs:selector xpath=".//mstns:OrderHed"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+			</xs:unique>
+			<xs:unique name="OrderDtl_Constraint1" msdata:ConstraintName="Constraint1">
+				<xs:selector xpath=".//mstns:OrderDtl"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+				<xs:field xpath="mstns:OrderLine"/>
+			</xs:unique>
+			<xs:unique name="OrderRel_Constraint1" msdata:ConstraintName="Constraint1">
+				<xs:selector xpath=".//mstns:OrderRel"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+				<xs:field xpath="mstns:OrderLine"/>
+				<xs:field xpath="mstns:OrderRelNum"/>
+			</xs:unique>
+			<xs:unique name="WhseBin_Constraint1" msdata:ConstraintName="Constraint1">
+				<xs:selector xpath=".//mstns:WhseBin"/>
+				<xs:field xpath="mstns:BinNum"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:WarehouseCode"/>
+				<xs:field xpath="mstns:Calc_OrderLine"/>
+				<xs:field xpath="mstns:Calc_OrderNum"/>
+				<xs:field xpath="mstns:Calc_PartNum"/>
+				<xs:field xpath="mstns:Calc_LotNum"/>
+			</xs:unique>
+			<xs:keyref name="WhseBinPartAlloc" refer="WhseBin_Constraint1">
+				<xs:selector xpath=".//mstns:PartAlloc"/>
+				<xs:field xpath="mstns:BinNum"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:WarehouseCode"/>
+				<xs:field xpath="mstns:OrderLine"/>
+				<xs:field xpath="mstns:OrderNum"/>
+				<xs:field xpath="mstns:PartNum"/>
+				<xs:field xpath="mstns:Calc_LotSerialNum"/>
+			</xs:keyref>
+			<xs:keyref name="OrderRelJobProd" refer="OrderRel_Constraint1">
+				<xs:selector xpath=".//mstns:JobProd"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+				<xs:field xpath="mstns:OrderLine"/>
+				<xs:field xpath="mstns:OrderRelNum"/>
+			</xs:keyref>
+			<xs:keyref name="OrderDtlOrderRel" refer="OrderDtl_Constraint1">
+				<xs:selector xpath=".//mstns:OrderRel"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+				<xs:field xpath="mstns:OrderLine"/>
+			</xs:keyref>
+			<xs:keyref name="OrderHedOrderDtl" refer="OrderHed_Constraint1">
+				<xs:selector xpath=".//mstns:OrderDtl"/>
+				<xs:field xpath="mstns:Company"/>
+				<xs:field xpath="mstns:OrderNum"/>
+			</xs:keyref>
+		</xs:element>
+	</xs:schema>
+	<ReportDataSet>
+		<CallContextBpmData>
+			<Password></Password>
+			<ButtonValue>0</ButtonValue>
+			<Character01></Character01>
+			<Character02></Character02>
+			<Character03></Character03>
+			<Character04></Character04>
+			<Character05></Character05>
+			<Character06></Character06>
+			<Character07></Character07>
+			<Character08></Character08>
+			<Character09></Character09>
+			<Character10></Character10>
+			<Character11></Character11>
+			<Character12></Character12>
+			<Character13></Character13>
+			<Character14></Character14>
+			<Character15></Character15>
+			<Character16></Character16>
+			<Character17></Character17>
+			<Character18></Character18>
+			<Character19></Character19>
+			<Character20></Character20>
+			<Number01>0</Number01>
+			<Number02>0</Number02>
+			<Number03>0</Number03>
+			<Number04>0</Number04>
+			<Number05>0</Number05>
+			<Number06>0</Number06>
+			<Number07>0</Number07>
+			<Number08>0</Number08>
+			<Number09>0</Number09>
+			<Number10>0</Number10>
+			<Number11>0</Number11>
+			<Number12>0</Number12>
+			<Number13>0</Number13>
+			<Number14>0</Number14>
+			<Number15>0</Number15>
+			<Number16>0</Number16>
+			<Number17>0</Number17>
+			<Number18>0</Number18>
+			<Number19>0</Number19>
+			<Number20>0</Number20>
+			<Checkbox01>false</Checkbox01>
+			<Checkbox02>false</Checkbox02>
+			<Checkbox03>false</Checkbox03>
+			<Checkbox04>false</Checkbox04>
+			<Checkbox05>false</Checkbox05>
+			<Checkbox06>false</Checkbox06>
+			<Checkbox07>false</Checkbox07>
+			<Checkbox08>false</Checkbox08>
+			<Checkbox09>false</Checkbox09>
+			<Checkbox10>false</Checkbox10>
+			<ShortChar01></ShortChar01>
+			<ShortChar02></ShortChar02>
+			<ShortChar03></ShortChar03>
+			<ShortChar04></ShortChar04>
+			<ShortChar05></ShortChar05>
+			<ShortChar06></ShortChar06>
+			<ShortChar07></ShortChar07>
+			<ShortChar08></ShortChar08>
+			<ShortChar09></ShortChar09>
+			<ShortChar10></ShortChar10>
+			<SysRowID>00000000-0000-0000-0000-000000000000</SysRowID>
+			<RowMod></RowMod>
+		</CallContextBpmData>
+		<CallContextClientData>
+			<ClientType>WinClient</ClientType>
+			<ProcessId>OMRP4002</ProcessId>
+			<AssemblyName>Erp.UIRpt.SOPickListReport</AssemblyName>
+			<CustomizationId></CustomizationId>
+			<CurrentUserId>epicor</CurrentUserId>
+			<CurrentCompany>EPIC03</CurrentCompany>
+			<CurrentPlant>MfgSys</CurrentPlant>
+			<SysRowID>00000000-0000-0000-0000-000000000000</SysRowID>
+			<RowMod></RowMod>
+		</CallContextClientData>
+		<RptLabels>
+			<RptLanguageID>enu</RptLanguageID>
+			<DecimalsGeneral>General Decimals</DecimalsGeneral>
+			<DecimalsPrice>Unit Prices Decimals</DecimalsPrice>
+			<DecimalsCost>Unit Cost Decimals</DecimalsCost>
+			<GlbDecimalsGeneral>General Decimals</GlbDecimalsGeneral>
+			<GlbDecimalsPrice>Unit Prices Decimals</GlbDecimalsPrice>
+			<GlbDecimalsCost>Unit Cost Decimals</GlbDecimalsCost>
+			<RptLiteralsPage>Page</RptLiteralsPage>
+			<RptLiteralsTime>Time</RptLiteralsTime>
+			<RptLiteralsUser>User</RptLiteralsUser>
+			<RptLiteralsDate>Date</RptLiteralsDate>
+			<RptLiteralsLAllocQty>Allocated Qty</RptLiteralsLAllocQty>
+			<RptLiteralsLBin>Bin</RptLiteralsLBin>
+			<RptLiteralsLcomp>Comp.</RptLiteralsLcomp>
+			<RptLiteralsLComp.>Comp.</RptLiteralsLComp.>
+			<RptLiteralsLComponents>Components</RptLiteralsLComponents>
+			<RptLiteralsLCompQty>Comp. Qty</RptLiteralsLCompQty>
+			<RptLiteralsLCustomer>CUSTOMER:</RptLiteralsLCustomer>
+			<RptLiteralsLDate>Date</RptLiteralsLDate>
+			<RptLiteralsLDesc>Description</RptLiteralsLDesc>
+			<RptLiteralsLDimCode>Dim Code</RptLiteralsLDimCode>
+			<RptLiteralsLJob>Job:</RptLiteralsLJob>
+			<RptLiteralsLKit>Kit</RptLiteralsLKit>
+			<RptLiteralsLKitComp>Kit Components</RptLiteralsLKitComp>
+			<RptLiteralsLKitComponents>Kit Components</RptLiteralsLKitComponents>
+			<RptLiteralsLKitHeading>--------------Kit Components--------------</RptLiteralsLKitHeading>
+			<RptLiteralsLKitParent>Kit Parent</RptLiteralsLKitParent>
+			<RptLiteralsLKitQty>Kit Qty</RptLiteralsLKitQty>
+			<RptLiteralsLKitSeq>Kit Seq.</RptLiteralsLKitSeq>
+			<RptLiteralsLLine>Line</RptLiteralsLLine>
+			<RptLiteralsLLineSeq>Line Seq</RptLiteralsLLineSeq>
+			<RptLiteralsLLn>Ln.</RptLiteralsLLn>
+			<RptLiteralsLOf>of</RptLiteralsLOf>
+			<RptLiteralsLOnHand>On Hand</RptLiteralsLOnHand>
+			<RptLiteralsLOrder>ORDER:</RptLiteralsLOrder>
+			<RptLiteralsLOrderLine>Order Line</RptLiteralsLOrderLine>
+			<RptLiteralsLOrderLn>Oder Ln</RptLiteralsLOrderLn>
+			<RptLiteralsLPage>Page:</RptLiteralsLPage>
+			<RptLiteralsLParent>Parent</RptLiteralsLParent>
+			<RptLiteralsLPartNum>Part Number</RptLiteralsLPartNum>
+			<RptLiteralsLPickFrm>Pick From</RptLiteralsLPickFrm>
+			<RptLiteralsLPrnt>Prnt.</RptLiteralsLPrnt>
+			<RptLiteralsLQtyPerKit>Qty Per Kit</RptLiteralsLQtyPerKit>
+			<RptLiteralsLQtyPerParent>Qty. Per Parent</RptLiteralsLQtyPerParent>
+			<RptLiteralsLQtyShip>Quantity Shipped</RptLiteralsLQtyShip>
+			<RptLiteralsLRel>Rel</RptLiteralsLRel>
+			<RptLiteralsLRelQty>Release Qty</RptLiteralsLRelQty>
+			<RptLiteralsLRev>Revision</RptLiteralsLRev>
+			<RptLiteralsLShipTo>Ship To</RptLiteralsLShipTo>
+			<RptLiteralsLShipVia>Ship Via</RptLiteralsLShipVia>
+			<RptLiteralsLTotalCompQty>Total Component Qty</RptLiteralsLTotalCompQty>
+			<RptLiteralsLTotalQty>Total Qty.</RptLiteralsLTotalQty>
+			<RptLiteralsLUOM>UOM</RptLiteralsLUOM>
+			<RptLiteralsLWhse>Whse</RptLiteralsLWhse>
+			<RptLiteralsRptTitle>Sales Order Pick List</RptLiteralsRptTitle>
+			<APBOECheck>APBOE Check </APBOECheck>
+			<Company>Company</Company>
+			<COSequenceCert>COSequenceCert</COSequenceCert>
+			<DeepCopy>DeepCopy</DeepCopy>
+			<DeepCopyDupOrRevEst>DeepCopyDupOrRevEst</DeepCopyDupOrRevEst>
+			<MapURL>MapURL</MapURL>
+			<MXMunicipio>MXMunicipio</MXMunicipio>
+			<Name>Company Name</Name>
+			<SendToFSA>Sync to FSA</SendToFSA>
+			<WIApplication>WIApplication</WIApplication>
+			<WIAutoCreateJob>WIAutoCreateJob</WIAutoCreateJob>
+			<WIGetDetails>WIGetDetails</WIGetDetails>
+			<WIRelease>WIRelease</WIRelease>
+			<WISchedule>WISchedule</WISchedule>
+			<WIShippingCosts>WIShippingCosts</WIShippingCosts>
+			<AGUseGoodDefaultMark>AGUseGoodDefaultMark</AGUseGoodDefaultMark>
+			<CCCity>Credit Card Holder City</CCCity>
+			<CCState>Credit Card Holder State</CCState>
+			<ccToken>ccToken</ccToken>
+			<ClosedNotShipped>ClosedNotShipped</ClosedNotShipped>
+			<CounterSOAck>CounterSOAck</CounterSOAck>
+			<CustNum>Customer</CustNum>
+			<DispatchReason>Key2</DispatchReason>
+			<ECCOrderNum>ECCOrderNum</ECCOrderNum>
+			<ECCPaymentMethod>ECCPaymentMethod</ECCPaymentMethod>
+			<ECCPONum>ECCPONum</ECCPONum>
+			<InvcOrderCmp>InvcOrderCmp</InvcOrderCmp>
+			<InvCurrDepositBal>Deposit Balance</InvCurrDepositBal>
+			<IsCSRSet>IsCSRSet</IsCSRSet>
+			<OrderCSR>OrderCSR</OrderCSR>
+			<OrderNum>Order</OrderNum>
+			<OrderOpenCredit>OrderOpenCredit</OrderOpenCredit>
+			<OTSShipToNum>Ship To</OTSShipToNum>
+			<Plant>Plant</Plant>
+			<PLArticle106c>Article. 106c</PLArticle106c>
+			<PLEnforcementAuthAddr>PLEnforcementAuthAddr</PLEnforcementAuthAddr>
+			<PLEnforcementAuthName>PLEnforcementAuthName</PLEnforcementAuthName>
+			<PLGoodsOrServiceVATExempt>PLGoodsOrServiceVATExempt</PLGoodsOrServiceVATExempt>
+			<PLInvIssuedBySecondTaxpayer>PLInvIssuedBySecondTaxpayer</PLInvIssuedBySecondTaxpayer>
+			<PLInvIssuedByTaxpayer>PLInvIssuedByTaxpayer</PLInvIssuedByTaxpayer>
+			<PLLegalArticleAct>PLLegalArticleAct</PLLegalArticleAct>
+			<PLLegalArticleOther>PLLegalArticleOther</PLLegalArticleOther>
+			<PLLegalArticleWEDirective>PLLegalArticleWEDirective</PLLegalArticleWEDirective>
+			<PLMarginScheme>Margin Scheme</PLMarginScheme>
+			<PLSecondHandOrArts>Secon Hand or Arts</PLSecondHandOrArts>
+			<PLTaxRepresentativeAddr>PLTaxRepresentativeAddr</PLTaxRepresentativeAddr>
+			<PLTaxRepresentativeName>PLTaxRepresentativeName</PLTaxRepresentativeName>
+			<PLTaxRepresentativeTaxID>PLTaxRepresentativeTaxID</PLTaxRepresentativeTaxID>
+			<PLTouristService>Tourist Services</PLTouristService>
+			<ProFormaInvComment>ProFormaInvComment</ProFormaInvComment>
+			<ReadyToFulfill>Ready To Fulfill</ReadyToFulfill>
+			<ReprintSOAck>ReprintSOAck</ReprintSOAck>
+			<ShipByTime>Ship By Time</ShipByTime>
+			<TWFiscalPeriod>GUI Fiscal Period</TWFiscalPeriod>
+			<TWFiscalYear>GUI Fiscal Year</TWFiscalYear>
+			<TWFiscalYearSuffix>GUI Fiscal Year Suffix</TWFiscalYearSuffix>
+			<TWGUIGroup>GroupID</TWGUIGroup>
+			<TWGUIRegNumBuyer>Buyer GUI Code</TWGUIRegNumBuyer>
+			<TWGUIRegNumSeller>Seller GUI Code</TWGUIRegNumSeller>
+			<WICreditCardorder>WICreditCardorder</WICreditCardorder>
+			<WIOrder>WIOrder</WIOrder>
+			<WIUserID>WIUserID</WIUserID>
+			<WIUsername>WIUsername</WIUsername>
+			<Calc_BCCustNum>BCCustNum</Calc_BCCustNum>
+			<Calc_BCOrderNum>BCOrderNum</Calc_BCOrderNum>
+			<Calc_CustID>CustID</Calc_CustID>
+			<Calc_CustName>CustName</Calc_CustName>
+			<Calc_FOBDesc>FOBDesc</Calc_FOBDesc>
+			<Calc_HeadComment>HeadComment</Calc_HeadComment>
+			<Calc_NeedByDate>NeedByDate</Calc_NeedByDate>
+			<Calc_NewPage>NewPage</Calc_NewPage>
+			<CommodityCode>CommodityCode</CommodityCode>
+			<ContractID>Contract ID</ContractID>
+			<CreateJob>CreateJob</CreateJob>
+			<DefaultOversPricing>DefaultOversPricing</DefaultOversPricing>
+			<DisplaySeq>Display Seq</DisplaySeq>
+			<DocInAdvanceBillBal>DocInAdvanceBillBal</DocInAdvanceBillBal>
+			<DupOnJobCrt>DupOnJobCrt</DupOnJobCrt>
+			<ECCOrderLine>ECCOrderLine</ECCOrderLine>
+			<ECCPlant>ECCPlant</ECCPlant>
+			<ECCQuoteLine>ECCQuoteLine</ECCQuoteLine>
+			<ECCQuoteNum>ECCQuoteNum</ECCQuoteNum>
+			<GroupSeq>GroupSeq</GroupSeq>
+			<InAdvanceBillBal>InAdvanceBillBal</InAdvanceBillBal>
+			<KitFlag>Sales Kit Line</KitFlag>
+			<KitParentLine>Kit Parent Line</KitParentLine>
+			<KitQtyPer>Kit Qty Per</KitQtyPer>
+			<KitShipComplete>Kit Ship Complete</KitShipComplete>
+			<LineDesc>Desc</LineDesc>
+			<LinkToContract>Link To Contract</LinkToContract>
+			<MfgJobType>MfgJobType</MfgJobType>
+			<MOMsourceEst>MOMsourceEst</MOMsourceEst>
+			<MOMsourceType>MOMsourceType</MOMsourceType>
+			<OrderLine>Line</OrderLine>
+			<Overs>Overs</Overs>
+			<OversUnitPrice>OversUnitPrice</OversUnitPrice>
+			<PartNum>Part</PartNum>
+			<PCLinkRemoved>PCLinkRemoved</PCLinkRemoved>
+			<PickListComment>PickListComment</PickListComment>
+			<PlanGUID>PlanGUID</PlanGUID>
+			<PlanUserID>PlanUserID</PlanUserID>
+			<RevisionNum>Rev</RevisionNum>
+			<Rpt1InAdvanceBillBal>Rpt1InAdvanceBillBal</Rpt1InAdvanceBillBal>
+			<Rpt2InAdvanceBillBal>Rpt2InAdvanceBillBal</Rpt2InAdvanceBillBal>
+			<Rpt3InAdvanceBillBal>Rpt3InAdvanceBillBal</Rpt3InAdvanceBillBal>
+			<SalesUM>UOM</SalesUM>
+			<Unders>Unders</Unders>
+			<UndersPct>UndersPct</UndersPct>
+			<Calc_BCLineNum>BCLineNum</Calc_BCLineNum>
+			<Calc_BCPart>BCPart</Calc_BCPart>
+			<Calc_BCRev>BCRev</Calc_BCRev>
+			<Calc_BinNum>BinNum</Calc_BinNum>
+			<Calc_Discount>Discount</Calc_Discount>
+			<Calc_KitPartNum>KitPartNum</Calc_KitPartNum>
+			<Calc_OnHandQty>OnHandQty</Calc_OnHandQty>
+			<Calc_UOM>UOM</Calc_UOM>
+			<Calc_whse>whse</Calc_whse>
+			<PartDescription>Description</PartDescription>
+			<EntityUseCode>EntityUseCode</EntityUseCode>
+			<OrderRelNum>Rel</OrderRelNum>
+			<PhaseID>Project Phase</PhaseID>
+			<ReqDate>Ship By</ReqDate>
+			<ShipOvers>ShipOvers</ShipOvers>
+			<ShipToNum>Ship To</ShipToNum>
+			<ShipViaCode>Ship Via</ShipViaCode>
+			<WasRecInvoiced>WasRecInvoiced</WasRecInvoiced>
+			<WebSKU>WebSKU</WebSKU>
+			<WIItemPrice>WIItemPrice</WIItemPrice>
+			<WIItemShipCost>WIItemShipCost</WIItemShipCost>
+			<WIOrderLine>WIOrderLine</WIOrderLine>
+			<Calc_BCRelNum>BCRelNum</Calc_BCRelNum>
+			<Calc_RelQty>RelQty</Calc_RelQty>
+			<Calc_RelShipAddr1>RelShipAddr1</Calc_RelShipAddr1>
+			<Calc_RelShipAddr2>RelShipAddr2</Calc_RelShipAddr2>
+			<Calc_RelShipAddr3>RelShipAddr3</Calc_RelShipAddr3>
+			<Calc_RelShipAddr4>RelShipAddr4</Calc_RelShipAddr4>
+			<Calc_RelShipAddr5>RelShipAddr5</Calc_RelShipAddr5>
+			<Calc_RelShipAddr6>RelShipAddr6</Calc_RelShipAddr6>
+			<Calc_RelShipAddr7>RelShipAddr7</Calc_RelShipAddr7>
+			<Calc_RelShipAddr8>RelShipAddr8</Calc_RelShipAddr8>
+			<Calc_ShipToAddr>ShipToAddr</Calc_ShipToAddr>
+			<Calc_Source>Source</Calc_Source>
+			<BinNum>Bin</BinNum>
+			<WarehouseCode>Warehouse</WarehouseCode>
+			<Calc_DimCode>DimCode</Calc_DimCode>
+			<Calc_LotNum>LotNum</Calc_LotNum>
+			<Calc_OrderLine>OrderLine</Calc_OrderLine>
+			<Calc_OrderNum>OrderNum</Calc_OrderNum>
+			<Calc_OrdRelNum>OrdRelNum</Calc_OrdRelNum>
+			<Calc_PartNum>PartNum</Calc_PartNum>
+			<Accuracy>Accuracy</Accuracy>
+			<MeterReading>MeterReading</MeterReading>
+			<OTS>One Time</OTS>
+			<OTSAddress1>OTS Address 1</OTSAddress1>
+			<OTSAddress2>OTSAddress2</OTSAddress2>
+			<OTSAddress3>OTSAddress3</OTSAddress3>
+			<OTSCity>OTS City</OTSCity>
+			<OTSContact>OTS Contact</OTSContact>
+			<OTSCountryNum>Country Number</OTSCountryNum>
+			<OTSCustSaved>OTS Customer Saved</OTSCustSaved>
+			<OTSFaxNum>OTS Fax</OTSFaxNum>
+			<OTSName>OTS Name</OTSName>
+			<OTSPhoneNum>OTS Phone</OTSPhoneNum>
+			<OTSResaleID>OTS Tax ID</OTSResaleID>
+			<OTSSaveAs>OTS Save As</OTSSaveAs>
+			<OTSSaveCustID>Cust. ID</OTSSaveCustID>
+			<OTSState>OTS State</OTSState>
+			<OTSTaxRegionCode>Tax Region</OTSTaxRegionCode>
+			<OTSZip>OTS Postal Code</OTSZip>
+			<PCID>PCID</PCID>
+			<PriorAssemblySeq>Prior Assembly Seq</PriorAssemblySeq>
+			<PriorJobNum>Prior JobNum</PriorJobNum>
+			<PriorMtlSeq>Prior Mtl Seq</PriorMtlSeq>
+			<PriorPartNum>Prior PartNum</PriorPartNum>
+			<SerialNumber>Serial Number</SerialNumber>
+			<JobNum>Job</JobNum>
+			<PlanID>PlanID</PlanID>
+			<AllocatedQty>Allocated</AllocatedQty>
+			<Calc_AvailableQty>AvailableQty</Calc_AvailableQty>
+			<Calc_LotSerialNum>LotSerialNum</Calc_LotSerialNum>
+		</RptLabels>
+		<RptParameter>
+			<Company>EPIC03</Company>
+			<BarCodes>true</BarCodes>
+			<FromDate>2013-10-09T00:00:00-07:00</FromDate>
+			<IncSOWihoutShipDate>true</IncSOWihoutShipDate>
+			<NewPage>true</NewPage>
+			<OrderList>5482</OrderList>
+			<PartList></PartList>
+			<PrintKitComponents>true</PrintKitComponents>
+			<ToDate>2017-11-13T00:00:00-08:00</ToDate>
+			<ReportCultureCode>en-US</ReportCultureCode>
+			<ReportCurrencyCode>USD</ReportCurrencyCode>
+			<ThousandsSeparator>,</ThousandsSeparator>
+			<DecimalSeparator>.</DecimalSeparator>
+			<DecimalsGeneral>2</DecimalsGeneral>
+			<DecimalsCost>2</DecimalsCost>
+			<DecimalsPrice>2</DecimalsPrice>
+			<GlbDecimalsGeneral>2</GlbDecimalsGeneral>
+			<GlbDecimalsCost>2</GlbDecimalsCost>
+			<GlbDecimalsPrice>2</GlbDecimalsPrice>
+			<DecimalsQuantity>2</DecimalsQuantity>
+		</RptParameter>
+		<Company>
+			<RptLanguageID>enu</RptLanguageID>
+			<APBOECheck>0</APBOECheck>
+			<Company>EPIC03</Company>
+			<COSequenceCert>0</COSequenceCert>
+			<DeepCopy>false</DeepCopy>
+			<DeepCopyDupOrRevEst>false</DeepCopyDupOrRevEst>
+			<MapURL></MapURL>
+			<MXMunicipio></MXMunicipio>
+			<Name>Epicor USA</Name>
+			<SendToFSA>false</SendToFSA>
+			<WIApplication></WIApplication>
+			<WIAutoCreateJob>false</WIAutoCreateJob>
+			<WIGetDetails>false</WIGetDetails>
+			<WIRelease>false</WIRelease>
+			<WISchedule>false</WISchedule>
+			<WIShippingCosts>false</WIShippingCosts>
+		</Company>
+		<OrderHed>
+			<RptLanguageID>enu</RptLanguageID>
+			<AGUseGoodDefaultMark>false</AGUseGoodDefaultMark>
+			<CCCity></CCCity>
+			<CCState></CCState>
+			<ccToken></ccToken>
+			<ClosedNotShipped>0</ClosedNotShipped>
+			<Company>EPIC03</Company>
+			<CounterSOAck>0</CounterSOAck>
+			<CustNum>2</CustNum>
+			<DispatchReason></DispatchReason>
+			<ECCOrderNum>WEB-100000039</ECCOrderNum>
+			<ECCPaymentMethod></ECCPaymentMethod>
+			<ECCPONum>WEB-100000039</ECCPONum>
+			<InvcOrderCmp>false</InvcOrderCmp>
+			<InvCurrDepositBal>0</InvCurrDepositBal>
+			<IsCSRSet>false</IsCSRSet>
+			<OrderCSR></OrderCSR>
+			<OrderNum>5482</OrderNum>
+			<OrderOpenCredit>0</OrderOpenCredit>
+			<OTSShipToNum></OTSShipToNum>
+			<Plant></Plant>
+			<PLArticle106c>false</PLArticle106c>
+			<PLEnforcementAuthAddr></PLEnforcementAuthAddr>
+			<PLEnforcementAuthName></PLEnforcementAuthName>
+			<PLGoodsOrServiceVATExempt>false</PLGoodsOrServiceVATExempt>
+			<PLInvIssuedBySecondTaxpayer>false</PLInvIssuedBySecondTaxpayer>
+			<PLInvIssuedByTaxpayer>false</PLInvIssuedByTaxpayer>
+			<PLLegalArticleAct></PLLegalArticleAct>
+			<PLLegalArticleOther></PLLegalArticleOther>
+			<PLLegalArticleWEDirective></PLLegalArticleWEDirective>
+			<PLMarginScheme>0</PLMarginScheme>
+			<PLSecondHandOrArts>false</PLSecondHandOrArts>
+			<PLTaxRepresentativeAddr></PLTaxRepresentativeAddr>
+			<PLTaxRepresentativeName></PLTaxRepresentativeName>
+			<PLTaxRepresentativeTaxID></PLTaxRepresentativeTaxID>
+			<PLTouristService>false</PLTouristService>
+			<ProFormaInvComment></ProFormaInvComment>
+			<ReadyToFulfill>false</ReadyToFulfill>
+			<ReprintSOAck>false</ReprintSOAck>
+			<ShipByTime>0</ShipByTime>
+			<TWFiscalPeriod>0</TWFiscalPeriod>
+			<TWFiscalYear>0</TWFiscalYear>
+			<TWFiscalYearSuffix></TWFiscalYearSuffix>
+			<TWGUIGroup></TWGUIGroup>
+			<TWGUIRegNumBuyer></TWGUIRegNumBuyer>
+			<TWGUIRegNumSeller></TWGUIRegNumSeller>
+			<WIApplication></WIApplication>
+			<WICreditCardorder>false</WICreditCardorder>
+			<WIOrder></WIOrder>
+			<WIUserID></WIUserID>
+			<WIUsername></WIUsername>
+			<Character01></Character01>
+			<Character06></Character06>
+			<Character07></Character07>
+			<Character08></Character08>
+			<Character09></Character09>
+			<Character10></Character10>
+			<CheckBox01>false</CheckBox01>
+			<CheckBox05>false</CheckBox05>
+			<CheckBox10>false</CheckBox10>
+			<CheckBox15>false</CheckBox15>
+			<CheckBox16>false</CheckBox16>
+			<CheckBox17>false</CheckBox17>
+			<Number05>0.000000000</Number05>
+			<Number20></Number20>
+			<orderhed_c></orderhed_c>
+			<PbsId_c></PbsId_c>
+			<PbsStage_c></PbsStage_c>
+			<ShortChar01></ShortChar01>
+			<ShortChar05></ShortChar05>
+			<ShortChar06></ShortChar06>
+			<ShortChar08></ShortChar08>
+			<ShortChar09></ShortChar09>
+			<ShortChar10></ShortChar10>
+			<Calc_BCCustNum>*ADDISON*</Calc_BCCustNum>
+			<Calc_BCOrderNum>*5482*</Calc_BCOrderNum>
+			<Calc_CustID>ADDISON</Calc_CustID>
+			<Calc_CustName>Addison, Inc</Calc_CustName>
+			<Calc_FOBDesc>Factory</Calc_FOBDesc>
+			<Calc_HeadComment></Calc_HeadComment>
+			<Calc_NewPage>true</Calc_NewPage>
+		</OrderHed>
+		<OrderDtl>
+			<RptLanguageID>enu</RptLanguageID>
+			<CommodityCode></CommodityCode>
+			<Company>EPIC03</Company>
+			<ContractID></ContractID>
+			<CreateJob>false</CreateJob>
+			<DefaultOversPricing></DefaultOversPricing>
+			<DisplaySeq>1.000</DisplaySeq>
+			<DocInAdvanceBillBal>0</DocInAdvanceBillBal>
+			<DupOnJobCrt>false</DupOnJobCrt>
+			<ECCOrderLine>1</ECCOrderLine>
+			<ECCOrderNum>WEB-100000039</ECCOrderNum>
+			<ECCPlant>MFGSYS</ECCPlant>
+			<ECCQuoteLine>0</ECCQuoteLine>
+			<ECCQuoteNum></ECCQuoteNum>
+			<GroupSeq>0</GroupSeq>
+			<InAdvanceBillBal>0</InAdvanceBillBal>
+			<KitFlag></KitFlag>
+			<KitParentLine>1</KitParentLine>
+			<KitQtyPer>0</KitQtyPer>
+			<KitShipComplete>true</KitShipComplete>
+			<LineDesc>Motor Module 12111</LineDesc>
+			<LinkToContract>false</LinkToContract>
+			<MfgJobType></MfgJobType>
+			<MOMsourceEst></MOMsourceEst>
+			<MOMsourceType></MOMsourceType>
+			<OrderLine>1</OrderLine>
+			<OrderNum>5482</OrderNum>
+			<Overs>0</Overs>
+			<OversUnitPrice>0</OversUnitPrice>
+			<PartNum>M10000</PartNum>
+			<PCLinkRemoved>false</PCLinkRemoved>
+			<PickListComment></PickListComment>
+			<PlanGUID>00000000-0000-0000-0000-000000000000</PlanGUID>
+			<PlanUserID></PlanUserID>
+			<ProFormaInvComment></ProFormaInvComment>
+			<RevisionNum></RevisionNum>
+			<Rpt1InAdvanceBillBal>0</Rpt1InAdvanceBillBal>
+			<Rpt2InAdvanceBillBal>0</Rpt2InAdvanceBillBal>
+			<Rpt3InAdvanceBillBal>0</Rpt3InAdvanceBillBal>
+			<SalesUM>EA</SalesUM>
+			<Unders>0</Unders>
+			<UndersPct>0</UndersPct>
+			<Character01></Character01>
+			<Character03></Character03>
+			<Character04></Character04>
+			<Character05></Character05>
+			<Character06></Character06>
+			<CheckBox02>false</CheckBox02>
+			<CheckBox11>false</CheckBox11>
+			<CheckBox12>false</CheckBox12>
+			<CheckBox13>false</CheckBox13>
+			<Number01>0.000000000</Number01>
+			<Number02>0.000000000</Number02>
+			<Number04>0.000000000</Number04>
+			<Number05>0.000000000</Number05>
+			<Number06>0.000000000</Number06>
+			<Number10>0.000000000</Number10>
+			<Number11>0.000000000</Number11>
+			<Number12>0.000000000</Number12>
+			<Number13>0</Number13>
+			<Number16>0</Number16>
+			<Number18>0</Number18>
+			<Number19>0</Number19>
+			<OrderDtl_c></OrderDtl_c>
+			<PbsId_c>0</PbsId_c>
+			<ShortChar01></ShortChar01>
+			<ShortChar03></ShortChar03>
+			<ShortChar04></ShortChar04>
+			<ShortChar06></ShortChar06>
+			<ShortChar10></ShortChar10>
+			<Calc_BCLineNum>*1*</Calc_BCLineNum>
+			<Calc_BCPart>*M10000*</Calc_BCPart>
+			<Calc_BCRev></Calc_BCRev>
+			<Calc_BinNum></Calc_BinNum>
+			<Calc_Discount>0</Calc_Discount>
+			<Calc_KitPartNum></Calc_KitPartNum>
+			<Calc_OnHandQty>0</Calc_OnHandQty>
+			<Calc_UOM>EA</Calc_UOM>
+			<Calc_whse></Calc_whse>
+			<PartNum_PartDescription>Motor Module 12111</PartNum_PartDescription>
+		</OrderDtl>
+		<OrderRel>
+			<RptLanguageID>enu</RptLanguageID>
+			<Company>EPIC03</Company>
+			<ContractID></ContractID>
+			<ECCPlant>MFGSYS</ECCPlant>
+			<EntityUseCode></EntityUseCode>
+			<LinkToContract>false</LinkToContract>
+			<OrderLine>1</OrderLine>
+			<OrderNum>5482</OrderNum>
+			<OrderRelNum>1</OrderRelNum>
+			<OTSShipToNum></OTSShipToNum>
+			<PhaseID></PhaseID>
+			<ReadyToFulfill>false</ReadyToFulfill>
+			<ReqDate>2014-04-15T00:00:00</ReqDate>
+			<ShipOvers>false</ShipOvers>
+			<ShipToNum></ShipToNum>
+			<ShipViaCode>COMP</ShipViaCode>
+			<WasRecInvoiced>false</WasRecInvoiced>
+			<WebSKU></WebSKU>
+			<WIItemPrice>0</WIItemPrice>
+			<WIItemShipCost>0</WIItemShipCost>
+			<WIOrder></WIOrder>
+			<WIOrderLine></WIOrderLine>
+			<PbsDefaultTaxRemoved_c>false</PbsDefaultTaxRemoved_c>
+			<PbsTaxCalculated_c>false</PbsTaxCalculated_c>
+			<ShortChar01></ShortChar01>
+			<ShortChar02></ShortChar02>
+			<Calc_BCRelNum>*1*</Calc_BCRelNum>
+			<Calc_NeedByDate>4/15/2014 12:00:00 AM</Calc_NeedByDate>
+			<Calc_RelQty>1.00000000</Calc_RelQty>
+			<Calc_RelShipAddr1></Calc_RelShipAddr1>
+			<Calc_RelShipAddr2></Calc_RelShipAddr2>
+			<Calc_RelShipAddr3></Calc_RelShipAddr3>
+			<Calc_RelShipAddr4></Calc_RelShipAddr4>
+			<Calc_RelShipAddr5></Calc_RelShipAddr5>
+			<Calc_RelShipAddr6></Calc_RelShipAddr6>
+			<Calc_RelShipAddr7></Calc_RelShipAddr7>
+			<Calc_RelShipAddr8></Calc_RelShipAddr8>
+			<Calc_ShipToAddr>Addison, Inc~2100 Martin Luther King Blvd~Madison WI 53703~USA~~~~</Calc_ShipToAddr>
+			<Calc_Source></Calc_Source>
+		</OrderRel>
+	</ReportDataSet>
+</ReportDataSet>

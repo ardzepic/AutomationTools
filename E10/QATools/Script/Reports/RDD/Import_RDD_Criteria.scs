@@ -1,0 +1,38 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT Grid_Functions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT RDD_Functions
+//USEUNIT Main_Menu_Functions
+//USEUNIT Open_Forms
+//USEUNIT Actions_Functions
+
+// Function name:  function ImportRDDCriteria()
+// Purpose:  Follow testcase Report Data Validation > Import RDD Criteria (sharepoint) 
+// Author: Hector Rocha
+// Input:  -
+// Output:  -
+// Last update: Andrea Rodriguez - 1/29/2018
+
+function ImportRDDCriteria()
+{
+  var cabFile = "C:\\Users\\Administrator\\Documents\\Files For Scripts\\rdd_Customer Solution_3.2.100.0.cab" 
+  
+  OpenSolutionForm();
+  ClickMenu("Actions->Install Solution");
+  ClickButton("Solution File");
+  var windowscbo = Aliases["Epicor"]["Window"]("#32770", "Open", 1)["Window"]("ComboBoxEx32", "", 1)["Window"]("ComboBox", "", 1);
+  windowscbo["Keys"](cabFile + "[Tab]");
+  ClickButton("Open");
+  ClickButton("Install");
+  Delay(5000);
+  ClickButton("Close");
+  Exit();
+  OpenRDDForm();
+  OpenRDD("rddcriteria");
+  var styleTree = GetTreePanel("treeView");
+  styleTree["ClickItem"]("Report Data|rddcriteria|Report Criteria Sets (1)|RC|Report Criteria Prompts (2)");
+  Clear();
+  DeleteRDD("rddcriteria");
+  Exit();
+}

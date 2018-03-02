@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" version="12.0">
+	<children>
+		<child name="Events" key="{03002E06-A0C3-4C66-9A27-D9BCC860F978}" type="Events" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" pluginName="">
+			<data path="Events\Events.tcAX" />
+		</child>
+		<child name="Script" key="{D4FF7860-AABE-4F5B-B48F-5907C8991363}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script">
+			<data path="Script\Script.tcScript" />
+		</child>
+		<child name="KeywordTests" key="{A3727FCC-3B43-4DA5-BAD9-65568516D5ED}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing">
+			<data path="KeywordTests\KeywordTests.tcKDT" />
+		</child>
+		<child name="NameMapping" key="{48B05CF0-B36B-4418-9CAF-62297E1050B5}" type="Name Mapping" typeId="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" pluginName="NameMapping">
+			<data path="NameMapping\NameMapping.tcNM" />
+		</child>
+		<child name="TestedApps" key="{F347A318-B6CE-4FE6-AC7C-66260A2AE78F}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="">
+			<data path="TestedApps\TestedApps.tcTAs" />
+		</child>
+		<child name="Selenium" key="{F8340D9D-DDE1-4F24-8D3B-B8AB7726C0C5}" type="Selenium or Unit Testing" typeId="{CCBF15D3-5453-4E8D-891C-1C74B57C6979}" pluginName="Unit Testing">
+			<data path="Selenium\Selenium.tcUT" />
+		</child>
+		<child name="Stores" key="{A2537347-85FB-4D90-80B7-FF6EACDF791A}" type="Stores" typeId="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" pluginName="Stores">
+			<data path="Stores\Stores.tcStores" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Advanced" description="A logical folder that is used to organize project items and elements." moniker="{69583268-92F3-49FA-B573-C831F5ABC27B}">
+			<references>
+				<ref key="{03002E06-A0C3-4C66-9A27-D9BCC860F978}" />
+				<ref key="{D4FF7860-AABE-4F5B-B48F-5907C8991363}" />
+				<ref key="{F8340D9D-DDE1-4F24-8D3B-B8AB7726C0C5}" />
+			</references>
+		</folder>
+	</folders>
+	<config language="{90813F19-086D-4670-83BC-DB51386DC224}" />
+	<testItems key="{A42B9E40-11D9-4161-9ACB-D3C841A15F46}">
+		<children>
+			<testItem name="WarmUp SmartClient Forms" key="{9E08085F-0F6F-48A2-8ADB-F3BDAC24D238}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="Starting Point" key="{87FF2EE4-6560-4E96-9564-B97F1BEB3DA4}" group="False" enabled="False" testMoniker="{8BEC19EA-57D1-4BE5-9F7D-EFC30B2E9041}StartingPoint" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="WarmUp E10 Forms" key="{BE48CD88-4CE3-45EC-8BA6-12A7A4C11E24}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Start E10" key="{DE58C0BC-01B3-4D29-B466-FA842B88E2BF}" group="False" enabled="False" testMoniker="{C17651EF-BEFB-4809-AAEC-2550CA904F10}Startup" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="WarmUp Configure EWA" key="{7C77A2FF-5A95-4E3E-B22D-21D7B60200B9}" group="False" enabled="False" testMoniker="{91F43CBE-32BE-4E05-B519-4F2449DF81B1}warmupConfigureEWA" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="WarmUp Reports" key="{43A83575-E1A1-40E4-B2F9-C07BEC0E1A53}" group="False" enabled="False" testMoniker="{2A73C3AD-529A-45FC-B3B6-52BB050F1FCB}warmupReports" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="WarmnUp Dashboards" key="{8E6563CE-0B02-4DF9-8FC1-6FF968ABFD90}" group="False" enabled="False" testMoniker="{74B53942-4743-4BC8-97C4-D93CA01E79B8}warmupDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="Dashboards" key="{81A7468B-5DF8-4EB0-AD98-52B9700AFEDB}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="BAQ Parameters" key="{3A52D21C-22E1-42E8-A04D-0E450C3858EF}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}Dashboard_BAQ_Parameters" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Deployment" key="{3215423B-72C3-4DB9-9427-794B7925C671}" group="False" enabled="True" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}Dashboard_Deployment" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Publishing" key="{814F7CA1-6802-469B-9101-F0E8D567A59F}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}Dashboard_Publishing" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="UD tables" key="{39C9C519-DE3E-43D6-AC00-0B155AE5CE98}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}Dashboard_with_UD_tables" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Import Dashboards E10" key="{210A8395-8867-438D-96C8-AF3BA0B8A71D}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}TC_Importing_exporting_Dashboards_E10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Import Dashboards E9 E10" key="{8A8772D4-AEEA-4D1E-BF4A-5A75E8A837B6}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}TC_Importing_exporting_Dashboards_E9E10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Tracker Views 1" key="{057A609A-C571-4096-9E16-4EBE8FA0BCB8}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}TC_Dashboard_Tracker_Views_1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Tracker Views 2" key="{374E05B2-58E7-4BDC-8E7E-5924BC509765}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}TC_Dashboard_Tracker_Views_2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Tracker Views 3" key="{138C99BD-3B78-4DBF-B761-505EB4066B64}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}TC_Dashboard_Tracker_Views_3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Updatable Customized Form System" key="{51A33E11-1F86-4434-92BB-00C52407B2BD}" group="False" enabled="True" testMoniker="{180B6408-F370-4739-959A-0030A1C4BF1C}TC_Dashboard_Updatable_Customized_Form_sys" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Updatable Customized Form Dashb" key="{AC7E1149-401A-44A0-9D79-AC0C12A37CB0}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}TC_Dashboard_Updatable_Customized_Form" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="All Companies" key="{F41DF331-1DCC-4696-B0C0-36E51B234500}" group="False" enabled="True" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}TC_Dashboard_All_companies" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="Reports" key="{F5575F46-157C-49F0-9A4F-27C1B34B34B3}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="Printing Job Traveler Report" key="{D5FACB22-6FF2-48BE-927F-AF67F88F4BB0}" group="False" enabled="True" testMoniker="{8ACD7903-0A5B-466C-AF7A-D14E8FF6178A}ReportJobTraveler" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing AR Invoice Report" key="{BC3E8815-7CA5-4CCF-A9FE-5A22B8848878}" group="False" enabled="True" testMoniker="{C6DA09AC-E944-4A2E-B83E-8718CBBF8130}ReportARInvoice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Pro-Forma Inv Report" key="{B505A81E-39E9-404F-8FC2-44CEC102250E}" group="False" enabled="True" testMoniker="{6FDA6902-6B3A-4A8C-BEE4-90B38DE79FAB}ReportProFormaInv" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Purchase Order Report" key="{FA969457-0F94-43DC-8670-14F142243CFF}" group="False" enabled="True" testMoniker="{6FDA6902-6B3A-4A8C-BEE4-90B38DE79FAB}ReportProFormaInv" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Quote Forma Report" key="{7D471664-65F5-4C94-8BCB-0FA6FBA32F83}" group="False" enabled="True" testMoniker="{12403E4A-AFEB-4C15-995D-BFBDF5121E15}ReportQuote" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Sales Order Report" key="{EC38F238-642E-44A3-8701-26ED346E439E}" group="False" enabled="True" testMoniker="{7885357F-E6A5-45AC-A081-F1CBFC5711EE}ReportSalesOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Customer Statements Report" key="{F58065E0-CF38-4247-8023-8152E9E650BE}" group="False" enabled="True" testMoniker="{4C86D888-90E9-43C7-B0EF-8C2E418C1DAF}ReportCustomerStatements" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Sales Order Pick List Report" key="{D94006C2-8ED5-4582-B22D-03807CA2566C}" group="False" enabled="True" testMoniker="{2C74D238-7152-4AD2-861E-463E9868689F}ReportSOPickList" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Pro-Forma Inv Report" key="{63D9CB51-7819-4B70-AD2B-9F7D7BC3EF8B}" group="False" enabled="True" testMoniker="{6FDA6902-6B3A-4A8C-BEE4-90B38DE79FAB}ReportProFormaInv" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing Packing Form Report" key="{5888857D-7F20-47B8-831E-C01B251FC4FD}" group="False" enabled="True" testMoniker="{5CE89613-3734-44BF-A03D-FCB34B5BB4E4}ReportPrintPacking" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Printing AP Payment Form" key="{CA84F3C8-A013-4CFE-8165-BAA8CCB4E7A3}" group="False" enabled="True" testMoniker="{5851A0BA-1D47-43D6-868E-704DEE93EB3D}ReportAPPayment" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Menu for BAQ" key="{31768705-3F3B-4450-AC9A-539760D55D03}" group="False" enabled="True" testMoniker="{54FF24A2-968A-403F-AEFA-C7837AC35776}MenuForBaq" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Calculated Fields" key="{E4B683AB-0B9F-47A9-BD37-94795BECFF6C}" group="False" enabled="True" testMoniker="{B29290B6-E904-4B7D-8BD6-9745EFB54D9F}Calculatedfields" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Dynamic Criteria Filter" key="{7D69EA43-1B6B-4815-88C8-E70CCC82746D}" group="False" enabled="True" testMoniker="{B14B25CA-06C7-4725-9467-1D4BAC640ED0}DynamicCriteriaFilter" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Import RDD Criteria" key="{3EF6A58F-502A-45C9-9049-A804E32A5631}" group="False" enabled="True" testMoniker="{E679CDD0-7CF1-4133-B31A-D00A2AE6CE3C}ImportRDDCriteria" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Upload SysReports" key="{D9D08D2B-09BB-4766-9A89-D573B534952E}" group="False" enabled="True" testMoniker="{9B44562E-F68C-43AB-A16B-BE6D67AE3133}UploadSystemReports" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="RDD Validations" key="{33C6B80D-8599-4F25-B823-49050EBAD2AE}" group="False" enabled="True" testMoniker="{1A20B096-2BA4-4471-A64D-B9EBA47A3326}RDDValidations" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="UD Columns Sales Order" key="{B1C8F186-0A3C-46E2-8D5C-794DD635053A}" group="False" enabled="True" testMoniker="{D99F0D6B-E0C6-4879-AD99-7C154CD9B7FB}ReportSalesOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Create Report Style" key="{08DDE76A-9025-4908-A974-CFC79886E67B}" group="False" enabled="True" testMoniker="{BE123C28-3033-4A44-AA0F-24177EBE9AFC}CreateReportStyle" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Support BAQ in RDD" key="{42D5846C-9156-4DF4-AABD-A73224411E69}" group="False" enabled="True" testMoniker="{23C976FB-FE05-445E-82D4-E07FE2B3C9D5}SupBAQ" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="EndOfExecution" key="{519B4814-BE62-4152-8F9D-AB45206E07CA}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="EndOfExecution" key="{110E63FC-DA89-4C1C-BC25-DE5A8D439E7B}" group="False" enabled="True" testMoniker="{79236A2C-FB92-4D9B-BB58-C0A0BE3C8DB1}test" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="ReportsOLD (Printing)" key="{3DDCCB75-A3E8-4BE5-91BA-23FD224ECB43}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="Generate Reports" key="{8EF443AB-D27C-49A9-9158-44EF8368CC47}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}Report_Testing" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_3_2" key="{705D869E-AF45-4F4B-B8C2-5517D5E20F01}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="JobTraveler" key="{39AFC9C0-0EE3-4897-98A1-ECC7DD81305A}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportJobTraveler" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="ARInvoice" key="{4D40D505-B9DF-4D22-871B-316AE1641F15}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportARInvoice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="ProFormaInv" key="{16E9C742-4457-4E9C-ACEB-E1EC5E0A903E}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportProFormaInv" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="PurchaseOrder" key="{1C17DF80-418C-4384-A3FC-947D91682ABF}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportPurchaseOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="SalesOrder" key="{45512B13-A6A5-48F4-9E9D-DF8E8FFBD500}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportSalesOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Quote Form" key="{86A6D669-F52B-4DA1-B81B-250CA1DBC09A}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportQuoteform" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Print_PackingForm" key="{8C61EDAF-DBE5-498D-B489-884B38EED3EA}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportPrintPackingform" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customer Statements" key="{A1EA42AC-F914-4DCC-8133-01A3F9651D9B}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportCustomerStatements" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Sales Order Pick List" key="{2F36DF4D-FD26-4ADA-B645-4084BB5EE811}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportSOPickList" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="AP Payment Form" key="{2F9C4DFA-581D-41B9-B2CB-DB28062E6130}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportAPPaymentform" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="CompareReports" key="{44153623-8EE3-40E5-943D-DCE49E659B02}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}Report_Testing" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Get report file name" key="{6D572399-ED85-4F1D-A350-D606577F2327}" group="False" enabled="True" testMoniker="{B2500060-C4BF-448F-B282-6CD0226E36AF}ReportsFileNames" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="JobTraveler" key="{A8A44E20-872F-4118-8D25-F6683EA03124}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportJobTraveler" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="ARInvoice" key="{3B6F3043-4AC5-4156-862F-CAC1071BB3B9}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportARInvoice" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="ProFormaInv" key="{7536D7B2-6CE2-46DA-9C68-A75AE1ED6C6B}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportProFormaInv" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="PurchaseOrder" key="{BB0F7873-E03A-42A5-A0D4-EE6E03B84CDF}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportPurchaseOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Quote Form" key="{D68CF178-9D3B-4481-8715-AE5C032FF6E0}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportQuoteform" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="SalesOrder" key="{96BE8B9E-7A40-4800-90A1-2BA4A01E58AA}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportSalesOrder" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customer Statements" key="{E98497CD-7170-4F87-AFA4-2A8BD678036B}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportCustomerStatements" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Sales Order Pick List" key="{436898D3-352A-455F-94F8-2C04B64A6BDF}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportSOPickList" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Print_PackingForm" key="{657EC1B6-DFAC-4357-8644-B3666FF11115}" group="False" enabled="True" testMoniker="{DA284840-AC86-4B6C-AA67-8AA14E877490}ReportPackingForm" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="AP Payment Form_1" key="{F8A76FAD-E088-4E14-9A2B-EC8F9E990428}" group="False" enabled="True" testMoniker="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}ReportAPPaymentform" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="DashboardsOLD" key="{30BB2637-B2E6-481A-AD97-81E3D59F0296}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children>
+					<testItem name="BAQ Parameters_1" key="{8443759B-D356-40A5-AD40-268B7D3B6788}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to Clean" key="{AADACD12-5264-4CF2-AD3A-3C0420AB3017}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 1" key="{BCC004DD-F208-470D-8069-E01C88A41CD7}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 2" key="{1CEBDB53-6C45-40D6-8F78-2B2124179EA8}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}CreateBAQ2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard" key="{34F89E86-559C-485A-ABC7-F52A238654F0}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}CreateDashboard1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10" key="{3FC20C55-6346-4686-9654-DD55D8179697}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Deployed Dashboard" key="{D5561843-DB10-4372-B78C-E2436BF2F65B}" group="False" enabled="True" testMoniker="{4A4003D1-984C-4CB3-826B-F30D967189FF}TestDeployedDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Deployment_1" key="{F4E253BF-ECDF-48E0-B25C-5EBC79FF813B}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to Clean" key="{262EB539-5DC6-4768-8145-5EF195920BF9}" group="False" enabled="False" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Retrieve Sys Dashboard" key="{4B5E11FD-70C1-425E-A7DD-35289E8428DD}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}RetrieveSysDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard" key="{688E8BCA-CED6-42E4-A51C-9F6720DCA18D}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}CreateDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu 1" key="{48E65FB3-0EDF-4341-8C11-A426B970F8CD}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}CreateMenu1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10" key="{F643B209-11F2-4843-8ADD-4908DB9D159D}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Deployed Dashb from Fav Menu" key="{377121F2-2B44-462D-9FA3-4C3CD365E600}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}TestDeployedDbFavMenu" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Deployed Dashb from&#32;&#32;Menu" key="{6371214B-4DDF-42F4-B28D-EE999EA75B8E}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}TestDeployedDbMenu" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Sys Dashb - Dashb Maintenance form" key="{7A9B04E2-9B21-44EA-911B-B6D7BAF15232}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}SysDashbMaintenanceDeploy" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Modify Sys Dashb - Dashb Maintenance form" key="{2DB2A827-B412-406F-8FDE-CF280C2935B9}" group="False" enabled="False" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}SysDashbMaintenanceModify" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="GenWeb Sys Dashb - Dashb Maintenance form" key="{C3B921BD-D455-4A4E-AE68-C6DBD51AAE00}" group="False" enabled="True" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}SysDashbMaintenanceGenerateWeb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu 2" key="{D6ECC283-D350-4EFE-AE24-A8E88C20E77B}" group="False" enabled="True" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}CreateMenu2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Sys Dashb 2 - Dashb Maintenance form" key="{05806D5F-A55E-4373-B90A-756062748AF6}" group="False" enabled="True" testMoniker="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}SysDashbMaintenanceDeploy2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Publishing_1" key="{8BCBE108-9A63-4028-AEFA-D757115899CB}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to Clean" key="{4BC9CE24-2C21-42D6-8653-34DEF5D5BD53}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 1" key="{005AB72D-3B1A-4E46-8067-3FE4217F33C1}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 2" key="{1B4CDCC5-6D47-4B89-84E1-C7A61FCB46BB}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}CreateBAQ2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard 1" key="{995D0E1D-14B2-449F-9B14-2CCA2FAD7D89}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Activate Publish View" key="{E49BF3A1-C422-4CD1-9949-D81311989925}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}PublishView" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Retrieve Dashboard to Publish" key="{0B8A764E-D484-41F8-B5FC-29239A7E7A40}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}RetrieveDashbForPublish" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 2 Dashboard 1" key="{28F0C17E-4BE1-4E6F-A04D-DCA50C795477}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}AddQuery2Dashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard 1" key="{E6F2FD44-5FBC-4750-9FBE-3FFB06A2B4D3}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}TestBeforeDeploy1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard 2" key="{06349D82-C4F1-47E2-AE42-218C10EC565C}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}TestBeforeDeploy2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard 3" key="{1413B80E-DC8F-4981-B946-AB454E78241A}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}TestBeforeDeploy3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Dashboard" key="{A32716A6-45BD-42C7-9CF4-27BEDBC88DFA}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}DeployDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dahsboard 2" key="{AB35125C-773E-46FA-BAC9-428EBEBB47B7}" group="False" enabled="True" testMoniker="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}CreateDashboard2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="UD tables_1" key="{6CB0345F-B912-4297-87A9-9F7AC70317C3}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to Clean" key="{AA0CAFFD-8F5C-4C45-80B1-8AC6569CF236}" group="False" enabled="False" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu for UDs" key="{7839FCF6-83F3-4631-83FE-493E6F7DD357}" group="False" enabled="False" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}CreateMenuUDEntry" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10" key="{143ED1B9-00AC-42B7-8555-225F643148A3}" group="False" enabled="False" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create UD Records" key="{F9856678-C3D2-4440-AAE0-CDCE4E1343C0}" group="False" enabled="False" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}CreateUDRegisters" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ UD100" key="{FD6F75B0-B9A4-4D86-95BC-B2520E418341}" group="False" enabled="False" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}CreateBAQUD100" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ UD100A" key="{53B992BE-536C-409C-94CC-27024CA9C5FA}" group="False" enabled="False" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}CreateBAQUD100A" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dahsboard" key="{9F546235-FDDC-41D4-9F77-442CEE80770C}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Query 1 Dashboard" key="{7EDE0713-C897-4A68-8872-5EC33DDA1A2A}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}AddQuery1Dashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Query 2 Dashboard" key="{D5C3A1F4-265E-446B-BF86-6CD1C2C208FB}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}AddQuery2Dashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10" key="{E045D520-9B44-45BF-B141-5CBDF7F08992}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}RestartE10_2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Configure User for tracing" key="{AAF46622-09BA-4F10-AF61-C84A74E458ED}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}ConfigureUserForTracing" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Enable Tracing option" key="{ACC1076C-61CE-409D-9F31-B52D76133E63}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}EnableTracingOp" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Testing Dashboard" key="{33893B41-A5D0-4A65-9CAC-5CB7B5CD14EA}" group="False" enabled="True" testMoniker="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}TestingDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Import Dashboards E10_1" key="{C40DE452-3ABD-45EC-ABD8-6C381C5D4599}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_1_1" key="{95588A02-6C59-4DCC-8C28-9611938DD824}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ_1" key="{11D95028-1F94-4A1E-98AA-951800F74252}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard_1" key="{9D03A614-048F-4303-BB44-3485DE0A3289}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Query for dashboard_1" key="{1622565E-9496-48C3-BC88-6E7FC5669FDA}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}AddQueryDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Export Dashboard_1" key="{46B7B1B0-401B-41D9-B257-D7E18BB124B2}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}ExportDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Import Dashboard_1" key="{5F18E447-1071-408E-B322-A1AA1F02AECD}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}ImportDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Import BAQ_1" key="{906B9F40-7735-4976-B146-417171660359}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}ImportBAQs" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Dashboard_1" key="{27BBE9EF-607D-4D97-83B4-BF631F79A044}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}DeployDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu_1" key="{12590B3A-8084-4F6D-849F-7D3C7571D362}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}CreateMenu1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{F287EA7A-D6CF-4B8C-9644-E06AC460EAD2}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Menu_1" key="{FBE89200-50A2-4397-9A0D-0096BD5B622D}" group="False" enabled="True" testMoniker="{B93C264F-A28E-4706-84F3-BAC20BCE5950}TestMenu" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Import Dashboards E9 E10_1" key="{BC8FB252-DBCF-4BF5-9A51-E878C21CC647}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_2_1" key="{6FF8A78A-7F08-4377-9E20-1C70A6E00F91}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Import E9 Dashboard_1" key="{C6B33CAE-46B9-4EF5-84EE-8DF63C78E654}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}ImportDashboardE9" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Regenerate Data from Imported BAQ_1" key="{0B2AFAA0-DCDC-4330-A451-86060BEBA9C1}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}RegenerateImportedBAQ" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open Imported Dashboard_1" key="{3616964E-D703-4B46-9F61-590AB4A75347}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}OpenImportedDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Tracker View_1" key="{F7F812C0-4654-42C7-903C-E0BF0A351AE1}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}AddTrackerView" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu_1" key="{09A81250-5FB1-457F-8001-69D03CA0EB92}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}CreateMenu1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{C0BFC3B6-87C2-4BE4-9034-3F52976CD741}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Menu _1" key="{7445A454-2B83-4B7D-A597-D775028086D3}" group="False" enabled="True" testMoniker="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}TestMenu" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Tracker Views 1_1" key="{43D0018F-D08B-43B3-B848-A5C61B08B351}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_4" key="{A925731F-BFAF-4D76-B302-43D340A1F0D9}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ_1" key="{209DDCA6-C8E3-4EF9-8891-AFFFE455DF98}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard_1" key="{78CC2054-6D6D-4E23-ACFB-E3812D4ADD4A}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 1 to dashboard_1" key="{7DCF4362-FFB2-4396-9CC7-568070489B69}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddQuery1Dashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add TrackerView1 Query1_1" key="{D04EB0BC-58BD-410A-88BD-E949448C3654}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddTrackerView1Query1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add TrackerView2 Query1_1" key="{DB005F21-E458-4322-BC7C-2F0692E1AD3F}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddTrackerView2Query1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 2 to dashboard_1" key="{5C973F1B-EDFC-4C97-82D2-4585380FCB30}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddQuery2Dashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add TrackerView 1 Query2_1" key="{DE1355E9-F976-4C5D-A7BE-1A9A0FAFEAEB}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddTrackerView1Query2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu_1" key="{B8B38B6C-3444-413B-BCFE-4707CCBECB8B}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}CreateMenu1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{4B1E47D4-1E79-4F60-B86E-A7513471E380}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Tracker view before customizing_1" key="{D6AD6151-02CA-46CB-8995-1C154EEC451C}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}OpenMenuTestDashbTracker3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Re open dashboard_1" key="{0C37918F-AE17-4C71-AFE6-614BB8747935}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}OpenDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customize Tracker View_1" key="{87767B2E-725C-42BD-B975-8100F21FFFEB}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}CustomizeTrackerView" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Dashboard_1" key="{AF967B6C-6D3A-4FA8-9345-30DD8EE4C30A}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}DeployDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Delete E10 Cache / Restart_1" key="{9176BDA6-BBBF-4C11-9962-BD5C4220CADF}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}E10CacheRestart" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Menu (Dashboard)_1" key="{AD40F661-63C0-44AB-9FE4-F875B85912D6}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}OpenMenuTestDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open Dashboard / Add new query_1" key="{48CB9D59-1464-4E72-8C19-A3719EA86EA3}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}AddNewQueryDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Delete E10 Cache / Restart 2_1" key="{419CC7CB-4E07-4D81-8772-BAC99F6F0E59}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}E10CacheRestart2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create attribute data for dashboard_1" key="{68BC966E-5248-462F-BF8A-361AB149FF97}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}CreateAttributesQuery" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Attribute data_1" key="{C659D4B8-3BC4-44B7-96DD-00DB189229B0}" group="False" enabled="True" testMoniker="{8A998DCF-194C-4F05-A345-ED4726960885}TestAttributeData" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Tracker Views 2_1" key="{B3D3C6F5-A5A1-4518-8787-DBE38400A56B}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_4" key="{D1EAC7E9-8283-4F45-A200-29A8B208FDA3}" group="False" enabled="False" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 1_1" key="{26C93885-C34C-467C-A6FC-B2C2E78F10BE}" group="False" enabled="False" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 2_1" key="{75C02F4A-8E2E-42A4-B4AA-17C95B3D8C6C}" group="False" enabled="False" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CreateBAQ2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ 3_1" key="{B7EDCC4F-1343-44C2-AE94-B664188CB466}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CreateBAQ3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard_1" key="{FA8A256E-A6E7-4DB2-A43D-44177CD7EB7B}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 1_1" key="{8DEA04AC-C5FA-45B6-957A-77F059A6B426}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddQuery1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add tracker view query 1_1" key="{60D16AE1-510E-4C6E-A888-C2505A548CD9}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddTrackerView1Query1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add tracker view 2 query 1_1" key="{AD9079FC-EF30-446A-9442-E242632F7F81}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddTrackerView2Query1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Validate display group tracker view query1 _1" key="{8E60ECD1-19B9-46C2-A4EC-217BAD264BBD}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}ValidateDisplayGroupTV" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Reopen Dashboard for validation_1" key="{31541982-0C0B-41A3-B045-177D24931649}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}ReopenDashbValidateGroup" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 2_1" key="{68DE659C-5BBF-4DB8-A1D4-75C35CA6204C}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddQuery2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add grid query 2_1" key="{B77A1E3E-5134-4B5F-833E-3A085BF3D796}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddGrid1Query2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add grid 2 query 2_1" key="{EFDF77EB-FD5C-4AA5-AFB6-B39C4BA3ECF2}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddGrid2Query2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add grid 3 query 2_1" key="{1CD43DE2-24DB-4A0A-9746-2E7E24A7A68D}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddGrid3Query2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add tracker view query 2_1" key="{CD9A3A2D-2F3D-401A-A52C-F7953270D7DC}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddTrackerView1Query2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Update BAQ 2 (Part)_1" key="{2E369DCE-4F91-4DD0-A78C-6C38F95A3052}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}UpdateBAQ" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customize tracker view query 2_1" key="{782F0752-9F63-4CD6-BA8E-F907F7A1F756}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CustomizeTrackerViewQuery2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 3_1" key="{D881B28D-ACFD-4ADD-A570-2BB35FA268C2}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddQuery3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add tracker view query 3_1" key="{C7E7A1CF-CA56-4A8C-9E3F-2FBFDE2EDEAF}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddTrackerView1Query3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customize tracker view query 3_1" key="{3BA24F14-5537-4791-A214-91ED7855EAB8}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CustomizeTrackerViewQuery3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query 4_1" key="{50AA9A57-043A-4049-AACC-3B50DB2F08C1}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddQuery4" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add tracker view query 4_1" key="{2EB8BFC7-84F7-41B2-B32D-09E222478099}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}AddTrackerView1Query4" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Customize tracker view query 4_1" key="{66EC7826-C930-4F08-9C58-A4689B7E69FD}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CustomizeTrackerViewQuery4" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy Dashboard_1" key="{7DFBE538-EBB4-4E0D-825F-B7E338DC87C6}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}DeployDashbClose" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu_1" key="{3B3E1428-BECE-40C2-BFB6-FD14CD735CD2}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}CreateMenu1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{53EE7A81-E3BC-4EC4-883E-24920DAAD98D}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open Menu_1" key="{6227E2A1-ED40-4290-B628-0CAB128F51F2}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}OpenMenu" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test query 1_1" key="{BB4EB225-41C9-4690-9AF2-3B87C98F42C9}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}testQuery1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test query 2_1" key="{31907F96-F065-41C1-AFC9-5E6164F5DCC9}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}testQuery2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test query 3 &amp; 4_1" key="{369D710D-4A19-4A9A-B71B-D259DE92FC0C}" group="False" enabled="True" testMoniker="{403B20FC-414C-4C1F-B843-579324F5A72F}testQuery3_Query4" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Tracker Views 3_1" key="{6ED4B951-9EF3-4103-974E-AF5F5B42EDCC}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Change Region control panel_1" key="{A2B40C6B-069C-43D0-9681-D4F8D51B04AD}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}ChangeRegionControlPanel1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart to clean_4" key="{F90A0EAE-FFAB-49C3-BD64-53563570EC45}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Modify culture Account Mngmt_1" key="{1BE9F89E-60CB-4518-ACA4-70D01D3C1A91}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}ModifyCultureAccountMngmt" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ_1" key="{5103F2CF-CB0A-408C-82DC-86B9D17BB268}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard_1" key="{D75092C9-D051-40A4-9B7A-CF2BFD555346}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add query dashboard_1" key="{8CDF03B6-5A37-4E89-9A79-654DBAD9A3A5}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}AddQuery1Dashb1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create tracker view_1" key="{3FD9487D-11F9-4125-AA36-35EAD6B5661A}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}CreateTrackerViewQuery1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Deploy dashboard_1" key="{BA19DF73-EB88-4838-BEB3-6A98B2DD0D5D}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}DeployDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{EEBDE1F7-8ECE-4812-961F-BA18A8B07787}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard_1" key="{FDC710F6-2373-463D-A5F9-D5BCD97F39B6}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}TestDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Close E10_1" key="{43970FCF-09E6-4CF0-B72E-D6294F96C43F}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}CloseE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Change Region control panel_1" key="{5D9992C8-41C7-4EA4-994B-FEE6C6009AAB}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}ChangeRegionControlPanel2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Login E10_1" key="{EEEA1B7F-559D-447B-B491-7174F51F83DF}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}LogInE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Modify culture Account Mngmt_1" key="{D5D8EB0B-E3CE-4E07-BA89-7283F9FC0913}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}ModifyCultureAccountMngmnt2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{44B7C099-4E8A-4E45-8070-EA52A89D2503}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}RestartE102" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard_1" key="{E1D2CBE9-923E-4494-9B58-1338A46F77C9}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}TestDashboard2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Modify culture account mngmt_1" key="{DB00855D-ECA7-4053-B9EF-C31F7AB49B34}" group="False" enabled="True" testMoniker="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}ModifyCultureAccountMngmnt3" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Updatable Customized Form System_1" key="{7B3D88D0-55B9-4BD2-AE69-3F551A0A3BCA}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_4" key="{1D53213D-7DC8-4E46-B226-BEA82A9AC10A}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open form in Dev mode_1" key="{06155E31-D28C-45FA-A12A-73C779D6703F}" group="False" enabled="True" testMoniker="{180B6408-F370-4739-959A-0030A1C4BF1C}OpenFormDevMode" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="CreateCustomization_1" key="{5AA6E125-9920-43BC-B195-2DDA6BB7B022}" group="False" enabled="True" testMoniker="{180B6408-F370-4739-959A-0030A1C4BF1C}CreateCustomization" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open Customized Form_1" key="{D96A83E0-9A18-4705-A112-43019EEA66BB}" group="False" enabled="True" testMoniker="{180B6408-F370-4739-959A-0030A1C4BF1C}OpenCustomedForm" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Customized Form_1" key="{10CDDC34-E635-4735-89F3-FAD7C5BF19EF}" group="False" enabled="True" testMoniker="{180B6408-F370-4739-959A-0030A1C4BF1C}TestCustomedForm" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Updatable Customized Form Dashb_1" key="{59DDA0A8-0E7F-4B15-84C7-C2FFEAE8F25F}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_4" key="{9214145F-ECE1-4667-83B3-1A58B7E02E37}" group="False" enabled="True" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ_1" key="{F18E9798-6ED2-4F0B-88A9-59EA56056974}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}CreateBAQ1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard_1" key="{83B4166E-EECC-4D8B-B83D-4EC724D25F3A}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Query Dashboard_1" key="{38C08325-2B12-4ECB-9AFF-FB0542CEB90D}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}AddQueryDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu Dashboard_1" key="{35125AC0-E8D4-4D22-9D76-AE2A4D3EFBB7}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}CreateMenuDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{B4124583-53C2-498A-AE98-79ECEA7DA3CB}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Dashboard_1" key="{EA6BC0BD-7558-42DF-A130-AABD17D8F24D}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}TestDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Add Customization to form_1" key="{684F5059-917D-45C7-A6D6-4F0918CA00FB}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}AddCustomizationDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Open customized form_1" key="{B7CF5597-8A62-4B4C-8EAD-CF70A8778822}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}OpenCustomizedForm" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test form_1" key="{B3489BFC-909C-408B-B5FD-B3D242EE6BE2}" group="False" enabled="True" testMoniker="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}TestCustomizedForm" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="All Companies_1" key="{06C8119F-6A21-45B6-906C-C999406AB625}" group="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="Restart to clean_3_1" key="{A7B755BB-2EA3-4B9A-868C-4AE2737716D9}" group="False" enabled="False" testMoniker="{4995F036-9B4B-43BE-9E89-03F2342149C2}RestartSmartClient" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create BAQ_1" key="{EBBC2520-1F92-4629-9E5E-037034AC02A2}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateBAQ" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard 1_1" key="{C4A686C9-6334-4835-8227-8ECC4B492760}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu 1_1" key="{B595E872-C26E-4013-8214-630055758420}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateMenuDashboard" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{E9BF6156-83B4-4B83-A658-0D601A1742D3}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}RestartE10" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Existence Menu 1 on EPIC06_1" key="{E1C3DE23-B061-46BF-9F9B-8B2ECB3A3815}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}TestMenuDataDB1_EPIC06" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Existence Menu 1 on EPIC05_1" key="{7C642392-920F-4CDF-A56A-0E7334103863}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}Dashb1Exists_EPIC05" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Verify All companies chk Dashb 1 EPIC07_1" key="{6E55060B-3CF9-4E04-B1A8-E5692ACC7161}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}VerifyAllCompaniesChk" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Dashboard 2_1" key="{4763873A-17B4-4C7B-862C-8606932E6516}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateDashboard2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Menu 2_1" key="{1EF2FC5A-685C-4A97-867A-2C15985C2AD4}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateMenu2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Restart E10_1" key="{B19B8A3A-27CC-4BFE-95D9-7D836FDC523B}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}RestartE10_2" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Grid Data Dashb 2 _1" key="{038D2E90-C85B-4E0A-9F69-01D6E48AB34B}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}TestMenuDataDB2_EPIC07" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Test Grid Data Dashb 1 - EPIC06_1" key="{D17FB58C-839A-4FC8-A3AF-D1BA36E104BE}" group="False" enabled="False" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}RetrieveMenuDataDB1_EPIC06" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Retrieve Dashb 1 - Dashb Maintenance_1" key="{BF9BD4BB-E998-4D94-8285-EBDAF64D8C0B}" group="False" enabled="True" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}DashbMaintenance" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create copy Dashb 1 _1" key="{CCD8C2F3-29B1-47CA-A5F4-23466E916E0C}" group="False" enabled="True" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CopyDashb1" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="Create Copy Sys Dashb_1" key="{CA192271-15B4-4B79-A488-476AFBD8D319}" group="False" enabled="True" testMoniker="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}CreateCopySysDashb" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+		</children>
+	</testItems>
+	<variables key="{D1623962-33F5-4BF9-9D3C-3A26B2F39EF8}">
+		<data Version="3">
+			<Items>
+				<Variable Name="username" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="65007000690063006F007200" />
+				</Variable>
+				<Variable Name="password" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="65007000690063006F007200" />
+				</Variable>
+				<Variable Name="result" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="intLogFolderCount" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True">
+					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="TestItemCnt" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True">
+					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="test_case" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="TestScenarioName" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="str_TmpLogFolder" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="CurSysIPAddress" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="ActualSlaveIP" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="TCResultFlag" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="CategoryName" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="ErrText" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="ProdName" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="VersionNum" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="BuildNum" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="HostName" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="LogsLocation" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="ScreenShot" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="DataType" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="StartTime" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="EndTime" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="TotalTime" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="CurrentTestIndex" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True">
+					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="str_SharedLogFolder" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<settings key="{2C83D84E-9224-4D91-96ED-423D60D845E5}">
+		<settingsVersion value="12.41" />
+		<setting name="JavaFXOpenApp_NodeByClassNameFilters" type="6" rowIndex="7" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" val2="False" />
+				<row val0="True" val1="javafx.scene.SubScene" val2="True" />
+				<row val0="True" val1="javafx.scene.control.Control" val2="True" />
+				<row val0="True" val1="javafx.scene.web.WebView" val2="False" />
+				<row val0="False" val1="javafx.scene.canvas.Canvas" val2="True" />
+				<row val0="False" val1="javafx.scene.image.ImageView" val2="True" />
+				<row val0="False" val1="javafx.scene.media.MediaView" val2="True" />
+				<row val0="True" val1="com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer" val2="True" />
+			</data>
+		</setting>
+		<setting name="{42651A7C-4287-4C91-AE26-98CBD2EA9355}" type="1" value="False" />
+		<setting name="{A2568CC8-7E8E-42C5-A87D-B69684A1E616}" type="1" value="False" />
+		<setting name="{3EADAFE2-0CD4-4B1E-A2A9-B184E94FDCC7}" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="UTF-16" />
+				<row val0="UTF-8" />
+				<row val0="ANSI" />
+				<row val0="Auto" />
+			</data>
+		</setting>
+		<setting name="RecreateActiveXObjects" type="1" value="False" />
+		<setting name="{0BE15905-46A9-40D6-9BE2-892EC4AABBD4}" type="1" value="False" />
+		<setting name="{9273E75A-1D1D-4F5F-9421-28A4BD60D485}" type="1" value="True" />
+		<setting name="{239AE5E0-D898-415D-8ECB-EBEB31D3F66F}" type="6" rowIndex="2" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" />
+				<row val0="True" val1="DirectUIHWND" />
+				<row val0="True" val1="Windows.UI.Core.CoreWindow" />
+			</data>
+		</setting>
+		<setting name="{E3AC1830-9216-4DC9-AB7B-884F3B0E9A48}" type="2" value="0" />
+		<setting name="{0CC2421A-8395-402E-B303-80AE4D4658A4}" type="1" value="True" />
+		<setting name="{7E9D3E8B-DFF5-4737-A877-E94B6B932BCD}" type="1" value="True" />
+		<setting name="{6BA39D6A-88C9-49B1-A310-A31F46136DFB}" type="1" value="False" />
+		<setting name="{2FCB2EB2-336E-4FD4-96A3-8710A73ADDD8}" type="1" value="True" />
+		<setting name="{FE195F25-7DC0-457F-9336-71ED39243753}" type="5" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_0_" />
+		<setting name="{C32B04F8-59F6-4F95-8E50-12818E0DECC7}" type="6" rowIndex="3" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="pmLowest" />
+				<row val0="pmLower" />
+				<row val0="pmNormal" />
+				<row val0="pmHigher" />
+				<row val0="pmHighest" />
+			</data>
+		</setting>
+		<setting name="{3FC03B2F-1B76-433D-86AE-20B18B2CA600}" type="1" value="True" />
+		<setting name="{A4D0B1B0-14DA-4AFA-8AFC-E82D0400E7E9}" type="1" value="True" />
+		<setting name="CountProcessesOfAllUsers" type="1" value="True" />
+		<setting name="{949057FA-CBDC-4A23-BB7F-9A25DCAE8729}" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Off" />
+				<row val0="Capture images only" />
+				<row val0="Capture images and test object info" />
+			</data>
+		</setting>
+		<setting name="{EF07B18F-C1B0-489E-84EF-A6A0A578C45C}" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Top-level parent" />
+				<row val0="Desktop" />
+			</data>
+		</setting>
+		<setting name="{0DEF6033-13D4-4335-97E9-CC6F1FC04342}" type="1" value="False" />
+		<setting name="{DF56DCEA-130B-4D36-8893-5FDC090AFB17}" type="1" value="False" />
+		<setting name="CLRBridge_SelectedComponents" type="6" rowIndex="20" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data>
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Player.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinTree.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinToolbars.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinTabControl.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinStatusBar.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinMaskedEdit.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinListView.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinGrid.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinEditors.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.UltraWinDock.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Win.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Infragistics.Shared.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\ControlProxy.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\ATEVisualTestLib.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\ADODB.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\ScaVisualTestCOM.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\Office.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\Interop.SCAVISUALTESTCOMLib.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\Interop.IWshRuntimeLibrary.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\ATEVisualTestLib.dll" val1="False" />
+				<row val0="C:\MasterTC\FunctionSourceFiles\ATE_Rebuild\Bin\Redist\ADODB.dll" val1="False" />
+			</data>
+		</setting>
+		<setting name="{85CD048A-29FF-4ABF-95A6-B915AEA2C10D}" type="1" value="False" />
+		<setting name="{2044DC7F-423E-4668-8114-68D23AE97AD6}" type="2" value="350" />
+		<setting name="Recording_TestedAppsOnly" type="1" value="True" />
+		<setting name="{FB1CAF99-7FA6-447C-B963-D862CA8BFF89}" type="2" value="10000" />
+		<setting name="{3B76535B-58AD-456C-837E-091A5C480F6C}" type="1" value="True" />
+		<setting name="{3AE91BBD-F37D-40E6-B49D-D2F1EF68E285}" type="1" value="False" />
+		<setting name="{90FD1116-F071-44C8-AB72-F1916C2B3A1B}" type="1" value="False" />
+		<setting name="JavaFXOpenApp_ExposedCustomNodes" type="6" rowIndex="-1" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{CE0B0B5B-F813-482E-BBEC-6E12A96D3B83}" type="1" value="False" />
+		<setting name="{D5773345-4407-4A8A-ACE6-0F0A9C8787C8}" type="1" value="False" />
+		<setting name="{C8F95D39-4AC0-4855-9D60-6E7E3BD87B30}" type="1" value="False" />
+		<setting name="{4FD668CC-C8C3-46B4-A220-8DDE5CD7A39F}" type="6" rowIndex="-1" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="TextRecognizer_AcceptedProcesses" type="6" rowIndex="-1" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{AF49D9D4-83CD-4BEA-BF27-8D70D88AC840}" type="1" value="False" />
+		<setting name="{6BE019A2-A836-4B31-84D9-F9DE78869D51}" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Tree" />
+				<row val0="Flat" />
+			</data>
+		</setting>
+		<setting name="{F7C29680-06BB-4F85-B0E3-C06AE2282A66}" type="1" value="True" />
+		<setting name="{596CA0D0-27CB-40D3-BAA5-BC1CECFF25AC}" type="6" rowIndex="-1" colIndex="2">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{0BD6AE2E-E5D9-4AD0-9BF3-2483D329B22A}" type="1" value="True" />
+		<setting name="JavaBridge_ClassPaths" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{3FC2A7B4-F4AF-4807-8D37-C3EE096DD330}" type="2" value="1024" />
+		<setting name="{9EB8E8E6-D2F2-4A8A-ADFB-492E8C0EAFEF}" type="2" value="12000" />
+		<setting name="{1DB8307D-FA4B-43E7-8E11-9F8F41ABD7E9}" type="1" value="True" />
+		<setting name="{47A56F4F-F2D3-4697-BEC8-632B29D5A344}" type="6" rowIndex="12" colIndex="0">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="False" val1="*" />
+				<row val0="True" val1="MsoCommandBar*" />
+				<row val0="True" val1="_Ww*" />
+				<row val0="True" val1="OpusApp" />
+				<row val0="True" val1="Vfp*" />
+				<row val0="True" val1="bosa_sdm_Microsoft Word *" />
+				<row val0="False" val1="Internet Explorer_Server" />
+				<row val0="True" val1="XTPToolBar" />
+				<row val0="True" val1="XTPDockingPaneTabbedContainer" />
+				<row val0="True" val1="XTPTaskPanel" />
+				<row val0="True" val1="XTPReport" />
+				<row val0="True" val1="XTPPopupBar" />
+				<row val0="True" val1="DirectUIHWND" />
+			</data>
+		</setting>
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="-1" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{15C8845F-53E4-4045-9800-74766ABC4B34}" type="2" value="0" />
+		<setting name="{18FD096E-E6B8-4D3D-9619-71670FC81D48}" type="1" value="True" />
+		<setting name="{3EDDD87D-14FB-46FB-9609-CEDE76C0CED7}" type="1" value="False" />
+		<setting name="{45AE3709-5569-4F74-BD85-C222C71981ED}" type="1" value="True" />
+		<setting name="DraggingDelay" type="2" value="5" />
+		<setting name="ObjectMapping_Objects" type="6" rowIndex="15" colIndex="3">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Ice.Lib.Framework.EpiTreeView" val1="{337E67D6-C631-4F10-9BD1-7D7AC5A3F691}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiListView" val1="{4BB9E129-6AAB-43AD-83AE-F0F57238F225}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiCombo" val1="{540D1798-82A9-47C2-AE69-3CCA3A71C246}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiUltraGrid" val1="{46F90EDA-E15B-4E2B-9314-9648494AF72C}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiDateTimeEditor" val1="{E435AC7B-CCB0-4BE0-90BE-26A654AE5673}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiListBox" val1="{4BB9E129-6AAB-43AD-83AE-F0F57238F225}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiMonthViewMulti" val1="{5AAFDFFC-1765-448D-96CF-4EA40F72488E}" val2="4" val3="0" />
+				<row val0="Infragistics.Win.UltraWinEditors.UltraOptionSet" val1="{1C4E7510-4D4A-4D9E-B2B1-CC414AB2A7FC}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiPropertyGrid" val1="{0C3F6C45-A0F0-4A64-8B9F-3F501886F835}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiUltraGridWithEmbeddedControl" val1="{46F90EDA-E15B-4E2B-9314-9648494AF72C}" val2="4" val3="0" />
+				<row val0="Erp.UI.App.*.*Grid" val1="{46F90EDA-E15B-4E2B-9314-9648494AF72C}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiMultiColumnListbox" val1="{4BB9E129-6AAB-43AD-83AE-F0F57238F225}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.*.MethodTree" val1="{337E67D6-C631-4F10-9BD1-7D7AC5A3F691}" val2="4" val3="0" />
+				<row val0="Erp.UI.Controls.Combos.*" val1="{D3FF9EEE-60FA-45E0-B370-707EC842786A}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiCombo" val1="{D3FF9EEE-60FA-45E0-B370-707EC842786A}" val2="4" val3="0" />
+				<row val0="Ice.Lib.Framework.EpiUltraCombo" val1="{D3FF9EEE-60FA-45E0-B370-707EC842786A}" val2="4" val3="0" />
+			</data>
+		</setting>
+		<setting name="{A892B59C-EC27-4ABB-8305-4F885C9BC8CA}" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Depth-first" />
+				<row val0="Breadth-first" />
+			</data>
+		</setting>
+		<setting name="{24DB98D6-5EF8-47BF-977E-C2FD2C5F5FB3}" type="5" value="..\..\..\..\MasterTC\BusinessFunctionalityTesting\BP-SalesOrderEntry\Setup\Log" />
+		<setting name="{3BAA9083-AE46-48CE-BFF4-A656DECF8E2F}" type="1" value="False" />
+		<setting name="{3E8BAA4F-EA09-4DD1-BD8E-DA765C8CF39B}" type="1" value="True" />
+		<setting name="{BE6D588C-BDC7-42E0-8BAE-3E3D8B0F7E83}" type="1" value="True" />
+		<setting name="{F544BC81-7A86-4230-B1FC-1B685211A0B4}" type="5" value="Format: PNG; Compression level: 4" />
+		<setting name="JavaOpenApp_DoNotRecognizeChildSWTAsParent" type="1" value="False" />
+		<setting name="{94ACE9B9-2204-49E3-89A5-87766C9A615E}" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{98C6A210-59EF-4CD6-AA7E-B41953DEC74A}" type="1" value="False" />
+		<setting name="{BF9B6482-CEA1-4402-BA61-9702404F1F12}" type="1" value="True" />
+		<setting name="{C3267834-69E4-4CD8-B16A-B60A9BB8A3B4}" type="1" value="False" />
+		<setting name="{1398B0BE-92B7-4650-A467-751B8FAAB738}" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Update existing frames and capture new frames, if needed" />
+				<row val0="Update existing frames only" />
+			</data>
+		</setting>
+		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Use all processes" />
+				<row val0="Use only tested applications" />
+				<row val0="Use only selected processes" />
+				<row val0="Ignore selected processes" />
+				<row val0="Ignore all processes" />
+			</data>
+		</setting>
+		<setting name="ApplicationHangingProcessList" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{3A4F97B3-D3D3-41E5-BE37-C419B02D488A}" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="2" enabled="True" />
+				<column type="5" enabled="True" />
+				<column type="1" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="ApplicationHangingTimeout" type="2" value="30000" />
+		<setting name="CLRBridge_PreferredApartmentModel" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Does not matter" />
+				<row val0="Single-threaded apartment" />
+				<row val0="Multi-threaded apartment" />
+			</data>
+		</setting>
+		<setting name="{C371F52C-2F81-459B-8A40-380AAA4FB590}" type="1" value="True" />
+		<setting name="{EF65967B-5D67-41D0-9E90-1E07D7ECE759}" type="6" rowIndex="7" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="NativeVBObject" />
+				<row val0="NativeDelphiObject" />
+				<row val0="NativeTextObject" />
+				<row val0="NativeJavaObject" />
+				<row val0="NativeClrObject" />
+				<row val0="NativeCPPObject" />
+				<row val0="NativeJavaFXObject" />
+				<row val0="NativeUIAObject" />
+				<row val0="NativeQtObject" />
+				<row val0="NativeMSAA" />
+			</data>
+		</setting>
+		<setting name="KeyPressingDelay" type="2" value="0" />
+		<setting name="{AE3F26D8-A5BD-4172-9F50-F2B9D1D03611}" type="1" value="True" />
+		<setting name="CLRBridge_PreferredArchitecture" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="The same as the operating system" />
+				<row val0="32-bit" />
+				<row val0="64-bit" />
+			</data>
+		</setting>
+		<setting name="JavaFXOpenApp_DoNotRecognizeJavaFXStageAsAWTComponent" type="1" value="True" />
+		<setting name="{890C6D5A-4706-498E-A6EA-CA765851BB97}" type="6" rowIndex="0" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Use all processes" />
+				<row val0="Use only tested applications" />
+				<row val0="Use only selected processes" />
+				<row val0="Ignore selected processes" />
+			</data>
+		</setting>
+		<setting name="{E5242A20-9B70-4540-AEFD-7012791D3284}" type="1" value="True" />
+		<setting name="JavaBridge_Classes" type="6" rowIndex="-1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
+		<setting name="{D80391D4-892F-4CEC-865E-B7FACB3FAC84}" type="2" value="10" />
+		<setting name="MouseMovementDelay" type="2" value="0" />
+		<setting name="{A383BA1A-68CF-40AE-9FCD-B3E554E9ADD7}" type="6" rowIndex="1" colIndex="0">
+			<columns>
+				<column type="5" enabled="True" />
+			</columns>
+			<data>
+				<row val0="Off" />
+				<row val0="Capture images only" />
+				<row val0="Capture images and test object info" />
+			</data>
+		</setting>
+	</settings>
+	<analysis key="{2BF5BF14-FB42-4A51-A350-234D8D2081F5}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<issueTracking key="{A84A2933-DEE8-493B-9C78-D40E27BD57F0}">
+		<Templates>
+			<Template Id="{1EB17ADF-E4EB-404D-97DC-AD758A1E8C1D}" ConnectionId="{00000000-0000-0000-0000-000000000000}" Description="This template is used by TestComplete&apos;s Log subsystem to post test results to an issue-tracking system. You can also use it at your desire." Name="CreateWorkItem" IsSystem="True" ItemTypeName="" ProjectName="" IsEditing="False" ItemId="">
+				<Fields>
+					<Field ItemId="{86F8BB9F-4DF3-448B-A235-7659E5817CAA}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
+					<Field ItemId="{B71AECAB-641A-4BDD-8DAB-C937212FB086}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
+				</Fields>
+			</Template>
+		</Templates>
+	</issueTracking>
+</Root>

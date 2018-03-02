@@ -1,0 +1,109 @@
+﻿//USEUNIT ObjectLib
+// Gets the object type checkbox
+function GetForm(FormName){
+  var E10 = Sys.Process("Epicor")
+
+  var wnd = FindObject("*Form*", "WndCaption", "*" + FormName + "*", E10 )
+  return wnd
+}
+
+function ActivateForm(FormName){
+  var wnd = GetForm(FormName)
+
+  if(wnd["Exists"]){
+    wnd["Activate"]()
+    Log["Message"]("Form '" + FormName + "' activated.")
+  }else{
+    Log["Error"]("Form '" + FormName + "' not found.")
+  }
+}
+
+function CloseForm(obj, FormName){
+  var wnd = obj ? obj : GetForm(FormName)
+
+  wndCaption = wnd["WndCaption"]
+  
+  if(wnd["Exists"]){
+    wnd["Close"]()
+    Log["Message"]("Form '" + (wndCaption || FormName) + "' closed.")
+  }else{
+    Log["Error"]("Form '" + (wndCaption || FormName) + "' not found.")
+  }
+}
+
+  // CheckErrorWindow
+
+//Verifies if top form exists 
+function VerifyForm(caption){
+  var wnd = FindTopMostForm()
+
+  if (aqString.Trim(wnd["WndCaption"]) == aqString.Trim(caption)){ 
+    return true
+  }else{
+    return false
+  }
+
+}
+
+//Logs data of form on top
+function ValidatesFormOpened(caption){
+  var form = VerifyForm(caption)
+
+  if(form){
+    Log["Message"]("Form '" + caption + "' opened.")
+  }else{
+    Log["Error"]("Form '" + caption + "' not on screen or opened.")
+  }
+
+}
+
+//Logs data of form on top
+function ValidatesFormClosed(caption){
+  var form = GetForm(caption)
+
+  if(!form["Exists"]){
+    Log["Message"]("Form '" + caption + "' closed.")
+  }else{
+    CloseForm(form)
+  }
+
+}
+
+
+//Used to catch a windows message 
+// Designed for System Dashboards mainly
+function CheckWindowMessage(WndCaption){
+  var count = 0
+   
+  while(true){
+    Delay(2000)
+    var windowsMsg = FindObject("*", "Name",  "*" + WndCaption + "*")
+
+    if(windowsMsg["Exists"]){
+      Log["Message"]("Validating Dialog Message - " + windowsMsg["WndCaption"])
+      ClickButton("OK")
+      break
+    }
+    count++
+
+    if(count == 5){
+      break
+      Runner["Stop"]()
+      Log["Error"]("Check")
+    }
+  }
+}
+
+
+//Used to catch Exception object window
+/*function CheckExceptionWnd(){
+
+  var eDialog = FindObject("*", "WndCaption",   "WinFormsObject(\"ExceptionDialog\")")
+
+  if(eDialog["Exists"]){
+    return true
+  }else{
+    return false
+  }
+
+}*/

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{CCCFA5F5-AB3B-408F-95C9-61DE90C5FAD5}" version="12.0">
+	<children>
+		<child name="XmlARInvoice" key="{8A6A14B8-B2D0-4317-85D2-A3504A385C0F}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlARInvoice\XmlARInvoice.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlJobTraveler" key="{7ECB9451-374B-4794-AC46-0C9F7F749977}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlJobTraveler\XmlJobTraveler.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlProFormaInvoice" key="{DD966125-EEFD-4D6C-B317-B5E41E98B205}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlProFormaInvoice\XmlProFormaInvoice.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlPurchaseOrder" key="{17C526AB-BDB2-48BD-9BD4-E3C6FC3947EB}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlPurchaseOrder\XmlPurchaseOrder.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlQuoteForm" key="{BA868878-740C-4DCB-9650-CC73E7CF5532}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlQuoteForm\XmlQuoteForm.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlSalesOrder" key="{5ED274CE-D681-4563-AA11-1524AE725282}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlSalesOrder\XmlSalesOrder.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlPackingForm" key="{18ABF424-2115-4FDF-BC35-F79D6CFAEBAC}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlPackingForm\XmlPackingForm.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlCustomerStatements" key="{53D2B2C7-D05E-4E67-8C62-7931A92D341B}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlCustomerStatements\XmlCustomerStatements.tcXmlCheckpoint" />
+		</child>
+		<child name="XmlSOPickList" key="{0856E769-2179-4DBF-B61D-41ED747E03E3}" type="XML Checkpoint" typeId="{CEC2489F-ECDE-4F42-9ED4-4EB3223B444D}" pluginName="Stores">
+			<data path="XmlSOPickList\XmlSOPickList.tcXmlCheckpoint" />
+		</child>
+	</children>
+	<folders />
+</Root>

@@ -1,0 +1,77 @@
+﻿//USEUNIT ObjectLib
+ 
+/*Changes format region from control panel
+* @param: format - String - Name of the format that will be set in the Region Panel
+* @return: none*/
+function ChangeRegionControlPanel(format){
+
+  Sys.OleObject("WScript.Shell").Run("powershell show-ControlPanelItem Region");
+
+  Delay(2500)
+  var formatCombo = Sys["Process"]("rundll32")["Window"]("#32770", "Region", 1)["Window"]("#32770", "Formats", 1)["Window"]("ComboBox", "", 1)
+  
+  formatCombo["Click"]()
+  formatCombo["ClickItem"](format)
+  //formatCombo["ClickItem"](format)
+  
+  Delay(2500)
+  Sys["Process"]("rundll32")["Window"]("#32770", "Region", 1)["Window"]("Button", "OK", 1)["Click"]()
+  
+  /*var controlPanelWindow = Sys["Process"]("explorer")["Window"]("CabinetWClass", "All Control Panel Items", 1)
+
+  var controlPanel = controlPanelWindow["Window"]("ShellTabWindowClass", "All Control Panel Items", 1)["Window"]("DUIViewWndClassName", "", 1)["UIAObject"]("Explorer_Pane")["UIAObject"]("Folder_Layout_Pane")["UIAObject"]("CPCategoryPanel")
+  
+  controlPanel["UIAObject"]("Region")["Click"]()
+
+  var formatCombo = Sys["Process"]("rundll32")["Window"]("#32770", "Region", 1)["Window"]("#32770", "Formats", 1)["Window"]("ComboBox", "", 1)
+  
+  formatCombo["Click"]()
+  // formatCombo["ClickItem"]("Estonian (Estonia)")
+  formatCombo["ClickItem"](format)
+
+  Sys["Process"]("rundll32")["Window"]("#32770", "Region", 1)["Window"]("Button", "&Apply", 3)["Click"]()
+  Sys["Process"]("rundll32")["Window"]("#32770", "Region", 1)["Window"]("Button", "OK", 1)["Click"]()
+
+  controlPanelWindow["Close"]()*/
+
+}
+
+
+function OpenCMD(application){
+  
+  var p, w, txt, cnt, i, s;
+  //show-ControlPanelItem "Region"
+  Sys.OleObject("WScript.Shell").Run("C:\\Windows\\system32\\cmd.exe");
+  
+  p = Sys.Process("cmd");
+
+  w = p.Window("ConsoleWindowClass", "*");
+
+  w.Keys(application + " [Enter]");
+}
+
+function CloseCMD(){
+  
+  var p, w, txt, cnt, i, s;
+   
+  p = Sys.Process("cmd");
+
+  w = p.Window("ConsoleWindowClass", "*");
+
+  w.Keys("exit [Enter]");
+
+}
+
+function minimizeCMD(){
+  var process = Sys.WaitProcess("cmd")
+  if(process["Exists"]){
+    	var cmd = FindObject("*ConsoleWindowClass*", ["WndCaption"], ["*cmd*"], Sys["Process"]("cmd") )
+
+  	if(cmd["Exists"]){
+  	  Log["Message"]("CMD exists. Ready to minimize.")
+  	  Delay(1500)
+  	  cmd["Minimize"]()
+  	  Log["Message"]("CMD minimized.")
+  	}
+  }
+}

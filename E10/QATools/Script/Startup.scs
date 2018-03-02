@@ -1,0 +1,10 @@
+﻿//USEUNIT General_Functions
+ 
+function Startup(){
+  
+  StartSmartClient()
+  
+  Login(Project["Variables"]["username"], Project["Variables"]["password"])
+  ActivateFullTree()
+  
+}

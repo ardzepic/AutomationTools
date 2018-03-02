@@ -1,0 +1,25 @@
+﻿//USEUNIT FormLib
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+
+function warmupConfigureEWA() {
+
+	var company1 = "Epicor Education"
+	var plant1 = "Main"
+	ExpandComp(company1)
+
+	ChangePlant(plant1)
+	
+	var treeMainPanel1 = setCompanyMainTree(company1, plant1)
+
+    MainMenuTreeViewSelect(treeMainPanel1 + "System Setup;Company/Site Maintenance;Company Maintenance")
+    
+    EnterText("txtWebUrl", "http://Kingslayer/EWA" + "[Tab]")
+    EnterText("txtWebPath", "C:\\inetpub\\wwwroot\\EWA")
+    
+    ClickMenu("File->Save")
+    Delay(1500)
+    ClickMenu("File->Exit")
+
+	
+} 

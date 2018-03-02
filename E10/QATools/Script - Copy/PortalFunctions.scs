@@ -1,0 +1,633 @@
+﻿//Durga Functions - Starts
+//***********************
+//Function to declare global ProjVar for portal
+
+function AppendLogFolder()
+{
+  Project["Variables"]["test_case"] = getCurrProjectTestItemName()          
+  TCFolder = Log["CreateFolder"]("MRP TC# = "+Project["Variables"]["test_case"]+"Product Name = "+Project["Variables"]["ProdName"]+"; Build Number = "+Project["Variables"]["BuildNum"]+"; Host Name = "+Project["Variables"]["HostName"]+"; Data Type = "+Project["Variables"]["DataType"]+"; Current Project Name = "+Project["TestItems"]["Current"]["Name"])  
+  Log["PushLogFolder"](TCFolder)  
+} 
+
+ 
+function CleanUpPortalDataB4Exe()
+{
+  var CurrentFolder = aqFileSystem.GetCurrentFolder();  
+  var ExlObj = Sys.OleObject("Excel.Application");ExlObj["DisplayAlerts"] = false ;  
+  var PortalWB = ExlObj.Workbooks.Open(CurrentFolder+"\\OutPutForPortal\\QAToolsPortalData.xlsx");
+  var PortalWS = PortalWB.Worksheets("PortalData");
+  var PortalWSRange = PortalWS.UsedRange;  
+  var PortalWSRows = PortalWSRange.Rows.Count
+  PortalWS.Range("3:100").Delete(); PortalWB ["Save"]();PortalWB ["Close"]()    
+} 
+function testWirte()
+{
+  WritePortalDataToExcelRow(3)
+}
+
+//Function to collect data into excel for portal
+function WritePortalDataToExcelRow(intRowNumToWrite)
+{
+  Log["Message"]("Inside excel function 'WritePortalDataToExcelRow'")
+  tmpTCDetailsArray = new Array();  
+  
+  var ProjVar = Project["Variables"];  
+  var CurrentFolder = aqFileSystem.GetCurrentFolder();
+  var ExlObj = Sys.OleObject("Excel.Application");ExlObj["DisplayAlerts"] = false ;  
+  var PortalWB = ExlObj.Workbooks.Open(CurrentFolder+"\\OutPutForPortal\\QAToolsPortalData.xlsx");
+  var PortalWS = PortalWB.Worksheets("PortalData");
+
+  var DistributedWS = PortalWB.Worksheets("Distributed");
+  var DistributedWSRange = DistributedWS.UsedRange;
+  
+  var DistributeWSRowCount = DistributedWSRange.Rows.Count
+  var currSysIPAddress =  GetSystemIpAddress()
+ 
+   for (v=2;v<=DistributeWSRowCount;v++)
+  {
+    var ActualSlaveIP = DistributedWSRange.Cells(v, 2).Value2
+    if (ActualSlaveIP == currSysIPAddress)
+      {
+        var ExpAppVersion = DistributedWSRange.Cells(v, 3).Value2;
+        Project["Variables"]["VersionNum"] = ExpAppVersion
+        Log["Message"]("Found the Slave IP from Master Excel as '"+ActualSlaveIP+"' & Portal Version = "+ExpAppVersion);
+         
+        if (Project["Variables"]["intLogFolderCount"] == 1)
+        {                                  
+          //var str_SharedLogFolder = "C:\\TCResults\\PSResults\\QATools_TCLogs\\"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y_%H_%M_%S")+ "_V" +Project["Variables"]["VersionNum"]+"_B"+Project["Variables"]["BuildNum"]+"_IP"+currSysIPAddress;
+          var str_SharedLogFolder = "\\hv-autoscripts\\AutomationLogs\\TestComplete\\TCLogs\\ToolsQALogs\\"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y_%H_%M_%S")+ "_V" +Project["Variables"]["VersionNum"]+"_B"+Project["Variables"]["BuildNum"]+"_IP"+currSysIPAddress;          
+          str_SharedLogFolder = aqString["Replace"](str_SharedLogFolder,"\\","\\\\");
+          if (aqFileSystem["CreateFolder"](str_SharedLogFolder)==0) 
+            {aqFileSystem["CreateFolder"](str_SharedLogFolder);Log["Message"]("The Shared Log Folder Path = "+str_SharedLogFolder)}
+          else
+            {Log["Message"]("Log Folder does already created at '"+str_SharedLogFolder+"', please check the location access","Can't create Log Folder ("+str_SharedLogFolder+"). Check this shared folder has access from the execution machine")}
+          if (!ProjVar["VariableExists"]("str_SharedLogFolder"))
+            {Project["Variables"]["AddVariable"]("str_SharedLogFolder", "String");}
+          Project["Variables"]["str_SharedLogFolder"] = str_SharedLogFolder;  
+        }
+        break;
+      } 
+  }
+  
+  
+  
+  
+  
+  ScenarioName = getCurrProjectTestItemName()
+  TmpStartTime = Project["Variables"]["StartTime"]
+  var TmpEndTime   = aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m/%d/%y %H:%M:%S")
+  var TmpTimeDiff  = aqConvert["TimeIntervalToStr"](aqDateTime["TimeInterval"](TmpStartTime, TmpEndTime)); 
+  var TmpTimeDiff  = aqString.Remove(TmpTimeDiff, 1, 2)
+  Project["Variables"]["TotalTime"] = TmpTimeDiff;
+  
+  PortalWS.Cells(intRowNumToWrite, 1) = intRowNumToWrite  //SLNO
+  PortalWS.Cells(intRowNumToWrite, 2) = Project["Variables"]["CategoryName"] //Category name
+  PortalWS.Cells(intRowNumToWrite, 3) = "Yes"  //Category run status
+  //PortalWS.Cells(intRowNumToWrite, 4) = Project["Variables"]["TestScenarioName"] //scenario name
+  PortalWS.Cells(intRowNumToWrite, 4) = ScenarioName //scenario name 
+  PortalWS.Cells(intRowNumToWrite, 5) = ""//'Senario Result' Yet to impliment
+  PortalWS.Cells(intRowNumToWrite, 6) = "Yes" //test run status
+  PortalWS.Cells(intRowNumToWrite, 7) = ScenarioName //test name
+  
+  tmpTCDetailsArray = getTCLogData(ScenarioName)
+  tcStatus = tmpTCDetailsArray[0]
+  tcErrFilePath = tmpTCDetailsArray[1]
+  if (aqString["Find"](tcErrFilePath,"undefine")!=-1)
+    {tcErrFilePath = "\\\\vm-ate64admin\\p\\_logs\\_Active\\TestComplete\\TCLogs\\ErrorImages\\SampleErrPic.png";}   
+            
+  tcErrText = tmpTCDetailsArray[2]
+  
+  Project["Variables"]["TCResultFlag"] = tcStatus //getTestStatus(ScenarioName);  //test results 
+  PortalWS.Cells(intRowNumToWrite, 8) = Project["Variables"]["TCResultFlag"] //test results
+  PortalWS.Cells(intRowNumToWrite, 5) = Project["Variables"]["TCResultFlag"]
+  
+  Project["Variables"]["ErrText"] = tcErrText //getErrorTextBasedOnSenarioName(ScenarioName) //test err text
+  PortalWS.Cells(intRowNumToWrite, 9) = removeSpecialChars (Project["Variables"]["ErrText"])
+  
+  PortalWS.Cells(intRowNumToWrite, 10) = Project["Variables"]["TotalTime"]     //ExeTime
+  PortalWS.Cells(intRowNumToWrite, 11) = Project["Variables"]["ProdName"]     //ProductName
+  PortalWS.Cells(intRowNumToWrite, 12) = Project["Variables"]["VersionNum"]   //VersionNumber
+  PortalWS.Cells(intRowNumToWrite, 13) = Project["Variables"]["BuildNum"]     //BuildNumber
+  PortalWS.Cells(intRowNumToWrite, 14) = Project["Variables"]["HostName"]     //HostName
+  //PortalWS.Cells(intRowNumToWrite, 12) = "\\\\\\\\\\"+Project["Variables"]["str_SharedLogFolder"]+"\\\\index.htm"//Project["Variables"]["LogsLocation"] //LogsLocation
+  PortalWS.Cells(intRowNumToWrite, 15) = "\\\\\\\\\\"+Project["Variables"]["str_SharedLogFolder"]+"\\\\index.htm"//Project["Variables"]["LogsLocation"] //LogsLocation
+  
+  if (Project["Variables"]["TCResultFlag"] == "failed")
+    {            
+      Log["Message"]("Error Image Path = "+tcErrFilePath+"; Failure SCR = '"+ScenarioName+"'")      
+      PortalWS.Cells(intRowNumToWrite, 16) = tcErrFilePath
+    }
+  PortalWS.Cells(intRowNumToWrite, 17) = Project["Variables"]["DataType"]     //DataType
+  PortalWS.Cells(intRowNumToWrite, 18) = Project["Variables"]["StartTime"]    //test_StartTime
+  var actualEndTime   = aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m/%d/%y %H:%M:%S")
+  PortalWS.Cells(intRowNumToWrite, 19) = actualEndTime
+         
+  PortalWB ["Save"];PortalWB ["Close"]      
+  Log["Message"]("intRowNumToWrite after insert  = "+intRowNumToWrite)
+} 
+
+function createSubLogFolder()
+{
+  var ProjVar = Project["Variables"];
+  var str_LogFolder = "C:\\MRP_To_Portal\\MRP\\MRP\\MRP\\MRP_HTML_Results\\"+"MRP_"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y_%H_%M_%S")+ "_" + GetSystemIpAddress();
+  str_LogFolder = aqString["Replace"](str_LogFolder,"\\","\\\\");
+  if (aqFileSystem["CreateFolder"](str_LogFolder)==0) 
+    {aqFileSystem["CreateFolder"](str_LogFolder)}
+  else
+    {Log["Error"]("Log Folder does not created at '"+str_LogFolder+"', please check the location access","Can't create Log Folder. Check this shared folder has access from the execution machine")}
+  if (!ProjVar["VariableExists"]("str_LogFolder"))
+    {Project["Variables"]["AddVariable"]("str_LogFolder", "String");}
+    Project["Variables"]["str_TmpLogFolder"] = str_LogFolder;       
+} 
+
+
+
+
+
+//function to get current system IP Address
+function GetSystemIpAddress()
+{
+var strQuery = "select * from Win32_NetworkAdapterConfiguration where IPEnabled=True"
+var objectsList = GetObject("winmgmts:").ExecQuery(strQuery)
+if (objectsList.Count > 0)
+  {
+    eObjectsList = new Enumerator(objectsList);
+    for (; !eObjectsList.atEnd(); eObjectsList.moveNext())
+      {
+        item = eObjectsList.item();
+        return item.IPAddress(0);
+        break;
+      }
+  }
+}
+
+
+//Function to get portal related data to post
+function PortalData()//MasterWorkSheetExcelRange)
+{
+  
+	var ErrCount, WrnCount, ProjVar;
+  var Host = Sys["HostName"];
+  var str_ProjPath = ProjectSuite.Path
+  var str_LogPath = str_ProjPath
+  var ProjectSuiteName = ProjectSuite["FileName"];
+  var Res;
+  ProjVar = ProjectSuite["ProjVar"];
+  var s, pos, datafound, appversion, fwversion;
+  datafound = 0;
+  var str_TestedAppPath = TestedApps["Epicor"]["Path"];  
+  var ATELogFilePath = TestedApps["Epicor"]["Path"] + "\ATELog.txt";
+  
+   if (aqFile["Exists"](ATELogFilePath)) 
+    {
+      var ATELogFileContent = aqFile["OpenTextFile"](ATELogFilePath, aqFile["faRead"], aqFile["ctANSI"]);
+  
+      while(! ATELogFileContent["IsEndOfFile"]())
+      {
+        s = ATELogFileContent["ReadLine"]();    
+        if (aqString["Find"](s, "Application version") != -1)
+        {
+          pos = aqString["FindLast"](s, "= ") // Obtain last occurrence for substring "= "
+          appversion = aqString["Remove"](s, 0, pos+2) // Obtain substring with only the version number         
+          datafound = datafound + 1;
+        }
+    
+        if (aqString["Find"](s, "Framework version") != -1)
+        {
+          pos = aqString["FindLast"](s, "= ") // Obtain last occurrence for substring "= "
+          fwversion = aqString["Remove"](s, 0, pos+2) // Obtain substring with only the version number    
+          datafound = datafound + 1;
+        }
+      }
+      if (datafound != 2)
+      {Log["Message"]("Not all required data was found on ATELog text file! required Application and Framework version. Please review. see Additional Information for obtained information.",  "Application version : " + appversion + " / Framework version: " + fwversion);}
+  
+      // Obtain Project Suite Name
+      Res = aqString["FindLast"](ProjectSuiteName, "\\");
+      ProjectSuiteName = aqString["Remove"](ProjectSuiteName, 0, Res+1);
+      ProjectSuiteName = aqString["Replace"](ProjectSuiteName, ".pjs", "");
+    }
+       
+    tmpPortalDataArray = new Array();         
+    var str_AppVersion = appversion;  
+    var str_BuildVersion = fwversion; 
+    var str_Host = Host;       
+    tmpPortalDataArray[0] = str_BuildVersion
+    tmpPortalDataArray[1] = str_Host
+      
+    return tmpPortalDataArray;
+		
+}
+
+//Function to get only the first occurence of the error text of the scenarios
+
+
+
+function getErrorTextBasedOnSenarioName(ScenarioName,jsFolderName)
+{
+  Log["Message"]("inside 'getErrorTextBasedOnSenarioName' - SCR# = '"+ScenarioName+"'")
+  HTML_logpath = Project["Variables"]["str_TmpLogFolder"] 
+  HTML_JS_logpath = HTML_logpath+"\\"+jsFolderName+"\\_TestLog.js"
+  Log["Message"]("JSON file = "+HTML_JS_logpath)
+  patternString = "Error"
+  
+  var FS2, F2, s2;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS2 = Sys["OleObject"]("Scripting.FileSystemObject");F2 = FS2["OpenTextFile"](HTML_JS_logpath, ForReading);
+  while(! F2["AtEndOfStream"]){logContent = F2["ReadLine"]();}F2["Close"]();
+  
+
+  json_logContent =  aqString["Trim"]( logContent, aqString["stAll"] )
+  json_logContent =  logContent.substring(30,logContent.length - 1)
+  //  cmpletedatafile = "C:\\TempPurpose\\123\\ValidJSonLogFile\\JSonFile.json";aqFile["Create"](cmpletedatafile);aqFile["WriteToTextFile"](cmpletedatafile, json_logContent, aqFile.ctUTF8);
+  logContent = json_logContent;
+  var objErrText = eval("(" + logContent + ")"); var picFound = false;var jsonData = JSON.parse(logContent);jsonLength = jsonData.items.length;
+  
+  for (var i = 0; i < jsonLength; i++) 
+   {
+      var msg1 = jsonData.items[i].Message;
+      //Log["Message"]("The Captured Msg = "+msg1+" at i = "+i)
+      if( (msg1 != undefined ) && ( msg1 != "Default"))
+      {
+      if ((msg1.indexOf(ScenarioName) !=-1))
+      //if (msg1 == ScenarioName)
+        {  
+          for(x=i;x<jsonLength;x++)
+          { 
+            var errMsg = jsonData.items[x].Message
+            var SCR = jsonData.items[x].Message;
+            var picLength = jsonData.items[x].Picture.length
+            if ((picLength>0))
+              {
+                for (j=0;j<picLength;j++)
+                  {
+                    var picValue = jsonData.items[x].TypeDescription;var fileName = jsonData.items[x].Picture[j].filename;var errText = jsonData.items[x].Message;
+                    if ((picValue.indexOf(patternString) !=-1))
+                      {SCR_ErrText_Path = errText;return SCR_ErrText_Path}
+                  }
+              }
+          }
+          
+        }
+      
+    }
+ 
+ }  
+}
+
+//Function to get only the first occurence of the error image file name of the scenarios
+function getErrorImageBasedOnSenarioName(ScenarioName,jsFolderName)
+{
+  Log["Message"]("inside 'getErrorImageBasedOnSenarioName' - SCR# = '"+ScenarioName+"'")
+  HTML_logpath = Project["Variables"]["str_TmpLogFolder"]	  	
+	HTML_JS_logpath = HTML_logpath+"\\"+jsFolderName+"\\_TestLog.js"
+  
+  patternString = "Error"
+  
+  var FS1, F1, s1;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS1 = Sys["OleObject"]("Scripting.FileSystemObject");F1 = FS1["OpenTextFile"](HTML_JS_logpath, ForReading);
+  while(! F1["AtEndOfStream"]){logImgContent = F1["ReadLine"]();}F1["Close"]();
+
+  
+  json_logImgContent =  aqString["Trim"]( logImgContent, aqString["stAll"] )
+  json_logImgContent =  logImgContent.substring(30,logImgContent.length - 1)
+    
+  json_ImgLogContent = json_logImgContent;
+  
+  var objImg = eval("(" + json_ImgLogContent + ")");var picFound = false;var jsonImgData = JSON.parse(json_ImgLogContent);jsonImgLength = jsonImgData.items.length;
+  for (var i = 0; i < jsonImgLength; i++) 
+   {
+      var msg1 = jsonImgData.items[i].Message;
+      if( (msg1 != undefined ) && ( msg1 != "Default"))
+      {
+      if ((msg1.indexOf(ScenarioName) !=-1))
+      //if (msg1 == ScenarioName)
+        {  
+          for(x=i;x<jsonImgLength;x++)
+          { 
+            var errMsg = jsonImgData.items[x].Message
+            var SCR = jsonImgData.items[x].Message;
+            var picLength = jsonImgData.items[x].Picture.length
+            if ((picLength>0))
+              {
+                for (j=0;j<picLength;j++)
+                  {
+                    var picValue = jsonImgData.items[x].TypeDescription;var fileName = jsonImgData.items[x].Picture[j].filename;var errText = jsonImgData.items[x].Message;
+                    if ((picValue.indexOf(patternString) !=-1))
+                      {SCR_ErrImg_Path = fileName;return SCR_ErrImg_Path;}
+                  }
+              }
+          }
+          
+        }
+      
+    }
+ }
+   
+}
+function getTCLogData(ScenarioName)
+{
+  Log["Message"]("Insde 'getTCLogData' for Scenario "+ScenarioName)
+  tmpLogDataArray = new Array()
+  
+  expScenarioName = ScenarioName  
+  html_LogFolderPath = Project["Variables"]["str_TmpLogFolder"]
+  rootJSFilePath = html_LogFolderPath+"\\_root.js"	
+  tcStatus = "failed"  
+  
+  var FS, F, s;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS = Sys["OleObject"]("Scripting.FileSystemObject");
+  F = FS["OpenTextFile"](rootJSFilePath, ForReading);
+  while(! F["AtEndOfStream"]){logContent1 = F["ReadLine"]();}F["Close"]();
+    json_AllRootContent =  aqString["Trim"]( logContent1, aqString["stAll"] )
+  
+  json_OnlyRootContent =  json_AllRootContent.substring(27,json_AllRootContent.length - 1)
+  statusContent = json_OnlyRootContent
+  
+  
+    
+  var objStatus = eval("(" + statusContent + ")");  
+  var jsonStatusData = JSON.parse(statusContent);
+  jsonLength = jsonStatusData.children.length
+  jsFolderName = jsonStatusData.children[0].providers[0].href
+  
+  ScriptTestLogFolder = jsFolderName.substring(0, jsFolderName.length - 12)
+  Log["Message"]("JSON FOLDER NAME = "+ScriptTestLogFolder)
+  
+  for (var a = 0; a < jsonLength; a++) 
+   {
+      var actScenarioName = jsonStatusData.name;     
+      if( (actScenarioName != undefined ) && ( actScenarioName != "Default"))
+        {
+          if ((actScenarioName == expScenarioName))      
+          {  
+            tmpScenarioStatus = jsonStatusData.status
+            if (tmpScenarioStatus==0) {tcStatus = "passed";break;}
+            if (tmpScenarioStatus==1) {tcStatus = "passed";break;}
+            if (tmpScenarioStatus==2) {tcStatus = "failed";break;}              
+          }      
+        } 
+    } 
+    
+  /*
+  //get Err Text and File
+  HTML_JS_logpath = html_LogFolderPath+"\\"+ScriptTestLogFolder
+  patternString = "Error" 
+  FS1 = Sys["OleObject"]("Scripting.FileSystemObject");F1 = FS1["OpenTextFile"](HTML_JS_logpath, ForReading);
+  while(! F1["AtEndOfStream"]){ErrLogContent = F1["ReadLine"]();}F1["Close"]();
+    json_errlogContent =  aqString["Trim"]( ErrLogContent, aqString["stAll"] )
+  
+  json_logContent =  json_errlogContent.substring(30,json_errlogContent.length - 1)
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  errImgFileName = getErrorImageBasedOnSenarioName(ScenarioName,ScriptTestLogFolder)
+  errImgPath = Project["Variables"]["str_TmpLogFolder"]+ "\\\\" + ScriptTestLogFolder + "\\" + errImgFileName            
+  errImgPath = errImgPath.replace(/\\\\/g, '\\');
+      
+  errText = getErrorTextBasedOnSenarioName(ScenarioName,ScriptTestLogFolder)
+  
+  tmpLogDataArray[0] = tcStatus
+  tmpLogDataArray[1] = errImgPath
+  tmpLogDataArray[2] = errText
+  
+  
+  return tmpLogDataArray;
+  
+}
+function getTestStatus(ScenarioName)
+{
+  Log["Message"]("Insde 'getTestStatus' for Scenario "+ScenarioName)
+  expScenarioName = ScenarioName  
+  html_LogFolderPath = Project["Variables"]["str_TmpLogFolder"] //"C:\\MRP_To_Portal\\All_LogsByEdgar"
+  rootJSFilePath = html_LogFolderPath+"\\_root.js"	
+  scr_Status = "failed"  
+  var FS, F, s;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS = Sys["OleObject"]("Scripting.FileSystemObject");F = FS["OpenTextFile"](rootJSFilePath, ForReading);
+  while(! F["AtEndOfStream"]){logContent1 = F["ReadLine"]();}F["Close"]();
+  json_logContent2 =  aqString["Trim"]( logContent1, aqString["stAll"] )
+  json_logContent3 =  json_logContent2.substring(27,json_logContent2.length - 1)
+  logContent = json_logContent3  
+  var obj = eval("(" + logContent + ")");
+  var picFound = false
+  var jsonData = JSON.parse(logContent);
+  jsonLength = jsonData.children.length
+  
+  for (var i = 0; i < jsonLength; i++) 
+   {
+      var actScenarioName = jsonData.name;
+     
+      if( (actScenarioName != undefined ) && ( actScenarioName != "Default"))
+      {
+        if ((actScenarioName == expScenarioName))      
+        {  
+          tmpScenarioStatus = jsonData.status
+          if (tmpScenarioStatus==0)
+            return "passed"
+          if (tmpScenarioStatus==1)
+            return "passed"
+          if (tmpScenarioStatus==2)
+            return "failed"              
+        }      
+    } 
+ }   
+}
+
+function removeSpecialChars(str) {
+
+ if( (str != undefined ) && ( str != "Default"))
+  {
+  return str.replace(/(?!\w|\s)./g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2');
+    }
+}
+////////////////////////////////////////////////////////////////////// Extra functions are not in use as of now
+
+
+
+
+
+
+
+
+
+function testgetTestStatus()
+{
+  for (j=0;j<74;j++)
+    {
+      scr1 = "TC-1."+j
+      res1 = getTestStatus(scr1)
+      Log["Message"]("Test = "+scr1+"; Status = "+res1)
+    }     
+} 
+
+function getTestStatus_tested(ScenarioName)
+{
+  expScenarioName = ScenarioName  
+  html_LogFolderPath = Project["Variables"]["str_TmpLogFolder"] //"C:\\MRP_To_Portal\\All_LogsByEdgar"
+  rootJSFilePath = html_LogFolderPath+"\\_root.js"	
+  scr_Status = "failed"  
+  var FS, F, s;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS = Sys["OleObject"]("Scripting.FileSystemObject");F = FS["OpenTextFile"](rootJSFilePath, ForReading);
+  while(! F["AtEndOfStream"]){logContent1 = F["ReadLine"]();}F["Close"]();
+  json_logContent2 =  aqString["Trim"]( logContent1, aqString["stAll"] )
+  json_logContent3 =  json_logContent2.substring(27,json_logContent2.length - 1)
+  logContent = json_logContent3  
+  var obj = eval("(" + logContent + ")");
+  var picFound = false
+  var jsonData = JSON.parse(logContent);
+  jsonLength = jsonData.children.length
+  
+  for (var i = 0; i < jsonLength; i++) 
+   {
+      var actScenarioName = jsonData.name;
+     
+      if( (actScenarioName != undefined ) && ( actScenarioName != "Default"))
+      {
+        if ((actScenarioName == expScenarioName))      
+        {  
+          tmpScenarioStatus = jsonData.status
+          return tmpScenarioStatus    
+        }      
+    } 
+ }   
+}
+function getTestStatus_ForCompleteLog(ScenarioName)
+{
+  expScenarioName = ScenarioName
+  //Log["Message"]("inside 'getTestStatus' - SCR# = '"+ScenarioName+"'")
+  html_LogFolderPath = Project["Variables"]["str_TmpLogFolder"] //"C:\\MRP_To_Portal\\All_LogsByEdgar"
+  rootJSFilePath = html_LogFolderPath+"\\_root.js"	
+  scr_Status = "failed"
+  //patternString = "Error"  
+  var FS, F, s;var ForReading = 1;var ForWriting = 2;var ForAppending = 8;
+  FS = Sys["OleObject"]("Scripting.FileSystemObject");F = FS["OpenTextFile"](rootJSFilePath, ForReading);
+  while(! F["AtEndOfStream"]){logContent1 = F["ReadLine"]();}F["Close"]();
+  //Log["Message"]("Total1",logContent1)
+  json_logContent2 =  aqString["Trim"]( logContent1, aqString["stAll"] )
+  //Log["Message"]("Total2",json_logContent2)
+  json_logContent3 =  json_logContent2.substring(27,json_logContent2.length - 1)
+  //Log["Message"]("Total3",json_logContent3)
+  logContent = json_logContent3
+  //Log["Message"]("Final JSON value",logContent)
+  var obj = eval("(" + logContent + ")");
+  var picFound = false
+  var jsonData = JSON.parse(logContent);
+  jsonLength = jsonData.children[0].children.length
+  
+  for (var i = 0; i < jsonLength; i++) 
+   {
+      var actScenarioName = jsonData.children[0].children[i].name;
+     
+      if( (actScenarioName != undefined ) && ( actScenarioName != "Default"))
+      {
+        if ((actScenarioName == expScenarioName))      
+        {  
+          tmpScenarioStatus = jsonData.children[0].children[i].status
+          return tmpScenarioStatus    
+        }      
+    } 
+ }   
+}
+
+
+
+function createTodayRunFolder()
+{   
+  var CurrentFolder = aqFileSystem.GetCurrentFolder() 
+  var OutputForPortalFolder = CurrentFolder+"\\"+"OutPutForPortal"  
+  var TestItemLogFoler = OutputForPortalFolder+"\\"+getCurrProjectTestItemName()+"_"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y_%H_%M_%S");
+  Log["Message"]("sTodayRunFolder = "+TestItemLogFoler)
+  if (aqFileSystem["CreateFolder"](TestItemLogFoler) == 0)    
+    Log["Message"]("Created a Temp Folder = "+TestItemLogFoler);
+  else
+    Log["Message"]("The Folder Already Exists " + TestItemLogFoler);
+  
+  return TestItemLogFoler
+}
+function createTodayRunFolder_v0()
+{   
+  var sTempFolder = Sys["OSInfo"]["TempDirectory"];    
+  var sTodayRunFolder = sTempFolder+"MRP_"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y")+ "_" + GetSystemIpAddress();
+  Log["Message"]("sTodayRunFolder = "+sTodayRunFolder)
+  if (aqFileSystem["CreateFolder"](sTempFolder+"MRP_"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y")+ "_" + GetSystemIpAddress()) == 0)
+    // Creates a file in that folder
+    Log["Message"]("Created a Temp Folder = "+sTodayRunFolder);
+  else
+    Log["Message"]("The Folder Already Exists " + sTodayRunFolder);
+  
+  return sTodayRunFolder
+}
+
+function createTodayRunFolder_js()
+{      
+      var sTempFolder = Sys["OSInfo"]["TempDirectory"];
+      var sTodayRunFolder = sTempFolder+"MRP_"+aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m_%d_%y")+ "_" + GetSystemIpAddress();
+      Log["Message"]("sTodayRunFolder = "+sTodayRunFolder)
+  
+      var fso = new ActiveXObject("Scripting.FileSystemObject");
+      var a = fso.CreateFolder(sTodayRunFolder);
+      window.close();
+}
+
+function getCurrProjectTestItemName() 
+{
+  var TestItems;  
+  CurrTetProjectItemName = Project["TestItems"]["Current"]["Name"]
+  Project["Variables"]["test_case"] = CurrTetProjectItemName  
+  return CurrTetProjectItemName
+
+} 
+
+function getCurrProjectTestScenarioName() 
+{
+  var CurrTetProjectItemParentName;  
+  if (!(Project["TestItems"]["Current"]["Parent"]["Name"])=="")
+  {
+  CurrTetProjectItemParentName = Project["TestItems"]["Current"]["Parent"]["Name"]
+  Project["Variables"]["TestScenarioName"] = CurrTetProjectItemParentName  
+  return CurrTetProjectItemParentName
+  }
+}
+function getCategory()
+{
+  Project["TestItems"]["Current"]["TestItem"]()
+}
+function getCurrProjectTestItemCategoryName()
+{
+  var CurrTestProjectItemCategoryName;  
+  try
+    {
+      CurrTestProjectItemCategoryName = Project["TestItems"]["Current"]["Parent"]["Parent"]["Name"]
+    }
+  catch (tmpexp)
+    {
+      CurrTestProjectItemCategoryName = Project["TestItems"]["Current"]["Parent"]["Name"]
+    }
+  Project["Variables"]["CategoryName"] = CurrTestProjectItemCategoryName  
+  return CurrTestProjectItemCategoryName
+}
+
+// Durga Funtions - End
+//***********************
+
+function test()
+{
+  Log["Message"]("End of Execution")
+}
+
+function RandomInt(min, max){return Math.floor(Math.random() * (max - min + 1)) + min;}

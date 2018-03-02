@@ -1,0 +1,58 @@
+﻿//USEUNIT Sys_Functions
+//USEUNIT ObjectLib
+
+var pathFileReportARInvoice 
+var pathFileReportSalesOrder
+var pathFileReportQuoteform 
+var pathFileReportPurchaseOrder 
+var pathFileReportProFormaInv
+var pathFileReportJobTraveler
+var pathFileReportCustomerStatements
+var pathFileReportSOPickList
+var pathFileReportPackingSlips
+
+
+function ReportsFileNames(){  
+    
+    //var serverFolder = "\\\\TOOLSSANDBOX\\epicor\\"
+    var serverFolder = "\\\\TYRELL\\epicor2\\"
+    var command = "start " + serverFolder
+    
+    OpenCMD(command)
+
+    var explorer = Sys["Process"]("explorer")
+
+    var Items_View = FindObject("*DirectUIHWND*", "Name", "*Items_View*", explorer)
+
+    if (Items_View["Exists"]) {
+        Log["Message"]("Object explorer exists and contains " + Items_View["ItemCount"] + " items.")
+    } else { 
+        Log["Message"]("Object explorer does not exist.")
+    }
+    
+    pathFileReportARInvoice = serverFolder + Items_View["UIAObject"]("*AR*")["Value"]
+    pathFileReportSalesOrder = serverFolder + Items_View["UIAObject"]("*Sales*")["Value"]
+    pathFileReportQuoteform = serverFolder + Items_View["UIAObject"]("*Quote*")["Value"]
+    pathFileReportPurchaseOrder = serverFolder + Items_View["UIAObject"]("*Purchase*")["Value"]
+    pathFileReportProFormaInv = serverFolder + Items_View["UIAObject"]("*Forma*")["Value"]
+    pathFileReportJobTraveler = serverFolder + Items_View["UIAObject"]("*Job*")["Value"]
+    pathFileReportCustomerStatements = serverFolder + Items_View["UIAObject"]("*Customer*")["Value"]
+    pathFileReportSOPickList = serverFolder  + Items_View["UIAObject"]("*SO*")["Value"]
+    pathFileReportPackingSlips = serverFolder  + Items_View["UIAObject"]("*Packing*")["Value"]
+
+    Log["Message"](pathFileReportARInvoice)
+    Log["Message"](pathFileReportSalesOrder)
+    Log["Message"](pathFileReportQuoteform)
+    Log["Message"](pathFileReportPurchaseOrder)
+    Log["Message"](pathFileReportProFormaInv)
+    Log["Message"](pathFileReportJobTraveler)
+    Log["Message"](pathFileReportCustomerStatements)
+    Log["Message"](pathFileReportSOPickList)
+    Log["Message"](pathFileReportPackingSlips)
+
+    explorer["Close"]()
+
+    CloseCMD()
+} 
+    
+    

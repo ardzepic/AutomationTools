@@ -1,0 +1,56 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT Grid_Functions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT RDD_Functions
+//USEUNIT Main_Menu_Functions
+//USEUNIT BAQs_Functions
+//USEUNIT Open_Forms
+//USEUNIT Actions_Functions
+
+function UDColumns2()
+{
+  OpenRDDForm();
+  OpenRDD("QuotForm");
+  DuplicateReport("1QuoteForm", "1QuoteForm");
+  var reportType = "cboReportType";
+  EnterText(reportType, "SQL Server Reporting");
+  NewTable("ABCCODE");
+  ClickMenu("File->New->New Table Criteria");
+
+ /* 
+  var grid = GetGrid("grdFieldMapping")
+  var rowIndex = grid["Rows"]["Count"] - 1
+  var columnIndex = getColumn(grid, "Field Name")
+  var cell = grid["Rows"]["Item"](rowIndex)["Cells"]["Item"](columnIndex)
+
+  var rect = cell["GetUIElement"]()["Rect"]
+
+  grid["DblClick"](rect["X"] + rect["Width"] - 5, rect["Y"] + rect["Height"]/2)
+
+  cell["ShowDropDown"]()
+    
+  var value = "ShortChar01x_c"
+  var ddValueList = cell["EditorResolved"]["ValueList"]
+  var ddListItemsCount = ddValueList["Rows"]["Count"]
+  Log["Message"]("ddListItemsCount " + ddListItemsCount)  
+  var result
+   grid["Keys"]("Sh")
+  for(var i = 0; i <= ddListItemsCount - 1; i++){
+  
+    var comboValue = aqString.Trim(ddValueList["Rows"]["Item"](i)["Cells"]["Item"](1)["Text"]["OleValue"])
+    //Log["Message"]("result " + comboValue)
+      grid["Keys"]("[Down]")
+     if ( comboValue == aqString.Trim(value) ){
+        Log["Message"]("found ") 
+        break
+        }     
+  }*/
+//SelectCellDropdownGrid("Field Name", "ShortChar01x_c", grid)
+    
+}
+
+function testing()
+{
+  ClickMenu("File->New->New Table Criteria");
+} 

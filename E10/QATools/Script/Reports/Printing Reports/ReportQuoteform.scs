@@ -1,0 +1,73 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportQuote
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportQuote(){
+  	Log["Message"]("Starting - Generate Reports")
+	ReportQuoteform()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("Quote Form")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportQuoteformXML(pathFile)
+}
+
+/*QuotForm2: Opportunity/QuotEntry.
+                Sales Management/ Customer Relationship Management/ General Operations/ Opportunity / Quote Entry
+                Opportunity/Quote: 1114
+                Actions > Print Form
+                Generate Only*/
+function ReportQuoteform(){
+
+    ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Sales Management;Customer Relationship Management;General Operations;Opportunity / Quote Entry")
+	
+	var quote = "1114"
+	var reportStyle = "Standard - SSRS - QuotForm2"
+
+	ValidatesFormOpened("Opportunity/Quote Entry")
+
+	//Select Opportunity/Quote
+	EnterText("txtQuoteNumber", quote + "[Tab]")
+
+	//Print Form
+	ClickMenu("Actions->Print Form")
+
+	//Select Report style
+	Delay(1000)
+	ComboboxSelect("cboStyle", reportStyle)
+
+	//Pending Validation
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+	//closes Quote form (print)
+	ClickMenu("File->Exit")
+	
+	ValidatesFormClosed("Quote Print")
+
+	ClickMenu("File->Exit")
+
+	ValidatesFormClosed("Opportunity / Quote Entry")
+}
+    
+function ReportQuoteformXML(pathFile){
+	XML["XmlQuoteForm"]["Check"](pathFile)
+}

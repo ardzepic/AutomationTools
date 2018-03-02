@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" version="12.0">
+	<children>
+		<child name="XML" key="{59107EE0-1102-4A22-B583-B78311CF3D9D}" type="XML" typeId="{CCCFA5F5-AB3B-408F-95C9-61DE90C5FAD5}" pluginName="Stores">
+			<data path="XML\XML.tcXmls" />
+		</child>
+	</children>
+	<folders />
+</Root>

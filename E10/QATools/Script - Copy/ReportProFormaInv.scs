@@ -1,0 +1,80 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportProFormaInv
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportProFormaInv(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportProFormaInvForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("Pro-Forma Invoice")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportProFormaInvXML(pathFile)
+}
+
+/* ProFormaInvc: Sales order entry.
+                Sales Management/Customer Relationship Management/General Operations/Order Entry
+                Order: 5428
+                Actions > Print Sales Order Acknowledgement
+                Go to filter tab, click new.
+                Order: 5428
+
+                For ProFormaInvc we can use the same script.
+                Actions > Print Pro-Forma Invoice.
+                Generate Only*/
+function ReportProFormaInvForm(){
+	var order = "5428"
+	var reportStyle = "Standard - SSRS - ProFormaInvc2"
+
+    ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Sales Management;Customer Relationship Management;General Operations;Order Entry")
+
+	ValidatesFormOpened("Sales Order Entry")
+
+	//Select Order
+	EnterText("txtKeyField", order + "[Tab]")
+
+	// Select Actions > Print Pro-Forma Invoice.
+	ClickMenu("Actions->Print Pro-Forma Invoice")
+
+	//Select Report style
+	Delay(1000)
+	ComboboxSelect("cboStyle", reportStyle)
+
+	//Pending Validation
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+
+	//closes OrderAck form (print)
+	ClickMenu("File->Exit")
+
+	ValidatesFormClosed("Order Ack")
+
+	ClickMenu("File->Exit")
+
+	ValidatesFormClosed("Sales Order")
+}	
+
+function ReportProFormaInvXML(pathFile){
+  Delay(2500)
+  E10["Refresh"]()
+  Log["Message"](pathFile)
+	XML["XmlProFormaInvoice"]["Check"](pathFile)
+}

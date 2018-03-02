@@ -1,0 +1,108 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportARInvoice
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportARInvoice(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportARInvoiceForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("AR Invoice Form")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportARInvoiceXML(pathFile)
+}
+
+
+/*ARForm: Mass Print AR Invoices.
+                Sales Management/Demand Management/Reports/Mass Print AR Invoices
+                go to filter tab, click customers, select Addison, Inc.
+                Click generate Only.*/
+
+function ReportARInvoiceForm() {
+	var customer = "ADDISON"
+	var reportStyle = "Standard - SSRS - ARFORM2"
+
+	ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Sales Management;Demand Management;Reports;Mass Print AR Invoices")
+
+	ValidatesFormOpened("Mass Print AR Invoices")
+
+	//Select Report style
+	Delay(1000)
+	ComboboxSelect("cboStyle", reportStyle)
+
+	//Activates 'Filter' Tab
+	OpenPanelTab("Filter")
+
+	ClickButton("Customers...")
+
+	EnterText("txtStartWith1", customer)
+
+	ClickButton("Search")
+
+	var searchGrid = GetGrid("ugdSearchResults")
+	var CustIDColumn = getColumn(searchGrid, "Cust. ID")
+
+	if(searchGrid["Rows"]["Count"] > 0 ){
+		for(var i = 0; i < searchGrid["Rows"]["Count"]; i++){
+			var cell = searchGrid["Rows"]["Item"](i)["Cells"]["Item"](CustIDColumn)
+
+			if (cell["Text"]["OleValue"] == customer) {
+			    // Selecting cell
+			    searchGrid["Rows"]["Item"](i)["Selected"] = true
+			    // Click Ok to select customer
+			    ClickButton("OK")
+			    Log["Message"]("Customer selected")
+			    break
+			}
+		}
+	}else{
+		Log["Error"]("Search for customer didn't retrieve records.")
+	}
+
+	var customersGrid = GetGrid("grdCustomers")
+	
+	if(customersGrid["Rows"]["Count"] > 0){
+		var CustIDColumn = getColumn(customersGrid, "Cust. ID")
+
+		for(var i = 0; i < customersGrid["Rows"]["Count"]; i++){
+			var cell = customersGrid["Rows"]["Item"](i)["Cells"]["Item"](CustIDColumn)
+
+			if (cell["Text"]["OleValue"] == customer) {
+			    Log["Message"]("Customer " + customer + " appears on grid.")
+			    break
+			}
+		}
+	}else{
+		Log["Error"]("Customer was not selected.")
+	}
+
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	//Close Form
+	Delay(4000)
+	ClickMenu("File->Exit")
+
+	ValidatesFormClosed("Mass Print AR Invoices")
+}
+
+function ReportARInvoiceXML(pathFile){
+	XML["XmlARInvoice"]["Check"](pathFile)
+}

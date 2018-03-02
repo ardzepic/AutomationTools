@@ -1,0 +1,32 @@
+﻿//USEUNIT Sys_Functions
+//USEUNIT ControlFunctions
+
+
+function test2(){  
+    var command = "start \\\\TOOLSSANDBOX\\epicor"
+ OpenCMD(command)
+    } 
+
+function OpenCMD(application){
+  
+  var p, w, txt, cnt, i, s;
+  
+  Sys.OleObject("WScript.Shell").Run("C:\\Windows\\system32\\cmd.exe");
+  
+  p = Sys.Process("cmd");
+
+  w = p.Window("ConsoleWindowClass", "*");
+
+  w.Keys(application + " [Enter]");
+
+  // Example
+    // w.Keys("ipconfig [Enter]");
+    // txt = w.wText;
+    // aqString.ListSeparator = "\r\n";
+    // cnt = aqString.GetListLength(txt);
+    // for (i = 0; i < cnt; i++)
+    // {
+    //   s = aqString.GetListItem(txt, i);
+    //   Log.Message(s);
+    // }
+}

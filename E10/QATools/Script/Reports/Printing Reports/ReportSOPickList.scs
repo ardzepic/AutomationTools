@@ -1,0 +1,103 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportSOPickList
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportSOPickList(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportSOPickListForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("SO Pick list")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportSOPickListXML(pathFile)
+}
+
+
+/* Sales Order Pick List
+                Sales Management/Order Management/Reports/Sales Order Pick List
+                Go to filter tab. 
+                Click Customer... button.
+                Search - ADDISON
+                Select 102 Dalton Manufacturing.*/
+function ReportSOPickListForm(){
+    ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+    // Modify report style
+    MainMenuTreeViewSelect("Epicor USA;Chicago;System Management;Reporting;Report Style")
+
+    EnterText("txtKeyField", "SOPick" + "[Tab]")
+
+    OpenPanelTab("Styles")
+
+    ComboboxSelect("cboOutputType", "XML")
+
+    ClickMenu("File->Save")
+    ClickMenu("File->Exit")
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Sales Management;Order Management;Reports;Sales Order Pick List")
+
+	ValidatesFormOpened("Sales Order Pick List")
+
+	OpenPanelTab("Filter")
+	
+	ClickButton("Order...")
+
+	var order = "5482"
+	
+	EnterText("eneStartsWith1", order)
+	ClickButton("Search")
+
+	var OrderGrid = GetGrid("ugdSearchResults")
+
+	var salesOrderColumn = getColumn(OrderGrid, "Sales Order")
+
+	for(var i = 0; i < OrderGrid["Rows"]["Count"]; i++){
+		var cell = OrderGrid["Rows"]["Item"](i)["Cells"]["Item"](salesOrderColumn)
+
+		if(cell["Text"]["OleValue"] == order){
+			OrderGrid["Rows"]["Item"](i)["Selected"] = true
+			Log["Message"]("Customer " +  order + " was selected.")
+			break
+		}
+	}
+	
+	ClickButton("OK")
+
+	OpenPanelTab("Selection")
+
+	var groupDateFrom = FindObject("*Date*", "Name", "*tdtFrom*" )
+	var groupDateTo = FindObject("*Date*", "Name", "*tdtTo*" )
+	var dteActualDate = FindObject("*Date*", "Name", "*dteActualDate*", groupDateFrom)
+	var dteActualDateTo = FindObject("*Date*", "Name", "*dteActualDate*", groupDateTo)
+
+	dteActualDate["Keys"]("10/09/2013" + "[Tab]")
+	dteActualDateTo["Keys"]("11/13/2017" + "[Tab]")
+
+	//Pending Validation
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+	//closes Packing Slip form (print)
+	ClickMenu("File->Exit")
+	
+	ValidatesFormClosed("Sales Order Pick List")
+}
+
+function ReportSOPickListXML(pathFile){
+	XML["XmlSOPickList"]["Check"](pathFile)
+}

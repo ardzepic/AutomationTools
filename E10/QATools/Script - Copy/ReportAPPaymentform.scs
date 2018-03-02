@@ -1,0 +1,101 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportAPPaymentform
+// Purpose:  Retrieve the file name of the report specified
+// Author: Andrea Rodriguez
+// Input:  report name Wildcard
+// Output:  report name with extension
+
+function ReportAPPayment(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportAPPaymentform()
+
+	Log["Message"]("Starting - Retrieve File name")
+	//ReportsFileNames(report)
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+}
+
+// ---------------------------------------------------------------------------------------------------------
+
+// APCheck: AP Payment Entry -- PENDING
+//                 Finantial Management/Cash Management/General Operations/Payment Entry
+//                 Group: 
+
+function ReportAPPaymentform(){
+    /*ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Financial Management;Cash Management;General Operations;Payment Entry")
+
+	ValidatesFormOpened("AP Payment Entry")
+
+	//Select Report style
+	Delay(1000)
+	var reportStyle = "Standard - SSRS - PACKSLIP2"
+	ComboboxSelect("cboStyle", reportStyle)
+
+	// Activates 'Filter' tab
+	OpenPanelTab("Filter")
+	
+	ClickButton("Packing Slips...")
+
+	var manufacturing = "102"
+	
+	//enter 102 for customer Dalton Manufacturing
+	EnterText("eneStartWith1", manufacturing)
+
+	var customerShipGrid = GetGrid("ugdSearchResults")
+
+	var packColumn = getColumn(customerShipGrid, "Pack")
+
+	for(var i = 0; i < customerShipGrid["wRowCount"]; i++){
+		var cell = customerShipGrid["Rows"]["Item"](i)["Cells"]["Item"](packColumn)
+
+		if(cell["Text"]["OleValue"] == manufacturing){
+			customerShipGrid["Rows"]["Item"](i)["Selected"] = true
+			Log["Message"]("Customer pack " +  manufacturing + " was selected.")
+			break
+		}
+	}
+	
+	ClickButton("OK")
+
+	var packListGrid = GetGrid("grdPackSlipList")
+
+	var packColumnID = getColumn(packListGrid, "Pack ID")
+
+	for(var i = 0; i < packListGrid["wRowCount"]; i++){
+		var cell = packListGrid["Rows"]["Item"](i)["Cells"]["Item"](packColumnID)
+
+		if(cell["Text"]["OleValue"] == manufacturing){
+			Log["Message"]("Customer pack " +  manufacturing + " was selected and displayed on pack slips list.")
+			break
+		}
+	}
+
+	//Pending Validation
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+	//closes Packing Slip form (print)
+	ClickMenu("File->Exit")
+	
+	ValidatesFormClosed("AP Payment Entry")*/
+}
+   
+// 	// EERRORES
+// }
+// function ReportAPPayment(){
+// 	XML["XmlARInvoice"]["Check"](pathFileReportARInvoice)
+// }

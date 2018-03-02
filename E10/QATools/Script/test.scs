@@ -1,0 +1,14 @@
+﻿
+//USEUNIT BAQs_Functions
+//USEUNIT ControlFunctions
+//USEUNIT Dashboards_Functions
+//USEUNIT DataBase_Functions
+//USEUNIT FormLib
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+
+function test(){  
+  minimizeCMD()
+
+} 
+

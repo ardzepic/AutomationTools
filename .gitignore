@@ -1,0 +1,21 @@
+
+TestComplete/E10/Project_600/
+
+# Ignore local settings files
+*.tcLS
+*.tcCfgExtender
+*.tcVis 
+*.png
+# Ignore backup files
+*.bak
+*.txt
+
+#Log information for megaportal
+*.js
+*.git
+*.html
+*.htm
+*.gif
+*.css
+
+/Images

@@ -1,0 +1,75 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportPurchaseOrder
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportPurchaseOrder(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportPurchaseOrderForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("Purchase Order")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportPurchaseOrderXML(pathFile)
+}
+
+/*POForm: Purchase Order Entry
+                Material Management/Purchase Management/General Operations/ Purchase Order Entry
+                PO Number: 4307
+                Actions > Print
+                Generate Only*/
+function ReportPurchaseOrderForm(){
+  ExpandComp("Epicor USA")
+
+  ChangePlant("Chicago")
+
+  MainMenuTreeViewSelect("Epicor USA;Chicago;Material Management;Purchase Management;General Operations;Purchase Order Entry")
+	
+  var poNum = "4307"
+  var reportStyle = "Standard - SSRS - POForm2"
+
+  ValidatesFormOpened("Purchase Order Entry")
+
+  //Select PO number
+  EnterText("txtPONumber", poNum + "[Tab]")
+
+  //Click on 'print'
+  ClickMenu("Actions->Print")
+
+  //Select Report style
+  Delay(1000)
+  ComboboxSelect("cboStyle", reportStyle)
+
+  //Pending Validation
+  Delay(2500)
+  ClickMenu("File->Generate Only")
+  Log["Message"]("'Generate Only' option clicked from menu")
+
+  Delay(4000)
+  //closes PO form (print)
+  ClickMenu("File->Exit")
+	
+  ValidatesFormClosed("PO Print")
+
+  ClickMenu("File->Exit")
+
+  ValidatesFormClosed("Purchase Order Entry")
+}
+
+function ReportPurchaseOrderXML(pathFile){
+  Delay(2500)
+  E10["Refresh"]()
+  Log["Message"](pathFile)
+	XML["XmlPurchaseOrder"]["Check"](pathFile)
+}

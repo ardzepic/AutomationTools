@@ -1,0 +1,93 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportCustomerStatements
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportCustomerStatements(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportCustomerStatementsForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("Customer Statement")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportCustomerStatementsXMl(pathFile)
+}
+
+/* Customer Statements
+                Financial Management/Accounts Receivable/Reports/Customer Statements
+                Go to filter tab. 
+                Click Customer... button.
+                Search - ADDISON
+                Select 102 Dalton Manufacturing.*/
+function ReportCustomerStatementsForm(){
+    ExpandComp("Epicor USA")
+
+    ChangePlant("Chicago")
+    
+    MainMenuTreeViewSelect("Epicor USA;Chicago;System Management;Reporting;Report Style")
+
+    EnterText("txtKeyField", "CustSt" + "[Tab]")
+
+    OpenPanelTab("Styles")
+
+    ComboboxSelect("cboOutputType", "XML")
+
+    ClickMenu("File->Save")
+    ClickMenu("File->Exit")
+
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Financial Management;Accounts Receivable;Reports;Customer Statements")
+	ValidatesFormOpened("Customer Statements Report")
+	
+	OpenPanelTab("Filter")
+	
+	ClickButton("Customer...")
+
+	var customer = "ADDISON"
+	
+	EnterText("txtStartWith1", customer)
+	ClickButton("Search")
+
+	var customerShipGrid = GetGrid("ugdSearchResults")
+
+	var packColumn = getColumn(customerShipGrid, "Cust. ID")
+
+	for(var i = 0; i < customerShipGrid["Rows"]["Count"]; i++){
+		var cell = customerShipGrid["Rows"]["Item"](i)["Cells"]["Item"](packColumn)
+
+		if(cell["Text"]["OleValue"] == customer){
+			customerShipGrid["Rows"]["Item"](i)["Selected"] = true
+			Log["Message"]("Customer " +  customer + " was selected.")
+			break
+		}
+	}
+	
+	ClickButton("OK")
+
+	//Pending Validation
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+	//closes Packing Slip form (print)
+	ClickMenu("File->Exit")
+	ValidatesFormClosed("Customer Statements")
+
+
+}
+
+function ReportCustomerStatementsXMl(pathFile){
+	XML["XmlCustomerStatements"]["Check"](pathFile)
+}

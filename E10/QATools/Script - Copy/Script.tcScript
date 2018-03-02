@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="BAQs_Functions" key="{DF7748E1-0D98-4FEA-9351-073D34A545AE}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="BAQs_Functions.scs" />
+		</child>
+		<child name="Dashboards_Functions" key="{41EC2F78-D61D-4F74-B038-BACDF90EC66B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Dashboards_Functions.scs" />
+		</child>
+		<child name="General_Functions" key="{4995F036-9B4B-43BE-9E89-03F2342149C2}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="General_Functions.scs" />
+		</child>
+		<child name="Grid_Functions" key="{711C7B65-6538-41FF-BA4D-A13403CC6771}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Grid_Functions.scs" />
+		</child>
+		<child name="DataBase_Functions" key="{241273DB-D99A-403D-A5EB-391BAA4C6C14}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="DataBase_Functions.scs" />
+		</child>
+		<child name="ControlFunctions" key="{048CB510-D2EE-4C91-B726-F52546F561F8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ControlFunctions.scs" />
+		</child>
+		<child name="Sys_Functions" key="{F85231C5-7597-49DD-8B7F-52589EA3DC27}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Sys_Functions.scs" />
+		</child>
+		<child name="ReportTesting" key="{DA284840-AC86-4B6C-AA67-8AA14E877490}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportTesting.scs" />
+		</child>
+		<child name="GenerateReports" key="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="GenerateReports.scs" />
+		</child>
+		<child name="Data_Solution_Workbench_sc2" key="{008BE47F-8ED7-4811-99DF-81E16DC35B53}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Solution_Workbench_sc2.scs" />
+		</child>
+		<child name="Data_Solution_Workbench_sc1" key="{41B12A63-A311-4459-853D-A27B2EBE0FD2}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Solution_Workbench_sc1.scs" />
+		</child>
+		<child name="test" key="{0FC5FDFD-77E8-4756-AEFE-FC7FA035D460}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="test.scs" />
+		</child>
+		<child name="Menu_Functions" key="{03A7BBE5-48EC-4A30-A849-9D0B2EF2AB43}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Menu_Functions.scs" />
+		</child>
+		<child name="ObjectLib" key="{2D365925-4DC5-4A27-98E2-5EB0080B0F24}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ObjectLib.scs" />
+		</child>
+		<child name="Data_Dashboard_Deployment" key="{54F81157-6E67-41B6-923C-BE7BAA0F2631}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_Deployment.scs" />
+		</child>
+		<child name="Data_Dashboard_All_companies" key="{79A1CC5C-6E28-427C-9DC8-4CAEC90C773B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_All_companies.scs" />
+		</child>
+		<child name="Data_Dashboard_Publishing" key="{C491B26A-0181-4E94-97F8-E66EDDF848E8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_Publishing.scs" />
+		</child>
+		<child name="Data_Dashboard_BAQParams" key="{C08ED6AA-2D8C-4D7C-945E-D4B3C9C8A974}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_BAQParams.scs" />
+		</child>
+		<child name="Data_Dashboard_UDs" key="{C250B045-95D2-4382-A9DA-6E6952D06531}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_UDs.scs" />
+		</child>
+		<child name="Data_Dashboard_TrackerViews_1" key="{93A3504C-4599-421F-8911-828411EE110A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_TrackerViews_1.scs" />
+		</child>
+		<child name="Data_Dashboard_TrackerViews_2" key="{FB71DAA8-F3C9-499C-B38D-94FFAA22D68C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_TrackerViews_2.scs" />
+		</child>
+		<child name="Data_Dashboard_TrackerViews_3" key="{3111237C-1998-498C-ACC9-93876D11D29D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboard_TrackerViews_3.scs" />
+		</child>
+		<child name="TC_Dashb_All_companies" key="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_All_companies.scs" />
+		</child>
+		<child name="FormLib_old" key="{349BE21A-4A64-425B-9C3B-E7962ABD21D2}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="FormLib_old.scs" />
+		</child>
+		<child name="TC_Dashb_BAQ_Parameters" key="{4A4003D1-984C-4CB3-826B-F30D967189FF}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_BAQ_Parameters.scs" />
+		</child>
+		<child name="TC_Dashb_Deployment" key="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Deployment.scs" />
+		</child>
+		<child name="TC_Dashb_Publishing" key="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Publishing.scs" />
+		</child>
+		<child name="TC_Dashb_UD_Tables" key="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_UD_Tables.scs" />
+		</child>
+		<child name="TC_Dashb_Updatable_Cust_Form_sys" key="{180B6408-F370-4739-959A-0030A1C4BF1C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Updatable_Cust_Form_sys.scs" />
+		</child>
+		<child name="TC_Dashb_Updatable_Dashb_Form" key="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Updatable_Dashb_Form.scs" />
+		</child>
+		<child name="TC_Dashb_Exporting_DashbE10" key="{B93C264F-A28E-4706-84F3-BAC20BCE5950}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Exporting_DashbE10.scs" />
+		</child>
+		<child name="TC_Dashb_Exporting_DashbE9_E10" key="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_Exporting_DashbE9_E10.scs" />
+		</child>
+		<child name="TC_Dashb_TrackerViews_1" key="{8A998DCF-194C-4F05-A345-ED4726960885}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_TrackerViews_1.scs" />
+		</child>
+		<child name="TC_Dashb_TrackerViews_2" key="{403B20FC-414C-4C1F-B843-579324F5A72F}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_TrackerViews_2.scs" />
+		</child>
+		<child name="TC_Dashb_TrackerViews_3" key="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TC_Dashb_TrackerViews_3.scs" />
+		</child>
+		<child name="FormLib" key="{0A9C52E0-D9BA-4647-8C4D-5654109030B1}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="FormLib.scs" />
+		</child>
+		<child name="test2" key="{CA624C3D-EFC0-4D17-988D-69784CB6F961}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="test2.scs" />
+		</child>
+		<child name="WarmUpReportsForms" key="{2A73C3AD-529A-45FC-B3B6-52BB050F1FCB}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="WarmUpReportsForms.scs" />
+		</child>
+		<child name="WarmUpDashboardsTC" key="{74B53942-4743-4BC8-97C4-D93CA01E79B8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="WarmUpDashboardsTC.scs" />
+		</child>
+		<child name="ReportsFileNames" key="{B2500060-C4BF-448F-B282-6CD0226E36AF}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportsFileNames.scs" />
+		</child>
+		<child name="Menu_For_BAQ" key="{54FF24A2-968A-403F-AEFA-C7837AC35776}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Electronic Compliance\Menu_For_BAQ.scs" />
+		</child>
+		<child name="Actions_Functions" key="{EFBD6A78-3D52-4577-97B6-49B5B9D11186}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Actions_Functions.scs" />
+		</child>
+		<child name="Main_Menu_Functions" key="{EB3D269D-D7F8-4B3F-A18E-730F192C8BE3}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Main_Menu_Functions.scs" />
+		</child>
+		<child name="Open_Forms" key="{0068E186-D4B9-4F92-87C1-AC1AC63C3D64}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Open_Forms.scs" />
+		</child>
+		<child name="Payment_Entry_Functions" key="{2D54F0F1-16BD-45B6-A61D-6D4CD43D37B0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Payment_Entry_Functions.scs" />
+		</child>
+		<child name="Supplier_Functions" key="{E0341137-7EC3-46AE-BE10-63725F8CA721}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Supplier_Functions.scs" />
+		</child>
+		<child name="Validation_Duplication" key="{182B1DD9-7FE2-4366-A4BF-8BF665EA9DD4}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\Validation_Duplication.scs" />
+		</child>
+		<child name="Calculatedfields" key="{B29290B6-E904-4B7D-8BD6-9745EFB54D9F}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\Calculatedfields.scs" />
+		</child>
+		<child name="Dynamic_Criteria_Filter" key="{B14B25CA-06C7-4725-9467-1D4BAC640ED0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\Dynamic_Criteria_Filter.scs" />
+		</child>
+		<child name="Import_RDD_Criteria" key="{E679CDD0-7CF1-4133-B31A-D00A2AE6CE3C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\Import_RDD_Criteria.scs" />
+		</child>
+		<child name="RDD" key="{00E07CF4-C492-4CE0-8DD4-B18A3C07EB03}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\RDD.scs" />
+		</child>
+		<child name="RDD_Functions" key="{30DEC5BE-7BCA-4F7B-9174-0BAD9AF4206A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\RDD_Functions.scs" />
+		</child>
+		<child name="Sup_BAQ" key="{23C976FB-FE05-445E-82D4-E07FE2B3C9D5}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\Sup_BAQ.scs" />
+		</child>
+		<child name="UD_Columns" key="{D99F0D6B-E0C6-4879-AD99-7C154CD9B7FB}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\UD_Columns.scs" />
+		</child>
+		<child name="UD_Columns_2" key="{C8D34C64-8447-4D17-B4F9-B79303B3CC1B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\UD_Columns_2.scs" />
+		</child>
+		<child name="Validations" key="{1A20B096-2BA4-4471-A64D-B9EBA47A3326}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="RDD\Validations.scs" />
+		</child>
+		<child name="Create_Report_Style" key="{BE123C28-3033-4A44-AA0F-24177EBE9AFC}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Report Style\Create_Report_Style.scs" />
+		</child>
+		<child name="ReportStyle_Functions" key="{34047CE8-B2E1-4248-B5BB-61F17FD58069}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Report Style\ReportStyle_Functions.scs" />
+		</child>
+		<child name="Upload_SysReports" key="{9B44562E-F68C-43AB-A16B-BE6D67AE3133}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Report Style\Upload_SysReports.scs" />
+		</child>
+		<child name="Startup" key="{C17651EF-BEFB-4809-AAEC-2550CA904F10}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Startup.scs" />
+		</child>
+		<child name="WarmUpConfigureEWA" key="{91F43CBE-32BE-4E05-B519-4F2449DF81B1}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="WarmUpConfigureEWA.scs" />
+		</child>
+		<child name="StartingPoint" key="{8BEC19EA-57D1-4BE5-9F7D-EFC30B2E9041}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="StartingPoint.scs" />
+		</child>
+		<child name="PortalDriver" key="{BF760776-2681-4228-AB72-6BA7155940E3}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="PortalDriver.scs" />
+		</child>
+		<child name="PortalFunctions" key="{79236A2C-FB92-4D9B-BB58-C0A0BE3C8DB1}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="PortalFunctions.scs" />
+		</child>
+		<child name="Data_Dashboards_Importing_exporting_E10" key="{46E82496-5B97-4BF1-99E5-BEF77B403DCF}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboards_Importing_exporting_E10.scs" />
+		</child>
+		<child name="Data_Dashboards_Importing_exporting_E9_E10" key="{2F5C6307-05A4-46DB-A31E-709BF67FF72C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data_Dashboards_Importing_exporting_E9_E10.scs" />
+		</child>
+		<child name="SolutionWorkbench1" key="{6B8C8AA1-2F64-4A0F-88C0-DC23CD0237B2}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="SolutionWorkbench1.scs" />
+		</child>
+		<child name="PrintedReportsFileNames" key="{D8C76D91-04E3-4D6A-B13E-C2E0F2CAEE27}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="PrintedReportsFileNames.scs" />
+		</child>
+		<child name="ReportAPPaymentform" key="{5851A0BA-1D47-43D6-868E-704DEE93EB3D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportAPPaymentform.scs" />
+		</child>
+		<child name="ReportARInvoice" key="{C6DA09AC-E944-4A2E-B83E-8718CBBF8130}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportARInvoice.scs" />
+		</child>
+		<child name="ReportCustomerStatements" key="{4C86D888-90E9-43C7-B0EF-8C2E418C1DAF}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportCustomerStatements.scs" />
+		</child>
+		<child name="ReportJobTraveler" key="{8ACD7903-0A5B-466C-AF7A-D14E8FF6178A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportJobTraveler.scs" />
+		</child>
+		<child name="ReportPrintPackingform" key="{5CE89613-3734-44BF-A03D-FCB34B5BB4E4}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportPrintPackingform.scs" />
+		</child>
+		<child name="ReportProFormaInv" key="{6FDA6902-6B3A-4A8C-BEE4-90B38DE79FAB}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportProFormaInv.scs" />
+		</child>
+		<child name="ReportPurchaseOrder" key="{06847270-4727-4778-A4F8-F0F646B0D7A4}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportPurchaseOrder.scs" />
+		</child>
+		<child name="ReportQuoteform" key="{12403E4A-AFEB-4C15-995D-BFBDF5121E15}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportQuoteform.scs" />
+		</child>
+		<child name="ReportSalesOrder" key="{7885357F-E6A5-45AC-A081-F1CBFC5711EE}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportSalesOrder.scs" />
+		</child>
+		<child name="ReportSOPickList" key="{2C74D238-7152-4AD2-861E-463E9868689F}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ReportSOPickList.scs" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Dashboards" description="A logical folder that is used to organize project items and elements." moniker="">
+			<folders>
+				<folder caption="Moduled Dashboards" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{6648AC0D-09AD-45CF-8214-CCE8D7B6AF09}" />
+						<ref key="{4A4003D1-984C-4CB3-826B-F30D967189FF}" />
+						<ref key="{E360F4DD-4FC0-4409-8378-9AF1B4A48A99}" />
+						<ref key="{D452CE4A-6C40-4BF6-9FC8-F814B1A78B6D}" />
+						<ref key="{78F363F0-D686-4D60-8EE7-6B9A89E2AFE7}" />
+						<ref key="{180B6408-F370-4739-959A-0030A1C4BF1C}" />
+						<ref key="{DF051D2B-47CF-4E17-8D86-ADD80FBF980E}" />
+						<ref key="{B93C264F-A28E-4706-84F3-BAC20BCE5950}" />
+						<ref key="{36B99A58-36E1-43E1-BFD0-3E0D47B9C76E}" />
+						<ref key="{8A998DCF-194C-4F05-A345-ED4726960885}" />
+						<ref key="{403B20FC-414C-4C1F-B843-579324F5A72F}" />
+						<ref key="{24017DA8-1D90-4FFA-9CF6-E4DB0C2F6701}" />
+						<ref key="{6B8C8AA1-2F64-4A0F-88C0-DC23CD0237B2}" />
+					</references>
+				</folder>
+			</folders>
+		</folder>
+		<folder caption="Framework" description="A logical folder that is used to organize project items and elements." moniker="">
+			<folders>
+				<folder caption="Control_Functions" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{048CB510-D2EE-4C91-B726-F52546F561F8}" />
+						<ref key="{F85231C5-7597-49DD-8B7F-52589EA3DC27}" />
+						<ref key="{03A7BBE5-48EC-4A30-A849-9D0B2EF2AB43}" />
+						<ref key="{2D365925-4DC5-4A27-98E2-5EB0080B0F24}" />
+						<ref key="{349BE21A-4A64-425B-9C3B-E7962ABD21D2}" />
+						<ref key="{0A9C52E0-D9BA-4647-8C4D-5654109030B1}" />
+					</references>
+				</folder>
+				<folder caption="Tools_Functions" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{DF7748E1-0D98-4FEA-9351-073D34A545AE}" />
+						<ref key="{41EC2F78-D61D-4F74-B038-BACDF90EC66B}" />
+						<ref key="{241273DB-D99A-403D-A5EB-391BAA4C6C14}" />
+						<ref key="{711C7B65-6538-41FF-BA4D-A13403CC6771}" />
+						<ref key="{4995F036-9B4B-43BE-9E89-03F2342149C2}" />
+					</references>
+				</folder>
+				<folder caption="DataForScripts" description="A logical folder that is used to organize project items and elements." moniker="">
+					<folders>
+						<folder caption="Dashboards" description="A logical folder that is used to organize project items and elements." moniker="">
+							<references>
+								<ref key="{79A1CC5C-6E28-427C-9DC8-4CAEC90C773B}" />
+								<ref key="{C08ED6AA-2D8C-4D7C-945E-D4B3C9C8A974}" />
+								<ref key="{54F81157-6E67-41B6-923C-BE7BAA0F2631}" />
+								<ref key="{C491B26A-0181-4E94-97F8-E66EDDF848E8}" />
+								<ref key="{93A3504C-4599-421F-8911-828411EE110A}" />
+								<ref key="{FB71DAA8-F3C9-499C-B38D-94FFAA22D68C}" />
+								<ref key="{3111237C-1998-498C-ACC9-93876D11D29D}" />
+								<ref key="{C250B045-95D2-4382-A9DA-6E6952D06531}" />
+								<ref key="{46E82496-5B97-4BF1-99E5-BEF77B403DCF}" />
+								<ref key="{2F5C6307-05A4-46DB-A31E-709BF67FF72C}" />
+								<ref key="{41B12A63-A311-4459-853D-A27B2EBE0FD2}" />
+								<ref key="{008BE47F-8ED7-4811-99DF-81E16DC35B53}" />
+							</references>
+						</folder>
+					</folders>
+					<references>
+						<ref key="{C17651EF-BEFB-4809-AAEC-2550CA904F10}" />
+					</references>
+				</folder>
+			</folders>
+			<references>
+				<ref key="{2A73C3AD-529A-45FC-B3B6-52BB050F1FCB}" />
+				<ref key="{74B53942-4743-4BC8-97C4-D93CA01E79B8}" />
+				<ref key="{91F43CBE-32BE-4E05-B519-4F2449DF81B1}" />
+				<ref key="{8BEC19EA-57D1-4BE5-9F7D-EFC30B2E9041}" />
+			</references>
+		</folder>
+		<folder caption="Reports" description="A logical folder that is used to organize project items and elements." moniker="">
+			<folders>
+				<folder caption="FrameworkReports" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{EFBD6A78-3D52-4577-97B6-49B5B9D11186}" />
+						<ref key="{EB3D269D-D7F8-4B3F-A18E-730F192C8BE3}" />
+						<ref key="{2D54F0F1-16BD-45B6-A61D-6D4CD43D37B0}" />
+						<ref key="{34047CE8-B2E1-4248-B5BB-61F17FD58069}" />
+						<ref key="{E0341137-7EC3-46AE-BE10-63725F8CA721}" />
+						<ref key="{182B1DD9-7FE2-4366-A4BF-8BF665EA9DD4}" />
+						<ref key="{30DEC5BE-7BCA-4F7B-9174-0BAD9AF4206A}" />
+						<ref key="{0068E186-D4B9-4F92-87C1-AC1AC63C3D64}" />
+					</references>
+				</folder>
+				<folder caption="Report Data Definition" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{B29290B6-E904-4B7D-8BD6-9745EFB54D9F}" />
+						<ref key="{B14B25CA-06C7-4725-9467-1D4BAC640ED0}" />
+						<ref key="{E679CDD0-7CF1-4133-B31A-D00A2AE6CE3C}" />
+						<ref key="{00E07CF4-C492-4CE0-8DD4-B18A3C07EB03}" />
+						<ref key="{23C976FB-FE05-445E-82D4-E07FE2B3C9D5}" />
+						<ref key="{D99F0D6B-E0C6-4879-AD99-7C154CD9B7FB}" />
+						<ref key="{C8D34C64-8447-4D17-B4F9-B79303B3CC1B}" />
+						<ref key="{1A20B096-2BA4-4471-A64D-B9EBA47A3326}" />
+					</references>
+				</folder>
+				<folder caption="Report Style" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{BE123C28-3033-4A44-AA0F-24177EBE9AFC}" />
+						<ref key="{9B44562E-F68C-43AB-A16B-BE6D67AE3133}" />
+					</references>
+				</folder>
+				<folder caption="Electronic Compliance" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{54FF24A2-968A-403F-AEFA-C7837AC35776}" />
+					</references>
+				</folder>
+				<folder caption="Printing Reports" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{D8C76D91-04E3-4D6A-B13E-C2E0F2CAEE27}" />
+						<ref key="{5851A0BA-1D47-43D6-868E-704DEE93EB3D}" />
+						<ref key="{C6DA09AC-E944-4A2E-B83E-8718CBBF8130}" />
+						<ref key="{4C86D888-90E9-43C7-B0EF-8C2E418C1DAF}" />
+						<ref key="{8ACD7903-0A5B-466C-AF7A-D14E8FF6178A}" />
+						<ref key="{5CE89613-3734-44BF-A03D-FCB34B5BB4E4}" />
+						<ref key="{6FDA6902-6B3A-4A8C-BEE4-90B38DE79FAB}" />
+						<ref key="{06847270-4727-4778-A4F8-F0F646B0D7A4}" />
+						<ref key="{12403E4A-AFEB-4C15-995D-BFBDF5121E15}" />
+						<ref key="{7885357F-E6A5-45AC-A081-F1CBFC5711EE}" />
+						<ref key="{2C74D238-7152-4AD2-861E-463E9868689F}" />
+					</references>
+				</folder>
+			</folders>
+			<references>
+				<ref key="{DA284840-AC86-4B6C-AA67-8AA14E877490}" />
+				<ref key="{E55E31FF-E1A7-4AF4-812A-7C408BF910E3}" />
+				<ref key="{B2500060-C4BF-448F-B282-6CD0226E36AF}" />
+			</references>
+		</folder>
+		<folder caption="PortalRoutines" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{BF760776-2681-4228-AB72-6BA7155940E3}" />
+				<ref key="{79236A2C-FB92-4D9B-BB58-C0A0BE3C8DB1}" />
+			</references>
+		</folder>
+	</folders>
+</Root>

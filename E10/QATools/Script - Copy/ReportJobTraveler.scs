@@ -1,0 +1,92 @@
+﻿//USEUNIT ControlFunctions
+//USEUNIT General_Functions
+//USEUNIT Menu_Functions
+//USEUNIT Grid_Functions
+//USEUNIT PrintedReportsFileNames
+
+//Script to generate reports
+//A function for each report is created and called on TC routine 
+
+// Function name:  ReportJobTraveler
+// Purpose:  Generates and prints report then retrieves file name in order to compare to baseline
+// Author: Andrea Rodriguez
+// Input:  -
+// Output:  -
+
+function ReportJobTraveler(){
+	Log["Message"]("Starting - Generate Reports")
+	ReportJobTravelerForm()
+
+	Log["Message"]("Starting - Retrieve File name")
+	var pathFile = ReportsFileNames("Job Traveler")
+	
+	Log["Message"]("Starting - XMl report file comparison with baselines")
+	ReportJobTravelerXMl(pathFile)
+}
+
+/*Jobtrav: JobTraveler.
+                Production Management/Job Management/Reports/Job Traveler
+                Go to filter tab, Click on job button, select the first 3 jobs (005354-1-1, 2000, 2022) click ok.
+                Click Generate Only*/
+
+function ReportJobTravelerForm(){
+	var reportStyle = "Standard - SSRS - JOBTRAV2"
+
+  ExpandComp("Epicor USA")
+
+  ChangePlant("Chicago")
+  
+  RestartSmartClient()
+
+	MainMenuTreeViewSelect("Epicor USA;Chicago;Production Management;Job Management;Reports;Job Traveler")
+
+	//Validates if form was opened
+	ValidatesFormOpened("Job Traveler Report")
+
+	//Select Report style
+	Delay(1000)
+	ComboboxSelect("cboStyle", reportStyle)
+
+	// Activates 'Filter' tab
+	OpenPanelTab("Filter")
+
+	ClickButton("Job...")
+
+	//Opens 'Job search' form 
+	ClickButton("Search")	
+
+	var jobEntrySearchForm = GetGrid("ugdSearchResults")
+
+	//Select first three jobs
+	while(true){
+		jobEntrySearchForm["Rows"]["Item"](0)["Selected"] = true
+		jobEntrySearchForm["Keys"]("![Down]![Down]")
+		break
+	}
+
+	ClickButton("OK")
+
+	var gridJobs = GetGrid("grdJob")
+
+	if (gridJobs["wRowCount"] == 3) {
+		Log["Message"]("Jobs were selected.")
+	}else {
+	    Log["Error"]("Jobs weren't selected.")
+	}
+
+	//Pending Generate only
+	Delay(2500)
+	ClickMenu("File->Generate Only")
+	Log["Message"]("'Generate Only' option clicked from menu")
+
+	Delay(4000)
+	//Close Form
+	ClickMenu("File->Exit")
+
+	//Validates if form is still on screen
+	ValidatesFormClosed("Job Traveler")
+}
+
+function ReportJobTravelerXMl(pathFile){
+	XML["XmlJobTraveler"]["Check"](pathFile)
+}

@@ -1,0 +1,172 @@
+﻿//USEUNIT PortalFunctions
+intRowNumToWrite = 2
+intLogFolderCount = 0
+intProjItemCount = 0
+function GeneralEvents_OnStartTest(Sender)
+{
+
+  var ProjVar = Project["Variables"];
+  if (!ProjVar["VariableExists"]("intLogFolderCount")){Project["Variables"]["AddVariable"]("intLogFolderCount", "Integer");};
+    Project["Variables"]["intLogFolderCount"] = intLogFolderCount;
+            
+  DeclareGlobalVariales();
+       
+  if (Project["Variables"]["ActualSlaveIP"] == Project["Variables"]["CurSysIPAddress"])
+    { 
+      portalRunFlag = true     
+      intRowNumToWrite = intRowNumToWrite+1             
+      intLogFolderCount = intLogFolderCount+1      
+      intProjItemCount = intProjItemCount+1 
+      Project["Variables"]["intLogFolderCount"] = Project["Variables"]["intLogFolderCount"]+1     
+           
+    }
+  else
+    {portalRunFlag = false}              
+    
+
+  if (portalRunFlag)
+    {Log["Message"]("Running for Portal - Test Item = '"+Project["TestItems"]["Current"]["Name"]+"' - Start")} 
+  else
+    {Log["Message"]("Not Running for Portal - Test Item = '"+Project["TestItems"]["Current"]["Name"]+"' - Start")}    
+  
+}
+
+function GeneralEvents_OnStopTest(Sender)
+{
+  
+    Log["PopLogFolder"]()
+    intLogFolderCount = intLogFolderCount+1  
+    Log["Message"]("Inside 'GeneralEvents_OnStopTest'")
+    var ProjVar = Project["Variables"];  
+    
+    if (intProjItemCount == Project["TestItems"]["ItemCount"])
+      {Log["Message"]("All Tests Items are Executed in Category '"+getCurrProjectTestItemCategoryName()+"'; and Count reached to = "+Project["TestItems"]["ItemCount"]+"")}
+    else
+      {Log["Message"]("All Tests Items are Not Yet Completed with execution in Category '"+getCurrProjectTestItemCategoryName()+"'; and Count reached to = "+Project["TestItems"]["ItemCount"]+"")}
+      
+    if (Project["Variables"]["ActualSlaveIP"] == Project["Variables"]["CurSysIPAddress"])
+        {
+          portalRunFlag = true
+          Log["SaveResultsAs"](Project["Variables"]["str_TmpLogFolder"], lsHTML, true,2)
+          WritePortalDataToExcelRow(intRowNumToWrite)
+  
+          if (getCurrProjectTestItemName() == "EndOfExecution")          
+            {
+              strMHTLogFile = Project["Variables"]["str_SharedLogFolder"]//+"\\MHTIndex.mht"
+              //Log["SaveResultsAs"](strMHTLogFile, 1, true,1)
+              Log["SaveResultsAs"](strMHTLogFile, lsHTML,true,lesFull)    
+              var PSFile_PushToPortal = aqFileSystem.GetCurrentFolder()+"\\PowerShellScripts\\PushToPortal_QATool_AllRows.ps1"+" "+intRowNumToWrite+" "+Project["Variables"]["VersionNum"]+" "+Project["Variables"]["BuildNum"]+" "+Project["Variables"]["test_case"];Delay(5000);
+              Log["Message"]("Before Running Portal Batch File by Saving result to Temp Log Folder for Excel Row = "+intRowNumToWrite)		
+            	WshShell["Run"]("powershell -windowstyle hidden -executionpolicy bypass -file "+PSFile_PushToPortal+"\"");Delay(5000)                
+              while(Sys.WaitProcess("powershell", 10).Exists){Delay(500)}  
+            }
+          else{Log["SaveResultsAs"](Project["Variables"]["str_TmpLogFolder"], lsHTML, true,2)} 
+        }
+      else
+        {portalRunFlag = false}         
+    
+    if (portalRunFlag)
+      {Log["Message"]("Running for Portal - Test Item = '"+Project["TestItems"]["Current"]["Name"]+"' - End")} 
+    else
+      {Log["Message"]("Not Running for Portal - Test Item = '"+Project["TestItems"]["Current"]["Name"]+"' - End")}
+}
+
+
+//--------------------------
+
+
+function DeclareGlobalVariales()
+{  
+  var ProjVar = Project["Variables"] 
+  var CurrentFolder = aqFileSystem.GetCurrentFolder();
+  var ExlObj1 = Sys.OleObject("Excel.Application");ExlObj1["DisplayAlerts"] = false ;  
+  var PortalWB1 = ExlObj1.Workbooks.Open(CurrentFolder+"\\OutPutForPortal\\QAToolsPortalData.xlsx");
+  var PortalWS1 = PortalWB1.Worksheets("PortalData");
+
+  var DistributedWS1 = PortalWB1.Worksheets("Distributed");
+  var DistributedWSRange1 = DistributedWS1.UsedRange;
+  
+  var DistributeWSRowCount1 = DistributedWSRange1.Rows.Count
+  var currSysIPAddress =  GetSystemIpAddress()
+  for (v1=2;v1<=DistributeWSRowCount1;v1++)
+  {
+    var ActualSlaveIP = DistributedWSRange1.Cells(v1, 2).Value2
+    if (ActualSlaveIP == currSysIPAddress)
+      { var TmpStartTime = aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m/%d/%y %H:%M:%S");Delay(20)
+          var TmpEndTime   = aqConvert["DateTimeToFormatStr"](aqDateTime["Now"](), "%m/%d/%y %H:%M:%S")
+          var TmpTimeDiff  = aqConvert["TimeIntervalToStr"](aqDateTime["TimeInterval"](TmpStartTime, TmpEndTime)); 
+          var TmpTimeDiff  = aqString.Remove(TmpTimeDiff, 1, 2)
+
+ 
+          TestItemCnt = TestItems = Project["TestItems"]["ItemCount"]
+          if (!ProjVar["VariableExists"]("TestItemCnt")){Project["Variables"]["AddVariable"]("TestItemCnt", "Integer");};
+          Project["Variables"]["TestItemCnt"] = TestItemCnt  
+          Log["Message"]("Test Item Count = "+TestItemCnt)
+  
+  
+          if (!ProjVar["VariableExists"]("test_case")){Project["Variables"]["AddVariable"]("test_case", "String");};
+          Project["Variables"]["test_case"] = getCurrProjectTestItemName();  
+  
+          if (!ProjVar["VariableExists"]("TestScenarioName")){Project["Variables"]["AddVariable"]("TestScenarioName", "String");};
+          Project["Variables"]["TestScenarioName"] = getCurrProjectTestScenarioName();                    
+          
+          var str_TmpLogFolder = createTodayRunFolder()                    
+          Log["Message"]("The 'createTodayRunFolder' Log Folder = str_TmpLogFolder "+str_TmpLogFolder)
+          
+          if (!ProjVar["VariableExists"]("str_TmpLogFolder")){Project["Variables"]["AddVariable"]("str_TmpLogFolder", "String");}
+          Project["Variables"]["str_TmpLogFolder"] = str_TmpLogFolder;       
+        
+          //Delacring Global ProjVar
+          if (!ProjVar["VariableExists"]("CurSysIPAddress")){Project["Variables"]["AddVariable"]("CurSysIPAddress", "String");};
+            Project["Variables"]["CurSysIPAddress"] = currSysIPAddress; 
+          if (!ProjVar["VariableExists"]("ActualSlaveIP")){Project["Variables"]["AddVariable"]("ActualSlaveIP", "String");};
+            Project["Variables"]["ActualSlaveIP"] = ActualSlaveIP; 
+            
+          if (!ProjVar["VariableExists"]("TCResultFlag")){Project["Variables"]["AddVariable"]("TCResultFlag", "String");};
+            Project["Variables"]["TCResultFlag"] = "failed";       
+          if (!ProjVar["VariableExists"]("CategoryName")){Project["Variables"]["AddVariable"]("CategoryName", "String");};
+            Project["Variables"]["CategoryName"] = getCurrProjectTestItemCategoryName();  
+          if (!ProjVar["VariableExists"]("test_case")){Project["Variables"]["AddVariable"]("test_case", "String");};
+            Project["Variables"]["test_case"] = getCurrProjectTestItemName() //"TmpTCName";    
+          if (!ProjVar["VariableExists"]("ErrText")){Project["Variables"]["AddVariable"]("ErrText", "String");};
+            Project["Variables"]["ErrText"] = "Tmp Err Text";
+          if (!ProjVar["VariableExists"]("ProdName")){Project["Variables"]["AddVariable"]("ProdName", "String");};
+            Project["Variables"]["ProdName"] = "Test Complete";
+          if (!ProjVar["VariableExists"]("VersionNum")){Project["Variables"]["AddVariable"]("VersionNum", "String");};
+            Project["Variables"]["VersionNum"] = "1";
+          if (!ProjVar["VariableExists"]("BuildNum")){Project["Variables"]["AddVariable"]("BuildNum", "String");};
+            Project["Variables"]["BuildNum"] = "1";  
+          if (!ProjVar["VariableExists"]("HostName")){Project["Variables"]["AddVariable"]("HostName", "String");};
+            Project["Variables"]["HostName"] = "TestHost";  
+          if (!ProjVar["VariableExists"]("LogsLocation")){Project["Variables"]["AddVariable"]("LogsLocation", "String");};
+            Project["Variables"]["LogsLocation"] = "Temp Log Locaton Path";
+          if (!ProjVar["VariableExists"]("ScreenShot")){Project["Variables"]["AddVariable"]("ScreenShot", "String");};
+            Project["Variables"]["ScreenShot"] = "Temp Log Screenshot";
+          if (!ProjVar["VariableExists"]("DataType")){Project["Variables"]["AddVariable"]("DataType", "String");};
+            Project["Variables"]["DataType"] = "testcomplete";  
+          if (!ProjVar["VariableExists"]("StartTime")){Project["Variables"]["AddVariable"]("StartTime", "String");};
+            Project["Variables"]["StartTime"] = TmpStartTime;
+          if (!ProjVar["VariableExists"]("EndTime")){Project["Variables"]["AddVariable"]("EndTime", "String");};
+            Project["Variables"]["EndTime"] = TmpEndTime;
+          if (!ProjVar["VariableExists"]("TotalTime")){Project["Variables"]["AddVariable"]("TotalTime", "String");};
+            Project["Variables"]["TotalTime"] = TmpTimeDiff;
+          //if (!ProjVar["VariableExists"]("CurrentIndex")){Project["Variables"]["AddVariable"]("CurrentIndex", "Integer");};
+          //  Project["Variables"]["CurrentTestIndex"] = intRowNumToWrite;
+   
+          if (!ProjVar["VariableExists"]("CurrentTestIndex")){Project["Variables"]["AddVariable"]("CurrentTestIndex", "Integer");};
+           Project["Variables"]["CurrentTestIndex"]=intRowNumToWrite   
+          //BuiltIn["ShowMessage"]("intRowNumToWrite="+intRowNumToWrite)
+    
+          //Get Build Number
+          portalDataArray = new Array();var portalDataArray = PortalData();
+          Project["Variables"]["BuildNum"] = portalDataArray[0]
+          Project["Variables"]["HostName"] = portalDataArray[1]
+ 
+          Indicator["PushText"]("Waiting for my window"); 
+
+    }   
+  }
+  PortalWB1["Save"];
+  PortalWB1["Close"];   
+  ExlObj1["Quit"]()
+} 

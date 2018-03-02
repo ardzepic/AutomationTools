@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1140" key="{F347A318-B6CE-4FE6-AC7C-66260A2AE78F}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{7862DEF7-F76E-4271-B9BC-EF773089801C}" type="Tested Application" typeId="{FD30A383-63C2-4C25-948C-2595C0F81320}">
+			<config nodeName="Epicor" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+				<runModeParams activeRunMode="Simple">
+					<param name="RunAs" parameters="/Skip &quot;/Config=ERP102100.sysconfig&quot;" workFolder="" userName="" password="" domain="" />
+					<param name="Profile" parameters="/Skip &quot;/Config=ERP102100.sysconfig&quot;" workFolder="" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="/Skip &quot;/Config=ERP102100.sysconfig&quot;" workFolder="" />
+					<param name="Simple" fileName="Epicor.exe" filePath="\\Toolssandbox\erp10\LocalClients\ERP102100\" parameters="/Skip &quot;/Config=ERP102100.sysconfig&quot;" workFolder="" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+	<folders />
+</Root>
